@@ -1,0 +1,280 @@
+10-04-2017 18:28:51	Start Execution		
+10-04-2017 18:28:55	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+10-04-2017 18:29:02	Start Execution	Open the TC767_Finance_StatusChangeViaImportReadyForReissueToIssued file	OPEN THE TC767_FINANCE_STATUSCHANGEVIAIMPORTREADYFORREISSUETOISSUED TEST CASE FILE SUCCESSFULLY
+10-04-2017 18:29:03	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+10-04-2017 18:29:04	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+10-04-2017 18:29:08	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+10-04-2017 18:29:08	Start Execution	start execute of  TC767_Finance_StatusChangeViaImportReadyForReissueToIssued	
+10-04-2017 18:29:09			Step Name			Expected		STATUS
+10-04-2017 18:29:20	LoginToSecurityWindow	Open the browser and start Application	PASS
+10-04-2017 18:30:00	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+10-04-2017 18:30:00	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+10-04-2017 18:30:00	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+10-04-2017 18:30:10	LoginToFinance	btn_Login button  should be loaded	PASS
+10-04-2017 18:30:10	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+10-04-2017 18:30:10	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+10-04-2017 18:30:10	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+10-04-2017 18:30:15	LoginToFinance	"Work Queue" page should be displayed.	PASS
+10-04-2017 18:30:15	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+10-04-2017 18:30:16	NavigateToMasterSummaryPage	"lnk_Certificates object" object Should be clicked.	PASS
+10-04-2017 18:30:16	NavigateToMasterSummaryPage	"lnk_ClientLookup object" object Should be clicked.	PASS
+10-04-2017 18:30:18	NavigateToMasterSummaryPage	"Client Search" page should be displayed.	PASS
+10-04-2017 18:30:18	NavigateToMasterSummaryPage	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+10-04-2017 18:30:18	NavigateToMasterSummaryPage	"lbl_SearchResults object" should be displayed.	PASS
+10-04-2017 18:30:18	NavigateToMasterSummaryPage	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+10-04-2017 18:30:18	NavigateToMasterSummaryPage	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:30:20	NavigateToMasterSummaryPage	"tbl_ClientName table" should be displayed.	PASS
+10-04-2017 18:30:26	NavigateToMasterSummaryPage	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+10-04-2017 18:30:29	NavigateToMasterSummaryPage	"Client Summary" page should be displayed.	PASS
+10-04-2017 18:30:29	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+10-04-2017 18:30:29	NavigateToMasterSummaryPage	"lbl_ClientProfile object" should be displayed.	PASS
+10-04-2017 18:30:29	NavigateToMasterSummaryPage	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+10-04-2017 18:30:29	NavigateToMasterSummaryPage	"lbl_CertCenterNotes object" should be displayed.	PASS
+10-04-2017 18:30:29	NavigateToMasterSummaryPage	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+10-04-2017 18:30:31	NavigateToMasterSummaryPage	tbl_MasterTemplateGrid table  should be loaded	PASS
+10-04-2017 18:30:31	NavigateToMasterSummaryPage	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+10-04-2017 18:30:31	NavigateToMasterSummaryPage	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+10-04-2017 18:30:31	NavigateToMasterSummaryPage	"tab_Audit link" should be displayed.	PASS
+10-04-2017 18:30:31	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+10-04-2017 18:30:31	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+10-04-2017 18:30:31	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be displayed.	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "ID"	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Description"	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Line of Business"	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Effective Date"	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Expiration Date "	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Holder Count"	PASS
+10-04-2017 18:30:32	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+10-04-2017 18:30:36	NavigateToMasterSummaryPage	"Master Template Summary" page should be displayed.	PASS
+10-04-2017 18:30:36	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+10-04-2017 18:30:36	NavigateToMasterSummaryPage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+10-04-2017 18:30:36	NavigateToMasterSummaryPage	"lbl_MasterTemplateDetails object" should be displayed.	PASS
+10-04-2017 18:30:36	NavigateToMasterSummaryPage	"lbl_SelectedAttachments object" should be displayed.	PASS
+10-04-2017 18:30:36	NavigateToMasterSummaryPage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+10-04-2017 18:30:36	NavigateToMasterSummaryPage	"lbl_ActiveHolders object" should be displayed.	PASS
+10-04-2017 18:30:37	NavigateToHolderImportExportPage	"btn_HolderExport button" object Should be clicked.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"Holder_ImportExport" page should be displayed.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"btn_Done button" should be displayed.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"btn_Back button" should be displayed.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"tab_Export link" should be displayed.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"tab_Details link" should be displayed.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"tab_Export link" object Should be clicked.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"btn_Export button" should be displayed.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"dwl_Status object" should be displayed.	PASS
+10-04-2017 18:30:39	NavigateToHolderImportExportPage	"dwl_IssuanceStatus object" should be displayed.	PASS
+10-04-2017 18:30:40	NavigateToHolderImportExportPage	"dwl_IssuanceStatus object" object Should be clicked.	PASS
+10-04-2017 18:30:41	SelectReadyForReIssue	"dtl_ReadyForReIssue object" should be displayed.	PASS
+10-04-2017 18:30:41	SelectReadyForReIssue	"dtl_ReadyForReIssue object" object Should be clicked.	PASS
+10-04-2017 18:30:42	StatusChangeViaImport	"btn_Export button" object Should be clicked.	PASS
+10-04-2017 18:30:44	StatusChangeViaImport	 Export Status SRID is "422884"	PASS
+10-04-2017 18:30:44	StatusChangeViaImport	"tab_WorkQueue object" object Should be clicked.	PASS
+10-04-2017 18:30:44	StatusChangeViaImport	"dtl_WorkQueue object" object Should be clicked.	PASS
+10-04-2017 18:30:46	StatusChangeViaImport	"Work Queue" page should be displayed.	PASS
+10-04-2017 18:30:46	StatusChangeViaImport	"422884" : value should be entered in "txt_SearchID edit box" field.	PASS
+10-04-2017 18:30:46	StatusChangeViaImport	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:30:48	StatusChangeViaImport	"Summary" page should be displayed.	PASS
+10-04-2017 18:30:48	StatusChangeViaImport	"tab_WorkFlow link" should be displayed.	PASS
+10-04-2017 18:30:48	StatusChangeViaImport	"tab_Details link" should be displayed.	PASS
+10-04-2017 18:30:48	StatusChangeViaImport	"tab_Documents link" should be displayed.	PASS
+10-04-2017 18:30:48	StatusChangeViaImport	"tab_Audit link" should be displayed.	PASS
+10-04-2017 18:30:48	StatusChangeViaImport	"tab_Details link" object Should be clicked.	PASS
+10-04-2017 18:31:58	StatusChangeViaImport	tab_Documents link  should be loaded	PASS
+10-04-2017 18:31:58	StatusChangeViaImport	"tab_Documents link" object Should be clicked.	PASS
+10-04-2017 18:32:01	StatusChangeViaImport	tbl_Document table  should be loaded	PASS
+10-04-2017 18:32:01	StatusChangeViaImport	"tbl_Document table" should be displayed.	PASS
+10-04-2017 18:32:06	StatusChangeViaImport	view attachment icon should be clicked under tbl_Document table	PASS
+10-04-2017 18:32:12	StatusChangeViaImport	"btn_SaveAs button" object Should be clicked.	PASS
+10-04-2017 18:32:23	StatusChangeViaImport	txt_FileName edit box  should be loaded	PASS
+10-04-2017 18:32:24	StatusChangeViaImport	"C:\IFSAutomation\Finance\Resources\TC762.xlsx" : value should be entered in "txt_FileName edit box" field.	PASS
+10-04-2017 18:32:26	StatusChangeViaImport	"btn_Save button" object should be clicked.	PASS
+10-04-2017 18:32:29	StatusChangeViaImport	tab_Documents link  should be loaded	PASS
+10-04-2017 18:32:29	StatusChangeViaImport	 File download successfully  in the specified path 	PASS
+10-04-2017 18:32:29	StatusChangeViaImport	"tab_Certificates object" object Should be clicked.	PASS
+10-04-2017 18:32:29	StatusChangeViaImport	"lnk_ClientLookup object" object Should be clicked.	PASS
+10-04-2017 18:32:31	StatusChangeViaImport	"Client Search" page should be displayed.	PASS
+10-04-2017 18:32:32	StatusChangeViaImport	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+10-04-2017 18:32:32	StatusChangeViaImport	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:32:34	StatusChangeViaImport	tbl_ClientName table  should be loaded	PASS
+10-04-2017 18:32:40	StatusChangeViaImport	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+10-04-2017 18:32:42	StatusChangeViaImport	"Client Summary" page should be displayed.	PASS
+10-04-2017 18:32:43	StatusChangeViaImport	"btn_HolderImport/Export button" object Should be clicked.	PASS
+10-04-2017 18:32:45	StatusChangeViaImport	"ImportExport_Holder" page should be displayed.	PASS
+10-04-2017 18:32:46	StatusChangeViaImport	"btn_ViewEPICContactID button" should be displayed.	PASS
+10-04-2017 18:32:46	StatusChangeViaImport	"btn_Done button" should be displayed.	PASS
+10-04-2017 18:32:46	StatusChangeViaImport	"btn_Back button" should be displayed.	PASS
+10-04-2017 18:32:46	StatusChangeViaImport	"tab_Import link" should be displayed.	PASS
+10-04-2017 18:32:46	StatusChangeViaImport	"tab_Export link" should be displayed.	PASS
+10-04-2017 18:32:46	StatusChangeViaImport	"tab_Details link" should be displayed.	PASS
+10-04-2017 18:32:46	StatusChangeViaImport	"tab_Import link" object Should be clicked.	PASS
+10-04-2017 18:32:49	StatusChangeViaImport	"wf_SelectFiles edit box" object Should be clicked.	PASS
+10-04-2017 18:32:49	StatusChangeViaImport	"C:\IFSAutomation\Finance\Resources\TC767.xlsx" : value should be entered in "txt_FileName edit box" field.	PASS
+10-04-2017 18:32:49	StatusChangeViaImport	"BTN_Open button" object should be clicked.	PASS
+10-04-2017 18:32:49	StatusChangeViaImport	"dtl_UploadedFile object" should be displayed.	PASS
+10-04-2017 18:32:49	StatusChangeViaImport	"btn_Upload button" object Should be clicked.	PASS
+10-04-2017 18:32:52	StatusChangeViaImport	"dtl_UploadStatus object" should be displayed.	PASS
+10-04-2017 18:32:52	StatusChangeViaImport	 Export Status SRID is "422885"	PASS
+10-04-2017 18:32:52	StatusChangeViaImport	"tab_WorkQueue object" object Should be clicked.	PASS
+10-04-2017 18:32:52	StatusChangeViaImport	"lnk_WorkQueue object" object Should be clicked.	PASS
+10-04-2017 18:32:55	StatusChangeViaImport	"422885" : value should be entered in "txt_SearchID edit box" field.	PASS
+10-04-2017 18:32:55	StatusChangeViaImport	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:32:57	StatusChangeViaImport	"Summary" page should be displayed.	PASS
+10-04-2017 18:32:57	StatusChangeViaImport	"dtl_ImportStatus object" should be displayed.	PASS
+10-04-2017 18:34:03	StatusChangeViaImport	Text: "No Import Errors"  should be displayed at dtl_ImportStatus object	PASS
+10-04-2017 18:34:03	StatusChangeViaImport	"tab_WorkFlow link" object Should be clicked.	PASS
+10-04-2017 18:34:05	StatusChangeViaImport	"Completed"  value is avilable in table at "3" row , "2" column	PASS
+10-04-2017 18:34:05	StatusChangeViaImport	"tab_Certificates object" object Should be clicked.	PASS
+10-04-2017 18:34:05	StatusChangeViaImport	"lnk_ClientLookup object" object Should be clicked.	PASS
+10-04-2017 18:34:07	StatusChangeViaImport	"Client Search" page should be displayed.	PASS
+10-04-2017 18:34:07	StatusChangeViaImport	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+10-04-2017 18:34:07	StatusChangeViaImport	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:34:09	StatusChangeViaImport	tbl_ClientName table  should be loaded	PASS
+10-04-2017 18:34:15	StatusChangeViaImport	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+10-04-2017 18:34:18	StatusChangeViaImport	"Client Summary" page should be displayed.	PASS
+10-04-2017 18:34:20	StatusChangeViaImport	tbl_MasterTemplateGrid table  should be loaded	PASS
+10-04-2017 18:34:20	StatusChangeViaImport	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+10-04-2017 18:34:23	StatusChangeViaImport	"Master Template Summary" page should be displayed.	PASS
+10-04-2017 18:34:28	StatusChangeViaImport	tbl_ActiveHoldersGrid table  should be loaded	PASS
+10-04-2017 18:34:28	StatusChangeViaImport	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "10"	PASS
+10-04-2017 18:34:28	StatusChangeViaImport	 All "Status" column displayed record values should be  "Issued" in tbl_ActiveHoldersGrid table	PASS
+10-04-2017 18:34:30	Logout	Logout from application	PASS
+10-04-2017 18:34:40	Start Execution	Open the TC762_Finance_StatusChangeViaImportIssuedToReadyForReissue file	OPEN THE TC762_FINANCE_STATUSCHANGEVIAIMPORTISSUEDTOREADYFORREISSUE TEST CASE FILE SUCCESSFULLY
+10-04-2017 18:34:41	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+10-04-2017 18:34:42	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+10-04-2017 18:34:45	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+10-04-2017 18:34:45	Start Execution	start execute of  TC762_Finance_StatusChangeViaImportIssuedToReadyForReissue	
+10-04-2017 18:34:45			Step Name			Expected		STATUS
+10-04-2017 18:34:53	LoginToSecurityWindow	Open the browser and start Application	PASS
+10-04-2017 18:35:34	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+10-04-2017 18:35:34	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+10-04-2017 18:35:34	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+10-04-2017 18:36:18	LoginToFinance	btn_Login button  should be loaded	PASS
+10-04-2017 18:36:59	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+10-04-2017 18:37:39	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+10-04-2017 18:38:20	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+10-04-2017 18:38:26	LoginToFinance	"Work Queue" page should be displayed.	PASS
+10-04-2017 18:38:26	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+10-04-2017 18:38:27	NavigateToMasterSummaryPage	"lnk_Certificates object" object Should be clicked.	PASS
+10-04-2017 18:38:27	NavigateToMasterSummaryPage	"lnk_ClientLookup object" object Should be clicked.	PASS
+10-04-2017 18:38:29	NavigateToMasterSummaryPage	"Client Search" page should be displayed.	PASS
+10-04-2017 18:38:29	NavigateToMasterSummaryPage	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+10-04-2017 18:38:29	NavigateToMasterSummaryPage	"lbl_SearchResults object" should be displayed.	PASS
+10-04-2017 18:38:29	NavigateToMasterSummaryPage	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+10-04-2017 18:38:29	NavigateToMasterSummaryPage	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:38:31	NavigateToMasterSummaryPage	"tbl_ClientName table" should be displayed.	PASS
+10-04-2017 18:38:36	NavigateToMasterSummaryPage	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+10-04-2017 18:38:39	NavigateToMasterSummaryPage	"Client Summary" page should be displayed.	PASS
+10-04-2017 18:38:39	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+10-04-2017 18:38:39	NavigateToMasterSummaryPage	"lbl_ClientProfile object" should be displayed.	PASS
+10-04-2017 18:38:39	NavigateToMasterSummaryPage	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+10-04-2017 18:38:39	NavigateToMasterSummaryPage	"lbl_CertCenterNotes object" should be displayed.	PASS
+10-04-2017 18:38:39	NavigateToMasterSummaryPage	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+10-04-2017 18:38:41	NavigateToMasterSummaryPage	tbl_MasterTemplateGrid table  should be loaded	PASS
+10-04-2017 18:38:41	NavigateToMasterSummaryPage	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+10-04-2017 18:38:41	NavigateToMasterSummaryPage	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+10-04-2017 18:38:41	NavigateToMasterSummaryPage	"tab_Audit link" should be displayed.	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be displayed.	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "ID"	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Description"	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Line of Business"	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Effective Date"	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Expiration Date "	PASS
+10-04-2017 18:38:42	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Holder Count"	PASS
+10-04-2017 18:38:43	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+10-04-2017 18:38:46	NavigateToMasterSummaryPage	"Master Template Summary" page should be displayed.	PASS
+10-04-2017 18:38:46	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+10-04-2017 18:38:46	NavigateToMasterSummaryPage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+10-04-2017 18:38:46	NavigateToMasterSummaryPage	"lbl_MasterTemplateDetails object" should be displayed.	PASS
+10-04-2017 18:38:46	NavigateToMasterSummaryPage	"lbl_SelectedAttachments object" should be displayed.	PASS
+10-04-2017 18:38:47	NavigateToMasterSummaryPage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+10-04-2017 18:38:47	NavigateToMasterSummaryPage	"lbl_ActiveHolders object" should be displayed.	PASS
+10-04-2017 18:38:48	NavigateToHolderImportExportPage	"btn_HolderExport button" object Should be clicked.	PASS
+10-04-2017 18:38:49	NavigateToHolderImportExportPage	"Holder_ImportExport" page should be displayed.	PASS
+10-04-2017 18:38:49	NavigateToHolderImportExportPage	"btn_Done button" should be displayed.	PASS
+10-04-2017 18:38:49	NavigateToHolderImportExportPage	"btn_Back button" should be displayed.	PASS
+10-04-2017 18:38:49	NavigateToHolderImportExportPage	"tab_Export link" should be displayed.	PASS
+10-04-2017 18:38:49	NavigateToHolderImportExportPage	"tab_Details link" should be displayed.	PASS
+10-04-2017 18:38:49	NavigateToHolderImportExportPage	"tab_Export link" object Should be clicked.	PASS
+10-04-2017 18:38:50	NavigateToHolderImportExportPage	"btn_Export button" should be displayed.	PASS
+10-04-2017 18:38:50	NavigateToHolderImportExportPage	"dwl_Status object" should be displayed.	PASS
+10-04-2017 18:38:50	NavigateToHolderImportExportPage	"dwl_IssuanceStatus object" should be displayed.	PASS
+10-04-2017 18:38:50	NavigateToHolderImportExportPage	"dwl_IssuanceStatus object" object Should be clicked.	PASS
+10-04-2017 18:38:51	SelectIssued	"dtl_Issued object" should be displayed.	PASS
+10-04-2017 18:38:51	SelectIssued	"dtl_Issued object" object Should be clicked.	PASS
+10-04-2017 18:38:52	StatusChangeAsReIssueViaImport	"btn_Export button" object Should be clicked.	PASS
+10-04-2017 18:38:54	StatusChangeAsReIssueViaImport	 Export Status SRID is "422886"	PASS
+10-04-2017 18:38:54	StatusChangeAsReIssueViaImport	"tab_WorkQueue object" object Should be clicked.	PASS
+10-04-2017 18:38:54	StatusChangeAsReIssueViaImport	"dtl_WorkQueue object" object Should be clicked.	PASS
+10-04-2017 18:38:56	StatusChangeAsReIssueViaImport	"Work Queue" page should be displayed.	PASS
+10-04-2017 18:38:56	StatusChangeAsReIssueViaImport	"422886" : value should be entered in "txt_SearchID edit box" field.	PASS
+10-04-2017 18:38:56	StatusChangeAsReIssueViaImport	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:38:58	StatusChangeAsReIssueViaImport	"Summary" page should be displayed.	PASS
+10-04-2017 18:38:58	StatusChangeAsReIssueViaImport	"tab_WorkFlow link" should be displayed.	PASS
+10-04-2017 18:38:58	StatusChangeAsReIssueViaImport	"tab_Details link" should be displayed.	PASS
+10-04-2017 18:38:58	StatusChangeAsReIssueViaImport	"tab_Documents link" should be displayed.	PASS
+10-04-2017 18:38:58	StatusChangeAsReIssueViaImport	"tab_Audit link" should be displayed.	PASS
+10-04-2017 18:38:58	StatusChangeAsReIssueViaImport	"tab_Documents link" object Should be clicked.	PASS
+10-04-2017 18:40:05	StatusChangeAsReIssueViaImport	"tab_Documents link" object Should be clicked.	PASS
+10-04-2017 18:40:06	StatusChangeAsReIssueViaImport	tbl_Document table  should be loaded	PASS
+10-04-2017 18:40:06	StatusChangeAsReIssueViaImport	"tbl_Document table" should be displayed.	PASS
+10-04-2017 18:40:11	StatusChangeAsReIssueViaImport	view attachment icon should be clicked under tbl_Document table	PASS
+10-04-2017 18:40:17	StatusChangeAsReIssueViaImport	"btn_SaveAs button" object Should be clicked.	PASS
+10-04-2017 18:40:25	StatusChangeAsReIssueViaImport	txt_FileName edit box  should be loaded	PASS
+10-04-2017 18:40:25	StatusChangeAsReIssueViaImport	"C:\IFSAutomation\Finance\Resources\TC767.xlsx" : value should be entered in "txt_FileName edit box" field.	PASS
+10-04-2017 18:40:28	StatusChangeAsReIssueViaImport	"btn_Save button" object should be clicked.	PASS
+10-04-2017 18:40:31	StatusChangeAsReIssueViaImport	tab_Details link  should be loaded	PASS
+10-04-2017 18:40:31	StatusChangeAsReIssueViaImport	 File download successfully  in the specified path 	PASS
+10-04-2017 18:40:31	StatusChangeAsReIssueViaImport	"tab_Certificates object" object Should be clicked.	PASS
+10-04-2017 18:40:31	StatusChangeAsReIssueViaImport	"lnk_ClientLookup object" object Should be clicked.	PASS
+10-04-2017 18:40:33	StatusChangeAsReIssueViaImport	"Client Search" page should be displayed.	PASS
+10-04-2017 18:40:33	StatusChangeAsReIssueViaImport	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+10-04-2017 18:40:33	StatusChangeAsReIssueViaImport	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:40:36	StatusChangeAsReIssueViaImport	tbl_ClientName table  should be loaded	PASS
+10-04-2017 18:40:42	StatusChangeAsReIssueViaImport	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+10-04-2017 18:40:44	StatusChangeAsReIssueViaImport	"Client Summary" page should be displayed.	PASS
+10-04-2017 18:40:45	StatusChangeAsReIssueViaImport	"btn_HolderImport/Export button" object Should be clicked.	PASS
+10-04-2017 18:40:47	StatusChangeAsReIssueViaImport	"ImportExport_Holder" page should be displayed.	PASS
+10-04-2017 18:40:47	StatusChangeAsReIssueViaImport	"btn_ViewEPICContactID button" should be displayed.	PASS
+10-04-2017 18:40:47	StatusChangeAsReIssueViaImport	"btn_Done button" should be displayed.	PASS
+10-04-2017 18:40:47	StatusChangeAsReIssueViaImport	"btn_Back button" should be displayed.	PASS
+10-04-2017 18:40:47	StatusChangeAsReIssueViaImport	"tab_Import link" should be displayed.	PASS
+10-04-2017 18:40:47	StatusChangeAsReIssueViaImport	"tab_Export link" should be displayed.	PASS
+10-04-2017 18:40:47	StatusChangeAsReIssueViaImport	"tab_Details link" should be displayed.	PASS
+10-04-2017 18:40:47	StatusChangeAsReIssueViaImport	"tab_Import link" object Should be clicked.	PASS
+10-04-2017 18:40:50	StatusChangeAsReIssueViaImport	"wf_SelectFiles edit box" object Should be clicked.	PASS
+10-04-2017 18:40:50	StatusChangeAsReIssueViaImport	"C:\IFSAutomation\Finance\Resources\TC762.xlsx" : value should be entered in "txt_FileName edit box" field.	PASS
+10-04-2017 18:40:50	StatusChangeAsReIssueViaImport	"BTN_Open button" object should be clicked.	PASS
+10-04-2017 18:41:11	StatusChangeAsReIssueViaImport	"dtl_UploadedFile object" should be displayed.	PASS
+10-04-2017 18:41:11	StatusChangeAsReIssueViaImport	"btn_Upload button" object Should be clicked.	PASS
+10-04-2017 18:41:13	StatusChangeAsReIssueViaImport	"dtl_UploadStatus object" should be displayed.	PASS
+10-04-2017 18:41:13	StatusChangeAsReIssueViaImport	 Export Status SRID is "422887"	PASS
+10-04-2017 18:41:13	StatusChangeAsReIssueViaImport	"tab_WorkQueue object" object Should be clicked.	PASS
+10-04-2017 18:41:13	StatusChangeAsReIssueViaImport	"lnk_WorkQueue object" object Should be clicked.	PASS
+10-04-2017 18:41:16	StatusChangeAsReIssueViaImport	"422887" : value should be entered in "txt_SearchID edit box" field.	PASS
+10-04-2017 18:41:16	StatusChangeAsReIssueViaImport	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:41:18	StatusChangeAsReIssueViaImport	"Summary" page should be displayed.	PASS
+10-04-2017 18:41:21	StatusChangeAsReIssueViaImport	dtl_ImportStatus object  should be loaded	PASS
+10-04-2017 18:41:21	StatusChangeAsReIssueViaImport	"dtl_ImportStatus object" should be displayed.	PASS
+10-04-2017 18:42:28	StatusChangeAsReIssueViaImport	Text: "No Import Errors"  should be displayed at dtl_ImportStatus object	FAIL
+10-04-2017 18:42:28	StatusChangeAsReIssueViaImport	"tab_WorkFlow link" object Should be clicked.	PASS
+10-04-2017 18:42:29	StatusChangeAsReIssueViaImport	"Completed" should be displayed in table	FAIL
+10-04-2017 18:42:29	StatusChangeAsReIssueViaImport	"tab_Certificates object" object Should be clicked.	PASS
+10-04-2017 18:42:29	StatusChangeAsReIssueViaImport	"lnk_ClientLookup object" object Should be clicked.	PASS
+10-04-2017 18:42:31	StatusChangeAsReIssueViaImport	"Client Search" page should be displayed.	PASS
+10-04-2017 18:42:31	StatusChangeAsReIssueViaImport	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+10-04-2017 18:42:31	StatusChangeAsReIssueViaImport	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 18:42:35	StatusChangeAsReIssueViaImport	tbl_ClientName table  should be loaded	PASS
+10-04-2017 18:42:40	StatusChangeAsReIssueViaImport	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+10-04-2017 18:42:43	StatusChangeAsReIssueViaImport	"Client Summary" page should be displayed.	PASS
+10-04-2017 18:42:45	StatusChangeAsReIssueViaImport	tbl_MasterTemplateGrid table  should be loaded	PASS
+10-04-2017 18:42:45	StatusChangeAsReIssueViaImport	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+10-04-2017 18:42:49	StatusChangeAsReIssueViaImport	"Master Template Summary" page should be displayed.	PASS
+10-04-2017 18:42:54	StatusChangeAsReIssueViaImport	tbl_ActiveHoldersGrid table  should be loaded	PASS
+10-04-2017 18:42:54	StatusChangeAsReIssueViaImport	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "10"	PASS
+10-04-2017 18:42:54	StatusChangeAsReIssueViaImport	 All "Status" column values should be displayed "Ready for Reissue" in tbl_ActiveHoldersGrid table	FAIL
+10-04-2017 18:42:56	Logout	Logout from application	PASS

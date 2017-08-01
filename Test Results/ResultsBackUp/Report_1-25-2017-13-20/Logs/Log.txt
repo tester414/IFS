@@ -1,0 +1,93 @@
+25-01-2017 13:20:10	Start Execution		
+25-01-2017 13:20:13	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+25-01-2017 13:20:20	Start Execution	Open the TC913_Finance_RenewalClientTeamMismatchCanCompleteRequest file	OPEN THE TC913_FINANCE_RENEWALCLIENTTEAMMISMATCHCANCOMPLETEREQUEST TEST CASE FILE SUCCESSFULLY
+25-01-2017 13:20:21	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+25-01-2017 13:20:22	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+25-01-2017 13:20:25	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+25-01-2017 13:20:25	Start Execution	start execute of  TC913_Finance_RenewalClientTeamMismatchCanCompleteRequest	
+25-01-2017 13:20:25			Step Name			Expected		STATUS
+25-01-2017 13:20:33	LoginToSecurityWindow	Open the browser and start Application	PASS
+25-01-2017 13:21:14	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+25-01-2017 13:21:14	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+25-01-2017 13:21:14	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+25-01-2017 13:21:23	LoginToFinance	btn_Login button  should be loaded	PASS
+25-01-2017 13:21:23	LoginToFinance	"nash" : value should be entered in "txt_UserName edit box" field.	PASS
+25-01-2017 13:21:23	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+25-01-2017 13:21:23	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+25-01-2017 13:21:27	LoginToFinance	"Work Queue" page should be displayed.	PASS
+25-01-2017 13:21:27	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+25-01-2017 13:21:28	NavigateToEntryRequestDetails	"lnk_Certificates object" object Should be clicked.	PASS
+25-01-2017 13:21:29	NavigateToEntryRequestDetails	"lnk_CreateRequest object" object Should be clicked.	PASS
+25-01-2017 13:21:36	NavigateToEntryRequestDetails	btn_SelectClient button  should be loaded	PASS
+25-01-2017 13:21:37	NavigateToEntryRequestDetails	"Entry" page should be displayed.	PASS
+25-01-2017 13:21:37	NavigateToEntryRequestDetails	"btn_SelectClient button" object Should be clicked.	PASS
+25-01-2017 13:21:39	EnterClientName	"Client Search" page should be displayed.	PASS
+25-01-2017 13:21:39	EnterClientName	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+25-01-2017 13:21:39	EnterClientName	"lbl_SearchResults object" should be displayed.	PASS
+25-01-2017 13:21:39	EnterClientName	"Davidson" : value should be entered in "txt_ClientName edit box" field.	PASS
+25-01-2017 13:21:39	EnterClientName	"btn_Search button" object Should be clicked.	PASS
+25-01-2017 13:21:41	EnterClientName	"tbl_ClientName table" should be displayed.	PASS
+25-01-2017 13:21:46	EnterClientName	"tbl_ClientName table"populates with a row of data containing "Davidson Roofing Inc"and clicked	PASS
+25-01-2017 13:21:49	ValidateEntryPage	"Entry" page should be displayed.	PASS
+25-01-2017 13:21:49	ValidateEntryPage	"lbl_RequestSummary object" should be displayed.	PASS
+25-01-2017 13:21:49	ValidateEntryPage	"lbl_ClientSummary object" should be displayed.	PASS
+25-01-2017 13:21:49	ValidateEntryPage	"lbl_RequestDetails object" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"lbl_NamedInsuredCertifcate object" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"lbl_Coverages object" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"lbl_AdditionalRequirements object" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"lbl_AutoID object" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"lbl_HandlingInstructions object" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"tab_Documents link" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"tab_Email link" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"tab_Audit link" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"tab_WorkFlow link" should be displayed.	PASS
+25-01-2017 13:21:50	ValidateEntryPage	"btn_Submit button" should be displayed.	PASS
+25-01-2017 13:21:51	ValidateEntryPage	"btn_Cancel button" should be displayed.	PASS
+25-01-2017 13:21:51	ValidateEntryPage	"btn_Back button" should be displayed.	PASS
+25-01-2017 13:21:51	ValidateEntryPage	 Request ID is "422397"	PASS
+25-01-2017 13:21:53	ValidateEntryPage	Email should be selected from dropdown.	PASS
+25-01-2017 13:21:57	RenewalClientTeamMismatchCanCompleteRequest	Renewal should be selected from dropdown.	PASS
+25-01-2017 13:21:57	RenewalClientTeamMismatchCanCompleteRequest	"btn_Submit button" object Should be clicked.	PASS
+25-01-2017 13:22:00	RenewalClientTeamMismatchCanCompleteRequest	"Work Queue" page should be displayed.	PASS
+25-01-2017 13:22:00	RenewalClientTeamMismatchCanCompleteRequest	"422397" : value should be entered in "txt_SearchID edit box" field.	PASS
+25-01-2017 13:22:00	RenewalClientTeamMismatchCanCompleteRequest	"btn_Search button" object Should be clicked.	PASS
+25-01-2017 13:22:03	RenewalClientTeamMismatchCanCompleteRequest	"Summary" page should be displayed.	PASS
+25-01-2017 13:22:03	RenewalClientTeamMismatchCanCompleteRequest	"tab_WorkFlow link" should be displayed.	PASS
+25-01-2017 13:22:03	RenewalClientTeamMismatchCanCompleteRequest	"tab_WorkFlow link" object Should be clicked.	PASS
+25-01-2017 13:22:05	RenewalClientTeamMismatchCanCompleteRequest	"NEW" Should be in 2 Row and 2 Column under "tbl_Task table"	PASS
+25-01-2017 13:22:09	RenewalClientTeamMismatchCanCompleteRequest	"dtl_RenewalReview object" should be displayed.	PASS
+25-01-2017 13:22:10	RenewalClientTeamMismatchCanCompleteRequest	"dtl_RequestEntry object" should be displayed.	PASS
+25-01-2017 13:22:10	RenewalClientTeamMismatchCanCompleteRequest	"btn_Task button" object Should be clicked.	PASS
+25-01-2017 13:22:13	RenewalClientTeamMismatchCanCompleteRequest	"Process Details" page should be displayed.	PASS
+25-01-2017 13:22:14	RenewalClientTeamMismatchCanCompleteRequest	Text: "The current user team is Nashville. The client is assigned to Mumbai. To clear the assignment associated with the request, click Clear Assignment or proceed with the request"  should be displayed at lbl_YellowWarnignMsg object	PASS
+25-01-2017 13:22:14	RenewalClientTeamMismatchCanCompleteRequest	"btn_ClearAssignment button" should be displayed.	PASS
+25-01-2017 13:22:14	RenewalClientTeamMismatchCanCompleteRequest	"btn_SelectHolder(s) button" object Should be clicked.	PASS
+25-01-2017 13:22:17	RenewalClientTeamMismatchCanCompleteRequest	"Select Holder for Issuance" page should be displayed.	PASS
+25-01-2017 13:22:17	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectHolders table" should be displayed.	PASS
+25-01-2017 13:22:17	RenewalClientTeamMismatchCanCompleteRequest	"btn_SelectClientDistribution button" should be displayed.	PASS
+25-01-2017 13:22:17	RenewalClientTeamMismatchCanCompleteRequest	"btn_SelectAll button" should be displayed.	PASS
+25-01-2017 13:22:17	RenewalClientTeamMismatchCanCompleteRequest	"btn_Search button" should be displayed.	PASS
+25-01-2017 13:22:17	RenewalClientTeamMismatchCanCompleteRequest	"btn_ClearSelection button" should be displayed.	PASS
+25-01-2017 13:22:17	RenewalClientTeamMismatchCanCompleteRequest	"btn_Back button" should be displayed.	PASS
+25-01-2017 13:22:21	RenewalClientTeamMismatchCanCompleteRequest	tbl_SelectHolders table  should be loaded	PASS
+25-01-2017 13:22:22	RenewalClientTeamMismatchCanCompleteRequest	Number of rows selected in the table: "tbl_SelectHolders table"should be "2"	PASS
+25-01-2017 13:22:22	RenewalClientTeamMismatchCanCompleteRequest	"btn_SelectClientDistribution button" object Should be clicked.	PASS
+25-01-2017 13:22:24	RenewalClientTeamMismatchCanCompleteRequest	"Select Client Distribution" page should be displayed.	PASS
+25-01-2017 13:22:24	RenewalClientTeamMismatchCanCompleteRequest	"dwl_ClientPrinter object" should be displayed.	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be displayed.	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"btn_Add button" should be displayed.	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterName"	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterType"	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterMethod"	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterDestination"	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterCC Address"	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"btn_ConfirmIssuance button" should be displayed.	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"btn_Back button" should be displayed.	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"Email"Type is selected  in "tbl_SelectClientDistribution table"	PASS
+25-01-2017 13:22:25	RenewalClientTeamMismatchCanCompleteRequest	"btn_ConfirmIssuance button" object Should be clicked.	PASS
+25-01-2017 13:22:28	RenewalClientTeamMismatchCanCompleteRequest	"Submit Issuance" page should be displayed.	PASS
+25-01-2017 13:22:28	RenewalClientTeamMismatchCanCompleteRequest	Text: "2"  should be displayed at dtl_IssuanceCertificateCount object	PASS
+25-01-2017 13:22:30	RenewalClientTeamMismatchCanCompleteRequest	"EMAIL" Should be in 2 Row and 3 Column under "tbl_SelectClientDist table"	PASS
+25-01-2017 13:22:30	RenewalClientTeamMismatchCanCompleteRequest	"btn_IssueCertificates button" object Should be clicked.	PASS
+25-01-2017 13:22:32	RenewalClientTeamMismatchCanCompleteRequest	"Work Queue" page should be displayed.	PASS
+25-01-2017 13:22:34	Logout	Logout from application	PASS

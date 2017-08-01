@@ -1,0 +1,18 @@
+05-04-2017 13:53:10	Start Execution		
+05-04-2017 13:53:14	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+05-04-2017 13:53:20	Start Execution	Open the TC746_Finance_EditNumberOfHoldersForIssuance file	OPEN THE TC746_FINANCE_EDITNUMBEROFHOLDERSFORISSUANCE TEST CASE FILE SUCCESSFULLY
+05-04-2017 13:53:21	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+05-04-2017 13:53:22	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+05-04-2017 13:53:26	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+05-04-2017 13:53:27	Start Execution	start execute of  TC746_Finance_EditNumberOfHoldersForIssuance	
+05-04-2017 13:53:27			Step Name			Expected		STATUS
+05-04-2017 13:53:35	LoginToSecurityWindow	Open the browser and start Application	PASS
+05-04-2017 13:54:15	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+05-04-2017 13:54:16	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+05-04-2017 13:54:16	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+05-04-2017 13:54:38	LoginToFinance	btn_Login button  should be loaded	PASS
+05-04-2017 13:54:38	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+05-04-2017 13:54:38	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+05-04-2017 13:54:38	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+05-04-2017 13:54:44	LoginToFinance	"Work Queue" page should be displayed.	FAIL
+05-04-2017 13:54:44	LoginToFinance	"lnk_Certificates object" should be displayed.	FAIL

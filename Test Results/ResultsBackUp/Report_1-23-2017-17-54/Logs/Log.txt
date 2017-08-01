@@ -1,0 +1,6 @@
+23-01-2017 17:54:55	Start Execution		
+23-01-2017 17:54:59	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+23-01-2017 17:55:07	Start Execution	Open the TC926_Finance_ReNewMasterTemplatePreSteps file	OPEN THE TC926_FINANCE_RENEWMASTERTEMPLATEPRESTEPS TEST CASE FILE SUCCESSFULLY
+23-01-2017 17:55:08	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+23-01-2017 17:55:09	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+23-01-2017 17:55:13	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	No rows in test data with TC926	FAIL

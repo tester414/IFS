@@ -1,0 +1,4 @@
+8:45:11 AM - Test Suite Execution Start Date and Time: 8/17/2015 8:45:11 AM
+8:45:11 AM - Current User: ChrisJ
+8:45:11 AM - Current folder: C:\Impact\Trunk_IFS_QuestionTypes
+8:45:11 AM - Specified Log file TestSuite.xlsm not found. Please check and re-execute. Quiting...

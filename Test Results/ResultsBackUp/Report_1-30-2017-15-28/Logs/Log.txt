@@ -1,0 +1,113 @@
+30-01-2017 15:28:50	Start Execution		
+30-01-2017 15:28:54	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+30-01-2017 15:29:02	Start Execution	Open the TC927_Finance_RenewMasterTemplateFromRenewToCopy file	OPEN THE TC927_FINANCE_RENEWMASTERTEMPLATEFROMRENEWTOCOPY TEST CASE FILE SUCCESSFULLY
+30-01-2017 15:29:03	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+30-01-2017 15:29:04	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+30-01-2017 15:29:07	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+30-01-2017 15:29:07	Start Execution	start execute of  TC927_Finance_RenewMasterTemplateFromRenewToCopy	
+30-01-2017 15:29:07			Step Name			Expected		STATUS
+30-01-2017 15:29:20	LoginToSecurityWindow	Open the browser and start Application	PASS
+30-01-2017 15:30:01	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+30-01-2017 15:30:01	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+30-01-2017 15:30:01	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+30-01-2017 15:30:11	LoginToFinance	btn_Login button  should be loaded	PASS
+30-01-2017 15:30:11	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+30-01-2017 15:30:11	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+30-01-2017 15:30:11	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+30-01-2017 15:30:17	LoginToFinance	"Work Queue" page should be displayed.	PASS
+30-01-2017 15:30:17	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+30-01-2017 15:30:18	NavigateMasterSummary	"lnk_Certificates object" object Should be clicked.	PASS
+30-01-2017 15:30:18	NavigateMasterSummary	"lnk_ClientLookup object" object Should be clicked.	PASS
+30-01-2017 15:30:20	NavigateMasterSummary	"Client Search" page should be displayed.	PASS
+30-01-2017 15:30:20	NavigateMasterSummary	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+30-01-2017 15:30:20	NavigateMasterSummary	"lbl_SearchResults object" should be displayed.	PASS
+30-01-2017 15:30:20	NavigateMasterSummary	"Happy Tails Grooming" : value should be entered in "txt_ClientName edit box" field.	PASS
+30-01-2017 15:30:20	NavigateMasterSummary	"btn_Search button" object Should be clicked.	PASS
+30-01-2017 15:30:22	NavigateMasterSummary	"tbl_ClientName table" should be displayed.	PASS
+30-01-2017 15:30:28	NavigateMasterSummary	"tbl_ClientName table"populates with a row of data containing "Happy Tails Grooming"and clicked	PASS
+30-01-2017 15:30:30	NavigateMasterSummary	"Client Summary" page should be displayed.	PASS
+30-01-2017 15:30:30	NavigateMasterSummary	"lbl_ClientSummary object" should be displayed.	PASS
+30-01-2017 15:30:30	NavigateMasterSummary	"lbl_ClientProfile object" should be displayed.	PASS
+30-01-2017 15:30:31	NavigateMasterSummary	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+30-01-2017 15:30:31	NavigateMasterSummary	"lbl_CertCenterNotes object" should be displayed.	PASS
+30-01-2017 15:30:31	NavigateMasterSummary	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+30-01-2017 15:30:33	NavigateMasterSummary	tbl_MasterTemplateGrid table  should be loaded	PASS
+30-01-2017 15:30:33	NavigateMasterSummary	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+30-01-2017 15:30:33	NavigateMasterSummary	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+30-01-2017 15:30:33	NavigateMasterSummary	"tab_Audit link" should be displayed.	PASS
+30-01-2017 15:30:33	NavigateMasterSummary	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+30-01-2017 15:30:33	NavigateMasterSummary	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+30-01-2017 15:30:33	NavigateMasterSummary	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+30-01-2017 15:30:35	NavigateMasterSummary	"RENEW MASTERS TEST" Should be in 2 Row and 4 Column under "tbl_MasterTemplateGrid table"	PASS
+30-01-2017 15:30:36	RenewMasterTemplateFromRenewToCopy	"btn_RenewMasters button" object Should be clicked.	PASS
+30-01-2017 15:30:39	RenewMasterTemplateFromRenewToCopy	"Select Master Type" page should be displayed.	PASS
+30-01-2017 15:30:39	RenewMasterTemplateFromRenewToCopy	"dwl_AcordType object" should be displayed.	PASS
+30-01-2017 15:30:41	RenewMasterTemplateFromRenewToCopy	"ACORD 24: CERTIFICATE OF PROPERTY INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+30-01-2017 15:30:43	RenewMasterTemplateFromRenewToCopy	"ACORD 25.CERTIFICATE OF LIABILITY INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+30-01-2017 15:30:45	RenewMasterTemplateFromRenewToCopy	"ACORD 27: EVIDENCE OF PROPERTY INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+30-01-2017 15:30:47	RenewMasterTemplateFromRenewToCopy	"ACORD 28: EVIDENCE OF COMMERICAL PROPERTY INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+30-01-2017 15:30:49	RenewMasterTemplateFromRenewToCopy	"ACORD 30: CERTIFICATE OF GARAGE INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+30-01-2017 15:30:53	RenewMasterTemplateFromRenewToCopy	ACORD 25.CERTIFICATE OF LIABILITY INSURANCE should be selected from dropdown.	PASS
+30-01-2017 15:30:54	RenewMasterTemplateFromRenewToCopy	"btn_Next button" object Should be clicked.	PASS
+30-01-2017 15:30:55	RenewMasterTemplateFromRenewToCopy	"Select Master" page should be displayed.	PASS
+30-01-2017 15:30:55	RenewMasterTemplateFromRenewToCopy	"lbl_SelectMaster(s) object" should be displayed.	PASS
+30-01-2017 15:30:55	RenewMasterTemplateFromRenewToCopy	"lbl_MasterTemplateCopyDetails object" should be displayed.	PASS
+30-01-2017 15:30:58	RenewMasterTemplateFromRenewToCopy	"RENEW MASTERS TEST" Should be in 2 Row and 5 Column under "tbl_SelectMaster(s) table"	PASS
+30-01-2017 15:30:59	RenewMasterTemplateFromRenewToCopy	Number of rows selected in the table: "tbl_SelectMaster(s) table"should be "1"	PASS
+30-01-2017 15:30:59	RenewMasterTemplateFromRenewToCopy	"btn_Next button" object Should be clicked.	PASS
+30-01-2017 15:31:03	RenewMasterTemplateFromRenewToCopy	"Select Coverage Template" page should be displayed.	PASS
+30-01-2017 15:31:03	RenewMasterTemplateFromRenewToCopy	"lbl_SelectCoverageTemplate object" should be displayed.	PASS
+30-01-2017 15:31:03	RenewMasterTemplateFromRenewToCopy	"lbl_MasterTemplateCopyDetails object" should be displayed.	PASS
+30-01-2017 15:31:04	RenewMasterTemplateFromRenewToCopy	tbl_SelectCoverageTemplate table  should be loaded	PASS
+30-01-2017 15:31:09	RenewMasterTemplateFromRenewToCopy	Renewselect icon should be clicked under tbl_SelectCoverageTemplate table	PASS
+30-01-2017 15:31:10	RenewMasterTemplateFromRenewToCopy	"dtl_Remove object" should be displayed.	PASS
+30-01-2017 15:31:10	RenewMasterTemplateFromRenewToCopy	"dtl_Renew object" should be displayed.	PASS
+30-01-2017 15:31:10	RenewMasterTemplateFromRenewToCopy	"dtl_Copy object" should be displayed.	PASS
+30-01-2017 15:31:10	RenewMasterTemplateFromRenewToCopy	"dtl_Copy object" object Should be clicked.	PASS
+30-01-2017 15:31:10	RenewMasterTemplateFromRenewToCopy	"btn_Next button" object Should be clicked.	PASS
+30-01-2017 15:31:13	RenewMasterTemplateFromRenewToCopy	"Select Policy" page should be displayed.	PASS
+30-01-2017 15:31:13	RenewMasterTemplateFromRenewToCopy	"lbl_MasterTemplateCopyDetails object" should be displayed.	PASS
+30-01-2017 15:31:13	RenewMasterTemplateFromRenewToCopy	"lbl_Confirm/SelectPolicy object" should be displayed.	PASS
+30-01-2017 15:31:13	RenewMasterTemplateFromRenewToCopy	 Request ID is "422475"	PASS
+30-01-2017 15:31:13	RenewMasterTemplateFromRenewToCopy	"btn_Submit button" object Should be clicked.	PASS
+30-01-2017 15:31:16	RenewMasterTemplateFromRenewToCopy	"Client Summary" page should be displayed.	PASS
+30-01-2017 15:31:18	RenewMasterTemplateFromRenewToCopy	tbl_RenewalMasterRequest table  should be loaded	PASS
+30-01-2017 15:31:18	RenewMasterTemplateFromRenewToCopy	 Icon should be clicked under tbl_RenewalMasterRequest table	PASS
+30-01-2017 15:31:20	RenewMasterTemplateFromRenewToCopy	"Summary" page should be displayed.	PASS
+30-01-2017 15:31:20	RenewMasterTemplateFromRenewToCopy	"tab_WorkFlow link" should be displayed.	PASS
+30-01-2017 15:31:21	RenewMasterTemplateFromRenewToCopy	"tab_Documents link" should be displayed.	PASS
+30-01-2017 15:31:21	RenewMasterTemplateFromRenewToCopy	"tab_Details link" should be displayed.	PASS
+30-01-2017 15:31:21	RenewMasterTemplateFromRenewToCopy	"tab_Audit link" should be displayed.	PASS
+30-01-2017 15:31:21	RenewMasterTemplateFromRenewToCopy	"422475" : value should be entered in "txt_SearchID edit box" field.	PASS
+30-01-2017 15:31:21	RenewMasterTemplateFromRenewToCopy	"btn_SearchID button" object Should be clicked.	PASS
+30-01-2017 15:31:26	RenewMasterTemplateFromRenewToCopy	tab_WorkFlow link  should be loaded	PASS
+30-01-2017 15:31:27	RenewMasterTemplateFromRenewToCopy	"422475" : value should be entered in "txt_SearchID edit box" field.	PASS
+30-01-2017 15:31:27	RenewMasterTemplateFromRenewToCopy	"btn_SearchID button" object Should be clicked.	PASS
+30-01-2017 15:31:32	RenewMasterTemplateFromRenewToCopy	tab_WorkFlow link  should be loaded	PASS
+30-01-2017 15:31:32	RenewMasterTemplateFromRenewToCopy	"422475" : value should be entered in "txt_SearchID edit box" field.	PASS
+30-01-2017 15:31:32	RenewMasterTemplateFromRenewToCopy	"btn_SearchID button" object Should be clicked.	PASS
+30-01-2017 15:31:38	RenewMasterTemplateFromRenewToCopy	tab_WorkFlow link  should be loaded	PASS
+30-01-2017 15:31:38	RenewMasterTemplateFromRenewToCopy	"422475" : value should be entered in "txt_SearchID edit box" field.	PASS
+30-01-2017 15:31:38	RenewMasterTemplateFromRenewToCopy	"btn_SearchID button" object Should be clicked.	PASS
+30-01-2017 15:31:43	RenewMasterTemplateFromRenewToCopy	tab_WorkFlow link  should be loaded	PASS
+30-01-2017 15:31:43	RenewMasterTemplateFromRenewToCopy	"422475" : value should be entered in "txt_SearchID edit box" field.	PASS
+30-01-2017 15:31:44	RenewMasterTemplateFromRenewToCopy	"btn_SearchID button" object Should be clicked.	PASS
+30-01-2017 15:31:49	RenewMasterTemplateFromRenewToCopy	dtl_MasterTemplateCopy object  should be loaded	PASS
+30-01-2017 15:31:49	RenewMasterTemplateFromRenewToCopy	"dtl_MasterTemplateCopy object" should be displayed.	PASS
+30-01-2017 15:32:10	RenewMasterTemplateFromRenewToCopy	"dtl_HolderCopy object" should be displayed.	FAIL
+30-01-2017 15:32:10	RenewMasterTemplateFromRenewToCopy	"dtl_CoverageTemplateCopy object" should be displayed.	PASS
+30-01-2017 15:32:31	RenewMasterTemplateFromRenewToCopy	"dtl_CompleteMasterCopyWorkflow object" should be displayed.	FAIL
+30-01-2017 15:32:31	RenewMasterTemplateFromRenewToCopy	"tab_WorkFlow link" object Should be clicked.	PASS
+30-01-2017 15:32:31	RenewMasterTemplateFromRenewToCopy	"tbl_WorkFlow table" should be displayed.	PASS
+30-01-2017 15:32:33	RenewMasterTemplateFromRenewToCopy	"IN PROGRESS" Should be in 2 Row and 2 Column under tbl_WorkFlow table" but displayed is NEW	FAIL
+30-01-2017 15:32:33	RenewMasterTemplateFromRenewToCopy	"btn_Work button" object Should be clicked.	PASS
+30-01-2017 15:32:36	RenewMasterTemplateFromRenewToCopy	"Summary" page should be displayed.	PASS
+30-01-2017 15:32:36	RenewMasterTemplateFromRenewToCopy	"btn_GenerateReport button" should be displayed.	PASS
+30-01-2017 15:32:36	RenewMasterTemplateFromRenewToCopy	"btn_Complete button" should be displayed.	PASS
+30-01-2017 15:32:36	RenewMasterTemplateFromRenewToCopy	"btn_Back button" should be displayed.	PASS
+30-01-2017 15:32:36	RenewMasterTemplateFromRenewToCopy	"btn_Complete button" object Should be clicked.	PASS
+30-01-2017 15:32:39	RenewMasterTemplateFromRenewToCopy	"Summary" page should be displayed.	PASS
+30-01-2017 15:32:39	RenewMasterTemplateFromRenewToCopy	"tab_WorkFlow link" should be displayed.	PASS
+30-01-2017 15:32:39	RenewMasterTemplateFromRenewToCopy	"tab_WorkFlow link" object Should be clicked.	PASS
+30-01-2017 15:32:39	RenewMasterTemplateFromRenewToCopy	"tbl_WorkFlow table" should be displayed.	PASS
+30-01-2017 15:32:41	RenewMasterTemplateFromRenewToCopy	"COMPLETED" Should be in 2 Row and 2 Column under tbl_WorkFlow table" but displayed is IN PROGRESS	FAIL

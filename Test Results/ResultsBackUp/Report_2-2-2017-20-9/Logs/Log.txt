@@ -1,0 +1,1438 @@
+02-02-2017 20:09:40	Start Execution		
+02-02-2017 20:09:43	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+02-02-2017 20:09:49	Start Execution	Open the TC746_Finance_EditNumberOfHoldersForIssuance file	OPEN THE TC746_FINANCE_EDITNUMBEROFHOLDERSFORISSUANCE TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:09:50	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:09:51	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:09:54	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:09:54	Start Execution	start execute of  TC746_Finance_EditNumberOfHoldersForIssuance	
+02-02-2017 20:09:54			Step Name			Expected		STATUS
+02-02-2017 20:10:02	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:10:43	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:10:43	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:10:43	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:10:52	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:10:52	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:10:52	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:10:53	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:10:57	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:10:57	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:10:58	NavigateToEntryRequestDetails	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:10:58	NavigateToEntryRequestDetails	"lnk_CreateRequest object" object Should be clicked.	PASS
+02-02-2017 20:11:06	NavigateToEntryRequestDetails	btn_SelectClient button  should be loaded	PASS
+02-02-2017 20:11:07	NavigateToEntryRequestDetails	"Entry" page should be displayed.	PASS
+02-02-2017 20:11:07	NavigateToEntryRequestDetails	"btn_SelectClient button" object Should be clicked.	PASS
+02-02-2017 20:11:09	EnterClientName	"Client Search" page should be displayed.	PASS
+02-02-2017 20:11:09	EnterClientName	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:11:09	EnterClientName	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:11:09	EnterClientName	"Davidson" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:11:10	EnterClientName	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:11:11	EnterClientName	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:11:17	EnterClientName	"tbl_ClientName table"populates with a row of data containing "Davidson Oil & Flying Star Transport, LLC"and clicked	PASS
+02-02-2017 20:11:20	ValidateEntryPage	"Entry" page should be displayed.	PASS
+02-02-2017 20:11:20	ValidateEntryPage	"lbl_RequestSummary object" should be displayed.	PASS
+02-02-2017 20:11:20	ValidateEntryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"lbl_RequestDetails object" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"lbl_NamedInsuredCertifcate object" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"lbl_Coverages object" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"lbl_AdditionalRequirements object" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"lbl_AutoID object" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"lbl_HandlingInstructions object" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"tab_Email link" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:11:21	ValidateEntryPage	"btn_Submit button" should be displayed.	PASS
+02-02-2017 20:11:22	ValidateEntryPage	"btn_Cancel button" should be displayed.	PASS
+02-02-2017 20:11:22	ValidateEntryPage	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:11:22	ValidateEntryPage	 Request ID is "422578"	PASS
+02-02-2017 20:11:24	ValidateEntryPage	Email should be selected from dropdown.	PASS
+02-02-2017 20:11:26	EditNumberOfHoldersForIssuance	"btn_Submit button" object Should be clicked.	PASS
+02-02-2017 20:11:34	EditNumberOfHoldersForIssuance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:11:34	EditNumberOfHoldersForIssuance	"txt_SearchID edit box" should be displayed.	PASS
+02-02-2017 20:11:35	EditNumberOfHoldersForIssuance	"422578" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:11:35	EditNumberOfHoldersForIssuance	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:11:38	EditNumberOfHoldersForIssuance	"Summary" page should be displayed.	PASS
+02-02-2017 20:11:38	EditNumberOfHoldersForIssuance	"tab_Communications link" should be displayed.	PASS
+02-02-2017 20:11:38	EditNumberOfHoldersForIssuance	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:11:38	EditNumberOfHoldersForIssuance	"tab_Email link" should be displayed.	PASS
+02-02-2017 20:11:38	EditNumberOfHoldersForIssuance	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:11:38	EditNumberOfHoldersForIssuance	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:11:38	EditNumberOfHoldersForIssuance	"tab_WorkFlow link" object Should be clicked.	PASS
+02-02-2017 20:11:43	EditNumberOfHoldersForIssuance	tbl_Task table  should be loaded	PASS
+02-02-2017 20:11:43	EditNumberOfHoldersForIssuance	"tbl_Task table" should be displayed.	PASS
+02-02-2017 20:11:45	EditNumberOfHoldersForIssuance	"NEW" Should be in 2 Row and 2 Column under "tbl_Task table"	PASS
+02-02-2017 20:11:50	EditNumberOfHoldersForIssuance	"lnk_Take object" should be displayed.	PASS
+02-02-2017 20:11:50	EditNumberOfHoldersForIssuance	"lnk_DueDate object" should be displayed.	PASS
+02-02-2017 20:11:50	EditNumberOfHoldersForIssuance	"lnk_Assign object" should be displayed.	PASS
+02-02-2017 20:11:50	EditNumberOfHoldersForIssuance	"btn_Task button" object Should be clicked.	PASS
+02-02-2017 20:11:52	EditNumberOfHoldersForIssuance	"Process Details" page should be displayed.	PASS
+02-02-2017 20:11:52	EditNumberOfHoldersForIssuance	"btn_SelectHolder(s) button" should be displayed.	PASS
+02-02-2017 20:11:53	EditNumberOfHoldersForIssuance	"btn_NeedInformation button" should be displayed.	PASS
+02-02-2017 20:11:53	EditNumberOfHoldersForIssuance	"btn_EmailInquiry button" should be displayed.	PASS
+02-02-2017 20:11:53	EditNumberOfHoldersForIssuance	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:11:53	EditNumberOfHoldersForIssuance	"btn_SelectHolder(s) button" object Should be clicked.	PASS
+02-02-2017 20:11:57	EditNumberOfHoldersForIssuance	"Select Holder for Issuance" page should be displayed.	PASS
+02-02-2017 20:12:27	EditNumberOfHoldersForIssuance	tbl_SelectHolders table  should be loaded	PASS
+02-02-2017 20:12:27	EditNumberOfHoldersForIssuance	"tbl_SelectHolders table" should be displayed.	PASS
+02-02-2017 20:12:28	EditNumberOfHoldersForIssuance	Number of rows selected in the table: "tbl_SelectHolders table"should be "5"	PASS
+02-02-2017 20:12:28	EditNumberOfHoldersForIssuance	"btn_SelectClientDistribution button" object Should be clicked.	PASS
+02-02-2017 20:12:31	EditNumberOfHoldersForIssuance	"Select Client Distribution" page should be displayed.	PASS
+02-02-2017 20:12:36	EditNumberOfHoldersForIssuance	tbl_SelectClientDistribution table  should be loaded	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be displayed.	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"btn_Add button" should be displayed.	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterName"	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterType"	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterMethod"	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterDestination"	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterCC Address"	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"btn_ConfirmIssuance button" should be displayed.	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:12:37	EditNumberOfHoldersForIssuance	"btn_Back button" object Should be clicked.	PASS
+02-02-2017 20:12:39	EditNumberOfHoldersForIssuance	"Select Holder for Issuance" page should be displayed.	PASS
+02-02-2017 20:13:19	EditNumberOfHoldersForIssuance	tbl_SelectHolders table  should be loaded	PASS
+02-02-2017 20:13:21	EditNumberOfHoldersForIssuance	2 rows are UNCHECKED in the table: "tbl_SelectHolders table"	PASS
+02-02-2017 20:13:21	EditNumberOfHoldersForIssuance	"btn_SelectClientDistribution button" object Should be clicked.	PASS
+02-02-2017 20:13:29	EditNumberOfHoldersForIssuance	"Select Client Distribution" page should be displayed.	PASS
+02-02-2017 20:13:33	EditNumberOfHoldersForIssuance	tbl_SelectClientDistribution table  should be loaded	PASS
+02-02-2017 20:13:33	EditNumberOfHoldersForIssuance	"lnk_Add object" should be displayed.	PASS
+02-02-2017 20:13:33	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterName"	PASS
+02-02-2017 20:13:33	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterType"	PASS
+02-02-2017 20:13:33	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterMethod"	PASS
+02-02-2017 20:13:34	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterDestination"	PASS
+02-02-2017 20:13:34	EditNumberOfHoldersForIssuance	"tbl_SelectClientDistribution table" should be contain column : "FilterCC Address"	PASS
+02-02-2017 20:13:34	EditNumberOfHoldersForIssuance	"Email"Type is selected  in "tbl_SelectClientDistribution table"	PASS
+02-02-2017 20:13:34	EditNumberOfHoldersForIssuance	"btn_ConfirmIssuance button" object Should be clicked.	PASS
+02-02-2017 20:13:36	EditNumberOfHoldersForIssuance	"Submit Issuance" page should be displayed.	PASS
+02-02-2017 20:13:40	EditNumberOfHoldersForIssuance	tbl_SelectClientDist table  should be loaded	PASS
+02-02-2017 20:13:40	EditNumberOfHoldersForIssuance	"tbl_SelectClientDist table" should be displayed.	PASS
+02-02-2017 20:13:40	EditNumberOfHoldersForIssuance	"tbl_SelectClientDist table" should be contain column : "Name"	PASS
+02-02-2017 20:13:40	EditNumberOfHoldersForIssuance	"tbl_SelectClientDist table" should be contain column : "Type"	PASS
+02-02-2017 20:13:40	EditNumberOfHoldersForIssuance	"tbl_SelectClientDist table" should be contain column : "Method"	PASS
+02-02-2017 20:13:40	EditNumberOfHoldersForIssuance	"tbl_SelectClientDist table" should be contain column : "Destination"	PASS
+02-02-2017 20:13:40	EditNumberOfHoldersForIssuance	"tbl_SelectClientDist table" should be contain column : "CC Address"	PASS
+02-02-2017 20:13:40	EditNumberOfHoldersForIssuance	Text: "3"  should be displayed at dtl_IssuanceCertificateCount object	PASS
+02-02-2017 20:13:41	EditNumberOfHoldersForIssuance	"btn_IssueCertificates button" should be displayed.	PASS
+02-02-2017 20:13:41	EditNumberOfHoldersForIssuance	"btn_IssueCertificates button" object Should be clicked.	PASS
+02-02-2017 20:13:44	EditNumberOfHoldersForIssuance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:13:46	Logout	Logout from application	PASS
+02-02-2017 20:13:55	Start Execution	Open the TC785_Finance_AutoID'sRenewalEmailClientDistribution file	OPEN THE TC785_FINANCE_AUTOID'SRENEWALEMAILCLIENTDISTRIBUTION TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:13:56	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:13:57	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:14:00	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:14:00	Start Execution	start execute of  TC785_Finance_AutoID'sRenewalEmailClientDistribution	
+02-02-2017 20:14:00			Step Name			Expected		STATUS
+02-02-2017 20:14:08	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:14:48	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:14:48	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:14:49	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:14:58	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:14:58	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:14:59	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:14:59	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:15:03	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:15:03	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:15:04	NavigateToEntryRequestDetails	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:15:04	NavigateToEntryRequestDetails	"lnk_CreateRequest object" object Should be clicked.	PASS
+02-02-2017 20:15:11	NavigateToEntryRequestDetails	btn_SelectClient button  should be loaded	PASS
+02-02-2017 20:15:12	NavigateToEntryRequestDetails	"Entry" page should be displayed.	PASS
+02-02-2017 20:15:12	NavigateToEntryRequestDetails	"btn_SelectClient button" object Should be clicked.	PASS
+02-02-2017 20:15:14	EnterClientName	"Client Search" page should be displayed.	PASS
+02-02-2017 20:15:14	EnterClientName	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:15:14	EnterClientName	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:15:15	EnterClientName	"American Automobile" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:15:15	EnterClientName	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:15:16	EnterClientName	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:15:22	EnterClientName	"tbl_ClientName table"populates with a row of data containing "American Automobile Association, (Incorporated)"and clicked	PASS
+02-02-2017 20:15:25	ValidateEntryPage	"Entry" page should be displayed.	PASS
+02-02-2017 20:15:25	ValidateEntryPage	"lbl_RequestSummary object" should be displayed.	PASS
+02-02-2017 20:15:25	ValidateEntryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:15:25	ValidateEntryPage	"lbl_RequestDetails object" should be displayed.	PASS
+02-02-2017 20:15:25	ValidateEntryPage	"lbl_NamedInsuredCertifcate object" should be displayed.	PASS
+02-02-2017 20:15:25	ValidateEntryPage	"lbl_Coverages object" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"lbl_AdditionalRequirements object" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"lbl_AutoID object" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"lbl_HandlingInstructions object" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"tab_Email link" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"btn_Submit button" should be displayed.	PASS
+02-02-2017 20:15:26	ValidateEntryPage	"btn_Cancel button" should be displayed.	PASS
+02-02-2017 20:15:27	ValidateEntryPage	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:15:27	ValidateEntryPage	 Request ID is "422579"	PASS
+02-02-2017 20:15:29	ValidateEntryPage	Email should be selected from dropdown.	PASS
+02-02-2017 20:15:32	AutoID	Renewal should be selected from dropdown.	PASS
+02-02-2017 20:15:35	AutoID	Auto ID Cards should be selected from dropdown.	PASS
+02-02-2017 20:15:35	AutoID	"btn_Submit button" object Should be clicked.	PASS
+02-02-2017 20:15:38	AutoID	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:15:38	AutoID	"422579" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:15:39	AutoID	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:15:42	AutoID	"Summary" page should be displayed.	PASS
+02-02-2017 20:15:42	AutoID	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:15:42	AutoID	"dtl_RenewalReview object" should be displayed.	PASS
+02-02-2017 20:15:42	AutoID	Text: "Removing workflow task 'Midterm Review & Process Request' due to service request type change"  should be displayed at dtl_RemovingWorkflowMsg object	PASS
+02-02-2017 20:15:42	AutoID	"tab_WorkFlow link" object Should be clicked.	PASS
+02-02-2017 20:15:44	AutoID	"NEW" Should be in 2 Row and 2 Column under "tbl_Task table"	PASS
+02-02-2017 20:15:48	AutoID	"btn_Task button" object Should be clicked.	PASS
+02-02-2017 20:15:51	AutoID	"Process Details" page should be displayed.	PASS
+02-02-2017 20:15:51	AutoID	"btn_SelectAutoIDCard(s) button" should be displayed.	PASS
+02-02-2017 20:15:52	AutoID	"btn_SelectAutoIDCard(s) button" object Should be clicked.	PASS
+02-02-2017 20:15:54	AutoID	"Select Auto ID Card for Issuance" page should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"lbl_RequestSummary object" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"lbl_FilterCriteria object" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"lbl_SelectCard(s)ToIssue object" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"txt_Year edit box" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"txt_Source edit box" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"txt_Model edit box" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"txt_Make edit box" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"txt_LicensedState edit box" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"txt_Batch edit box" should be displayed.	PASS
+02-02-2017 20:15:54	AutoID	"txt_AutoIDTemplate edit box" should be displayed.	PASS
+02-02-2017 20:15:55	AutoID	"btn_SelectClientDistribution button" should be displayed.	PASS
+02-02-2017 20:15:55	AutoID	"btn_SelectAll button" should be displayed.	PASS
+02-02-2017 20:15:55	AutoID	"btn_Search button" should be displayed.	PASS
+02-02-2017 20:15:55	AutoID	"btn_ClearSelection button" should be displayed.	PASS
+02-02-2017 20:15:55	AutoID	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:15:55	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "ID"	PASS
+02-02-2017 20:15:55	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "Year"	PASS
+02-02-2017 20:15:56	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "Make"	PASS
+02-02-2017 20:15:56	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "Model"	PASS
+02-02-2017 20:15:56	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "VIN"	PASS
+02-02-2017 20:15:56	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "Batch"	PASS
+02-02-2017 20:15:56	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "Auto ID Template"	PASS
+02-02-2017 20:15:56	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "Licensed State"	PASS
+02-02-2017 20:15:56	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "Source"	PASS
+02-02-2017 20:15:56	AutoID	"tbl_SelectCardsToIssue table" should be contain column : "Status"	PASS
+02-02-2017 20:15:56	AutoID	"2007" : value should be entered in "txt_Year edit box" field.	PASS
+02-02-2017 20:15:57	AutoID	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:16:04	AutoID	tbl_SelectCardsToIssue table  should be loaded	PASS
+02-02-2017 20:16:06	AutoID	"2007" Should be in 2 Row and 3 Column under "tbl_SelectCardsToIssue table"	PASS
+02-02-2017 20:16:08	AutoID	"2007" Should be in 10 Row and 3 Column under "tbl_SelectCardsToIssue table"	PASS
+02-02-2017 20:16:09	AutoID	"btn_ClearSelection button" object Should be clicked.	PASS
+02-02-2017 20:16:10	AutoID	"Ford" : value should be entered in "txt_Make edit box" field.	PASS
+02-02-2017 20:16:11	AutoID	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:16:18	AutoID	tbl_SelectCardsToIssue table  should be loaded	PASS
+02-02-2017 20:16:20	AutoID	"FORD" Should be in 2 Row and 4 Column under "tbl_SelectCardsToIssue table"	PASS
+02-02-2017 20:16:22	AutoID	"FORD" Should be in 10 Row and 4 Column under "tbl_SelectCardsToIssue table"	PASS
+02-02-2017 20:16:24	AutoID	Number of rows selected in the table: "tbl_SelectCardsToIssue table"should be "3"	PASS
+02-02-2017 20:16:24	AutoID	"btn_SelectClientDistribution button" object Should be clicked.	PASS
+02-02-2017 20:16:26	AutoID	"Select Client Distribution" page should be displayed.	PASS
+02-02-2017 20:16:27	AutoID	"btn_Add button" should be displayed.	PASS
+02-02-2017 20:16:27	AutoID	"tbl_SelectClientDistribution table" should be contain column : "FilterName"	PASS
+02-02-2017 20:16:27	AutoID	"tbl_SelectClientDistribution table" should be contain column : "FilterType"	PASS
+02-02-2017 20:16:27	AutoID	"tbl_SelectClientDistribution table" should be contain column : "FilterMethod"	PASS
+02-02-2017 20:16:27	AutoID	"tbl_SelectClientDistribution table" should be contain column : "FilterDestination"	PASS
+02-02-2017 20:16:27	AutoID	"tbl_SelectClientDistribution table" should be contain column : "FilterCC Address"	PASS
+02-02-2017 20:16:27	AutoID	"btn_ConfirmIssuance button" should be displayed.	PASS
+02-02-2017 20:16:27	AutoID	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:16:27	AutoID	"Email"Type is selected  in "tbl_SelectClientDistribution table"	PASS
+02-02-2017 20:16:27	AutoID	"btn_ConfirmIssuance button" object Should be clicked.	PASS
+02-02-2017 20:16:30	AutoID	"Submit Issuance" page should be displayed.	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterID"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterYear"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterMake"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterModel"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterVIN"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterBatch"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterAuto ID Template"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterLicensed State"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterSource"	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterStatus "	PASS
+02-02-2017 20:16:30	AutoID	"tbl_SelectCard(S)ToIssue table" should be contain column : "FilterType "	PASS
+02-02-2017 20:16:31	AutoID	Number of rows in the table: "tbl_SelectCard(S)ToIssue table"should be "3"	PASS
+02-02-2017 20:16:31	AutoID	"btn_IssueCertificates button" object Should be clicked.	PASS
+02-02-2017 20:16:33	AutoID	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:16:36	Logout	Logout from application	PASS
+02-02-2017 20:16:45	Start Execution	Open the TC789_Finance_ChangeRequestTypeRenewalToMidterm file	OPEN THE TC789_FINANCE_CHANGEREQUESTTYPERENEWALTOMIDTERM TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:16:46	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:16:47	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:16:48	Start Execution	Associate the General object repository to test		ASSOCIATE THE GENERAL OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:16:50	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:16:51	Start Execution	start execute of  TC789_Finance_ChangeRequestTypeRenewalToMidterm	
+02-02-2017 20:16:51			Step Name			Expected		STATUS
+02-02-2017 20:16:59	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:17:39	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:17:39	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:17:40	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:17:49	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:17:49	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:17:49	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:17:49	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:17:54	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:17:54	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:17:55	NavigateToEntryRequestDetails	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:17:55	NavigateToEntryRequestDetails	"lnk_CreateRequest object" object Should be clicked.	PASS
+02-02-2017 20:18:02	NavigateToEntryRequestDetails	btn_SelectClient button  should be loaded	PASS
+02-02-2017 20:18:03	NavigateToEntryRequestDetails	"Entry" page should be displayed.	PASS
+02-02-2017 20:18:03	NavigateToEntryRequestDetails	"btn_SelectClient button" object Should be clicked.	PASS
+02-02-2017 20:18:05	EnterClientName	"Client Search" page should be displayed.	PASS
+02-02-2017 20:18:05	EnterClientName	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:18:05	EnterClientName	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:18:05	EnterClientName	"Grace Bible" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:18:05	EnterClientName	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:18:07	EnterClientName	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:18:13	EnterClientName	"tbl_ClientName table"populates with a row of data containing "Grace Bible Church"and clicked	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"Entry" page should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"lbl_RequestSummary object" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"lbl_RequestDetails object" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"lbl_NamedInsuredCertifcate object" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"lbl_Coverages object" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"lbl_AdditionalRequirements object" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"lbl_AutoID object" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"lbl_HandlingInstructions object" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"tab_Email link" should be displayed.	PASS
+02-02-2017 20:18:16	ValidateEntryPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:18:17	ValidateEntryPage	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:18:17	ValidateEntryPage	"btn_Submit button" should be displayed.	PASS
+02-02-2017 20:18:17	ValidateEntryPage	"btn_Cancel button" should be displayed.	PASS
+02-02-2017 20:18:18	ValidateEntryPage	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:18:18	ValidateEntryPage	 Request ID is "422580"	PASS
+02-02-2017 20:18:20	ValidateEntryPage	Email should be selected from dropdown.	PASS
+02-02-2017 20:18:23	ChangeRequestTypeRenewalToMidterm	Renewal should be selected from dropdown.	PASS
+02-02-2017 20:18:24	ChangeRequestTypeRenewalToMidterm	"btn_Submit button" object Should be clicked.	PASS
+02-02-2017 20:18:27	ChangeRequestTypeRenewalToMidterm	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:18:27	ChangeRequestTypeRenewalToMidterm	"422580" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:18:27	ChangeRequestTypeRenewalToMidterm	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:18:30	ChangeRequestTypeRenewalToMidterm	"Summary" page should be displayed.	PASS
+02-02-2017 20:18:30	ChangeRequestTypeRenewalToMidterm	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:18:30	ChangeRequestTypeRenewalToMidterm	Text: "Removing workflow task 'Midterm Review & Process Request' due to service request type change"  should be displayed at dtl_RemovingWorkflowMsg object	PASS
+02-02-2017 20:18:30	ChangeRequestTypeRenewalToMidterm	Text: "Changing service request type from 'Midterm Issuance' to type 'Renewal Issuance'"  should be displayed at dtl_AlertsMsg object	PASS
+02-02-2017 20:18:30	ChangeRequestTypeRenewalToMidterm	Text: "West"  should be displayed at dtl_AssignedTeam object	PASS
+02-02-2017 20:18:30	ChangeRequestTypeRenewalToMidterm	"dtl_RenewalReview object" should be displayed.	PASS
+02-02-2017 20:18:30	ChangeRequestTypeRenewalToMidterm	"tab_WorkFlow link" object Should be clicked.	PASS
+02-02-2017 20:18:43	ChangeRequestTypeRenewalToMidterm	 New Browser tab is opened successfully 	PASS
+02-02-2017 20:18:44	ChangeRequestTypeRenewalToMidterm	"Login" page should be displayed.	PASS
+02-02-2017 20:18:44	ChangeRequestTypeRenewalToMidterm	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:18:44	ChangeRequestTypeRenewalToMidterm	"********" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:18:44	ChangeRequestTypeRenewalToMidterm	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:18:48	ChangeRequestTypeRenewalToMidterm	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:18:48	ChangeRequestTypeRenewalToMidterm	"dtl_Filter object" should be displayed.	PASS
+02-02-2017 20:18:49	ChangeRequestTypeRenewalToMidterm	"dtl_Filter object" object Should be clicked.	PASS
+02-02-2017 20:18:49	ChangeRequestTypeRenewalToMidterm	"dwl_AssignedTeam object" should be displayed.	PASS
+02-02-2017 20:18:51	ChangeRequestTypeRenewalToMidterm	"Midwest" should be displayed with in dropdown : "dwl_AssignedTeam object"	PASS
+02-02-2017 20:18:53	ChangeRequestTypeRenewalToMidterm	"Northeast" should be displayed with in dropdown : "dwl_AssignedTeam object"	PASS
+02-02-2017 20:18:55	ChangeRequestTypeRenewalToMidterm	"P&S" should be displayed with in dropdown : "dwl_AssignedTeam object"	PASS
+02-02-2017 20:18:57	ChangeRequestTypeRenewalToMidterm	"West" should be displayed with in dropdown : "dwl_AssignedTeam object"	PASS
+02-02-2017 20:19:00	ChangeRequestTypeRenewalToMidterm	"Process Support" should be displayed with in dropdown : "dwl_AssignedTeam object"	PASS
+02-02-2017 20:19:02	ChangeRequestTypeRenewalToMidterm	"Quality Control" should be displayed with in dropdown : "dwl_AssignedTeam object"	PASS
+02-02-2017 20:19:04	ChangeRequestTypeRenewalToMidterm	"Admin" should be displayed with in dropdown : "dwl_AssignedTeam object"	PASS
+02-02-2017 20:19:04	ChangeRequestTypeRenewalToMidterm	"btn_ApplyFilter button" should be displayed.	PASS
+02-02-2017 20:19:04	ChangeRequestTypeRenewalToMidterm	"btn_ClearFilter button" should be displayed.	PASS
+02-02-2017 20:19:04	ChangeRequestTypeRenewalToMidterm	"btn_Cancel button" should be displayed.	PASS
+02-02-2017 20:19:04	ChangeRequestTypeRenewalToMidterm	"dwl_AssignedTeam object" object Should be clicked.	PASS
+02-02-2017 20:19:04	ChangeRequestTypeRenewalToMidterm	"dtl_West object" object Should be clicked.	PASS
+02-02-2017 20:19:04	ChangeRequestTypeRenewalToMidterm	"btn_ApplyFilter button" object Should be clicked.	PASS
+02-02-2017 20:19:06	ChangeRequestTypeRenewalToMidterm	"tbl_SRWorkQueue table" should be displayed.	PASS
+02-02-2017 20:19:09	ChangeRequestTypeRenewalToMidterm	tbl_SRWorkQueue table  should be loaded	PASS
+02-02-2017 20:19:15	ChangeRequestTypeRenewalToMidterm	Show All icon should be clicked under tbl_SRWorkQueue table	PASS
+02-02-2017 20:19:19	ChangeRequestTypeRenewalToMidterm	tbl_SRWest table  should be loaded	PASS
+02-02-2017 20:19:19	ChangeRequestTypeRenewalToMidterm	"tbl_SRWest table" should be displayed.	PASS
+02-02-2017 20:19:19	ChangeRequestTypeRenewalToMidterm	"lnk_ID link" object Should be clicked.	PASS
+02-02-2017 20:19:22	ChangeRequestTypeRenewalToMidterm	tbl_SRWest table  should be loaded	PASS
+02-02-2017 20:19:23	ChangeRequestTypeRenewalToMidterm	"lnk_ID link" object Should be clicked.	PASS
+02-02-2017 20:19:28	ChangeRequestTypeRenewalToMidterm	tbl_SRWest table  should be loaded	PASS
+02-02-2017 20:19:31	ChangeRequestTypeRenewalToMidterm	"" Should be in 2 Row and 1 Column under "tbl_SRWest table"	PASS
+02-02-2017 20:19:33	ChangeRequestTypeRenewalToMidterm	"PROCESSING REQUEST" Should be in 2 Row and 16 Column under "tbl_SRWest table"	PASS
+02-02-2017 20:19:36	ChangeRequestTypeRenewalToMidterm	"RENEWAL REVIEW & PROCESS REQUEST" Should be in 2 Row and 4 Column under "tbl_SRWest table"	PASS
+02-02-2017 20:19:38	ChangeRequestTypeRenewalToMidterm	"RENEWAL ISSUANCE" Should be in 2 Row and 3 Column under "tbl_SRWest table"	PASS
+02-02-2017 20:19:40	ChangeRequestTypeRenewalToMidterm	"WEST" Should be in 2 Row and 2 Column under "tbl_SRWest table"	PASS
+02-02-2017 20:19:40	ChangeRequestTypeRenewalToMidterm	"btn_Task button" object Should be clicked.	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	"Process Details" page should be displayed.	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	"btn_ClearAssignment button" should be displayed.	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	"btn_ClientSummary button" should be displayed.	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	"btn_ChangeClient button" should be displayed.	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	"btn_ChangeRequestType button" should be displayed.	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	"btn_CloseRequest button" should be displayed.	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	Text: "Atlantic/South"  should be displayed at dtl_AssignedTeam object	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	Text: "Removing workflow task 'Midterm Review & Process Request' due to service request type change"  should be displayed at dtl_RemovingWorkflowTaskMSg object	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	Text: "Changing service request type from 'Midterm Issuance' to type 'Renewal Issuance'"  should be displayed at dtl_ChangingServiceRequestMsg object	PASS
+02-02-2017 20:19:45	ChangeRequestTypeRenewalToMidterm	"btn_SelectHolder(s) button" should be displayed.	PASS
+02-02-2017 20:19:46	ChangeRequestTypeRenewalToMidterm	"btn_EmailInquiry button" should be displayed.	PASS
+02-02-2017 20:19:46	ChangeRequestTypeRenewalToMidterm	"btn_NeedInformation button" should be displayed.	PASS
+02-02-2017 20:19:46	ChangeRequestTypeRenewalToMidterm	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:19:46	ChangeRequestTypeRenewalToMidterm	"btn_ChangeRequestType button" object Should be clicked.	PASS
+02-02-2017 20:19:49	ChangeRequestTypeRenewalToMidterm	"Change Request Type" page should be displayed.	PASS
+02-02-2017 20:19:49	ChangeRequestTypeRenewalToMidterm	"dtl_RequestType object" object Should be clicked.	PASS
+02-02-2017 20:19:49	ChangeRequestTypeRenewalToMidterm	"btn_Midterm object" object Should be clicked.	PASS
+02-02-2017 20:19:49	ChangeRequestTypeRenewalToMidterm	"btn_Update button" object Should be clicked.	PASS
+02-02-2017 20:19:53	ChangeRequestTypeRenewalToMidterm	"Process Details" page should be displayed.	PASS
+02-02-2017 20:19:53	ChangeRequestTypeRenewalToMidterm	Text: "Atlantic/South"  should be displayed at dtl_AssignedTeam object	PASS
+02-02-2017 20:19:53	ChangeRequestTypeRenewalToMidterm	Text: "Changing service request type from 'Renewal Issuance' to type 'Midterm Issuance'"  should be displayed at dtl_ChangingServiceRequestMsg object	PASS
+02-02-2017 20:19:53	ChangeRequestTypeRenewalToMidterm	Text: "Removing workflow task 'Renewal Review & Process Request' due to service request type change."  should be displayed at dtl_RemovingWorkflowTaskMSg object	PASS
+02-02-2017 20:19:53	ChangeRequestTypeRenewalToMidterm	"btn_SelectHolder(s) button" object Should be clicked.	PASS
+02-02-2017 20:19:56	ChangeRequestTypeRenewalToMidterm	"Select Holder for Issuance" page should be displayed.	PASS
+02-02-2017 20:19:56	ChangeRequestTypeRenewalToMidterm	Text: "Atlantic/South"  should be displayed at dtl_AssignedTeam object	PASS
+02-02-2017 20:20:16	ChangeRequestTypeRenewalToMidterm	tbl_SelectHolders table  should be loaded	PASS
+02-02-2017 20:20:17	ChangeRequestTypeRenewalToMidterm	Number of rows selected in the table: "tbl_SelectHolders table"should be "2"	PASS
+02-02-2017 20:20:17	ChangeRequestTypeRenewalToMidterm	"btn_SelectClientDistribution button" object Should be clicked.	PASS
+02-02-2017 20:20:21	ChangeRequestTypeRenewalToMidterm	"Select Client Distribution" page should be displayed.	PASS
+02-02-2017 20:20:22	ChangeRequestTypeRenewalToMidterm	tbl_SelectClientDistribution table  should be loaded	PASS
+02-02-2017 20:20:22	ChangeRequestTypeRenewalToMidterm	"Email"Type is selected  in "tbl_SelectClientDistribution table"	PASS
+02-02-2017 20:20:22	ChangeRequestTypeRenewalToMidterm	"btn_ConfirmIssuance button" object Should be clicked.	PASS
+02-02-2017 20:20:24	ChangeRequestTypeRenewalToMidterm	Text: "2"  should be displayed at dtl_IssuanceCertificateCount object	PASS
+02-02-2017 20:20:24	ChangeRequestTypeRenewalToMidterm	"btn_IssueCertificates button" object Should be clicked.	PASS
+02-02-2017 20:20:28	ChangeRequestTypeRenewalToMidterm	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:20:33	Logout	Logout from application	PASS
+02-02-2017 20:20:43	Start Execution	Open the TC913_Finance_RenewalClientTeamMismatchCanCompleteRequest file	OPEN THE TC913_FINANCE_RENEWALCLIENTTEAMMISMATCHCANCOMPLETEREQUEST TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:20:44	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:20:45	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:20:47	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:20:48	Start Execution	start execute of  TC913_Finance_RenewalClientTeamMismatchCanCompleteRequest	
+02-02-2017 20:20:48			Step Name			Expected		STATUS
+02-02-2017 20:20:56	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:21:36	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:21:36	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:21:36	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:21:45	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:21:45	LoginToFinance	"nash" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:21:45	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:21:45	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:21:50	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:21:50	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:21:51	NavigateToEntryRequestDetails	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:21:51	NavigateToEntryRequestDetails	"lnk_CreateRequest object" object Should be clicked.	PASS
+02-02-2017 20:21:58	NavigateToEntryRequestDetails	btn_SelectClient button  should be loaded	PASS
+02-02-2017 20:21:59	NavigateToEntryRequestDetails	"Entry" page should be displayed.	PASS
+02-02-2017 20:21:59	NavigateToEntryRequestDetails	"btn_SelectClient button" object Should be clicked.	PASS
+02-02-2017 20:22:01	EnterClientName	"Client Search" page should be displayed.	PASS
+02-02-2017 20:22:02	EnterClientName	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:22:02	EnterClientName	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:22:02	EnterClientName	"Davidson" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:22:02	EnterClientName	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:22:04	EnterClientName	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:22:09	EnterClientName	"tbl_ClientName table"populates with a row of data containing "Davidson Roofing Inc"and clicked	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"Entry" page should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"lbl_RequestSummary object" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"lbl_RequestDetails object" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"lbl_NamedInsuredCertifcate object" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"lbl_Coverages object" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"lbl_AdditionalRequirements object" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"lbl_AutoID object" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"lbl_HandlingInstructions object" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"tab_Email link" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:22:13	ValidateEntryPage	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:22:14	ValidateEntryPage	"btn_Submit button" should be displayed.	PASS
+02-02-2017 20:22:14	ValidateEntryPage	"btn_Cancel button" should be displayed.	PASS
+02-02-2017 20:22:14	ValidateEntryPage	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:22:14	ValidateEntryPage	 Request ID is "422582"	PASS
+02-02-2017 20:22:17	ValidateEntryPage	Email should be selected from dropdown.	PASS
+02-02-2017 20:22:20	RenewalClientTeamMismatchCanCompleteRequest	Renewal should be selected from dropdown.	PASS
+02-02-2017 20:22:20	RenewalClientTeamMismatchCanCompleteRequest	"btn_Submit button" object Should be clicked.	PASS
+02-02-2017 20:22:23	RenewalClientTeamMismatchCanCompleteRequest	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:22:24	RenewalClientTeamMismatchCanCompleteRequest	"422582" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:22:24	RenewalClientTeamMismatchCanCompleteRequest	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:22:26	RenewalClientTeamMismatchCanCompleteRequest	"Summary" page should be displayed.	PASS
+02-02-2017 20:22:26	RenewalClientTeamMismatchCanCompleteRequest	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:22:26	RenewalClientTeamMismatchCanCompleteRequest	"tab_WorkFlow link" object Should be clicked.	PASS
+02-02-2017 20:22:29	RenewalClientTeamMismatchCanCompleteRequest	"NEW" Should be in 2 Row and 2 Column under "tbl_Task table"	PASS
+02-02-2017 20:22:33	RenewalClientTeamMismatchCanCompleteRequest	"dtl_RenewalReview object" should be displayed.	PASS
+02-02-2017 20:22:33	RenewalClientTeamMismatchCanCompleteRequest	"dtl_RequestEntry object" should be displayed.	PASS
+02-02-2017 20:22:33	RenewalClientTeamMismatchCanCompleteRequest	"btn_Task button" object Should be clicked.	PASS
+02-02-2017 20:22:36	RenewalClientTeamMismatchCanCompleteRequest	"Process Details" page should be displayed.	PASS
+02-02-2017 20:22:38	RenewalClientTeamMismatchCanCompleteRequest	Text: "The current user team is Nashville. The client is assigned to Mumbai. To clear the assignment associated with the request, click Clear Assignment or proceed with the request"  should be displayed at lbl_YellowWarnignMsg object	PASS
+02-02-2017 20:22:38	RenewalClientTeamMismatchCanCompleteRequest	"btn_ClearAssignment button" should be displayed.	PASS
+02-02-2017 20:22:38	RenewalClientTeamMismatchCanCompleteRequest	"btn_SelectHolder(s) button" object Should be clicked.	PASS
+02-02-2017 20:22:41	RenewalClientTeamMismatchCanCompleteRequest	"Select Holder for Issuance" page should be displayed.	PASS
+02-02-2017 20:22:41	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectHolders table" should be displayed.	PASS
+02-02-2017 20:22:41	RenewalClientTeamMismatchCanCompleteRequest	"btn_SelectClientDistribution button" should be displayed.	PASS
+02-02-2017 20:22:41	RenewalClientTeamMismatchCanCompleteRequest	"btn_SelectAll button" should be displayed.	PASS
+02-02-2017 20:22:41	RenewalClientTeamMismatchCanCompleteRequest	"btn_Search button" should be displayed.	PASS
+02-02-2017 20:22:41	RenewalClientTeamMismatchCanCompleteRequest	"btn_ClearSelection button" should be displayed.	PASS
+02-02-2017 20:22:41	RenewalClientTeamMismatchCanCompleteRequest	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:22:44	RenewalClientTeamMismatchCanCompleteRequest	tbl_SelectHolders table  should be loaded	PASS
+02-02-2017 20:22:46	RenewalClientTeamMismatchCanCompleteRequest	Number of rows selected in the table: "tbl_SelectHolders table"should be "2"	PASS
+02-02-2017 20:22:46	RenewalClientTeamMismatchCanCompleteRequest	"btn_SelectClientDistribution button" object Should be clicked.	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"Select Client Distribution" page should be displayed.	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"dwl_ClientPrinter object" should be displayed.	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be displayed.	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"btn_Add button" should be displayed.	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterName"	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterType"	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterMethod"	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterDestination"	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"tbl_SelectClientDistribution table" should be contain column : "FilterCC Address"	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"btn_ConfirmIssuance button" should be displayed.	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:22:49	RenewalClientTeamMismatchCanCompleteRequest	"Email"Type is selected  in "tbl_SelectClientDistribution table"	PASS
+02-02-2017 20:22:50	RenewalClientTeamMismatchCanCompleteRequest	"btn_ConfirmIssuance button" object Should be clicked.	PASS
+02-02-2017 20:22:52	RenewalClientTeamMismatchCanCompleteRequest	"Submit Issuance" page should be displayed.	PASS
+02-02-2017 20:22:52	RenewalClientTeamMismatchCanCompleteRequest	Text: "2"  should be displayed at dtl_IssuanceCertificateCount object	PASS
+02-02-2017 20:22:54	RenewalClientTeamMismatchCanCompleteRequest	"EMAIL" Should be in 2 Row and 3 Column under "tbl_SelectClientDist table"	PASS
+02-02-2017 20:22:54	RenewalClientTeamMismatchCanCompleteRequest	"btn_IssueCertificates button" object Should be clicked.	PASS
+02-02-2017 20:22:56	RenewalClientTeamMismatchCanCompleteRequest	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:22:58	Logout	Logout from application	PASS
+02-02-2017 20:23:03	Start Execution	Open the TC755_Finance_HolderMassUpdatePreDependencyTest file	OPEN THE TC755_FINANCE_HOLDERMASSUPDATEPREDEPENDENCYTEST TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:23:05	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:23:05	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:23:08	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:23:09	Start Execution	start execute of  TC755_Finance_HolderMassUpdatePreDependencyTest	
+02-02-2017 20:23:09			Step Name			Expected		STATUS
+02-02-2017 20:23:17	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:23:57	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:23:57	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:23:58	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:24:07	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:24:07	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:24:07	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:24:08	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:24:12	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:24:12	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:24:13	NavigateToEntryRequestDetails	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:24:13	NavigateToEntryRequestDetails	"lnk_CreateRequest object" object Should be clicked.	PASS
+02-02-2017 20:24:20	NavigateToEntryRequestDetails	btn_SelectClient button  should be loaded	PASS
+02-02-2017 20:24:21	NavigateToEntryRequestDetails	"Entry" page should be displayed.	PASS
+02-02-2017 20:24:21	NavigateToEntryRequestDetails	"btn_SelectClient button" object Should be clicked.	PASS
+02-02-2017 20:24:23	EnterClientName	"Client Search" page should be displayed.	PASS
+02-02-2017 20:24:24	EnterClientName	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:24:24	EnterClientName	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:24:24	EnterClientName	"Maya C West" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:24:24	EnterClientName	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:24:26	EnterClientName	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:24:31	EnterClientName	"tbl_ClientName table"populates with a row of data containing "Maya C West"and clicked	PASS
+02-02-2017 20:24:34	ValidateEntryPage	"Entry" page should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"lbl_RequestSummary object" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"lbl_RequestDetails object" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"lbl_NamedInsuredCertifcate object" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"lbl_Coverages object" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"lbl_AdditionalRequirements object" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"lbl_AutoID object" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"lbl_HandlingInstructions object" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"tab_Email link" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:24:35	ValidateEntryPage	"btn_Submit button" should be displayed.	PASS
+02-02-2017 20:24:36	ValidateEntryPage	"btn_Cancel button" should be displayed.	PASS
+02-02-2017 20:24:36	ValidateEntryPage	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:24:36	ValidateEntryPage	 Request ID is "422583"	PASS
+02-02-2017 20:24:38	ValidateEntryPage	Email should be selected from dropdown.	PASS
+02-02-2017 20:24:42	UpdateHoldersPredependencyTest	Renewal should be selected from dropdown.	PASS
+02-02-2017 20:24:42	UpdateHoldersPredependencyTest	"btn_Submit button" object Should be clicked.	PASS
+02-02-2017 20:24:45	UpdateHoldersPredependencyTest	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:24:45	UpdateHoldersPredependencyTest	"422583" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:24:45	UpdateHoldersPredependencyTest	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:24:48	UpdateHoldersPredependencyTest	"Summary" page should be displayed.	PASS
+02-02-2017 20:24:48	UpdateHoldersPredependencyTest	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:24:48	UpdateHoldersPredependencyTest	"tab_WorkFlow link" object Should be clicked.	PASS
+02-02-2017 20:24:51	UpdateHoldersPredependencyTest	"NEW" Should be in 2 Row and 2 Column under "tbl_Task table"	PASS
+02-02-2017 20:24:55	UpdateHoldersPredependencyTest	"dtl_RenewalReview object" should be displayed.	PASS
+02-02-2017 20:24:55	UpdateHoldersPredependencyTest	"dtl_RequestEntry object" should be displayed.	PASS
+02-02-2017 20:24:55	UpdateHoldersPredependencyTest	"btn_Task button" object Should be clicked.	PASS
+02-02-2017 20:24:59	UpdateHoldersPredependencyTest	"Process Details" page should be displayed.	PASS
+02-02-2017 20:24:59	UpdateHoldersPredependencyTest	"btn_ClearAssignment button" should be displayed.	PASS
+02-02-2017 20:24:59	UpdateHoldersPredependencyTest	"btn_SelectHolder(s) button" object Should be clicked.	PASS
+02-02-2017 20:25:02	UpdateHoldersPredependencyTest	"Select Holder for Issuance" page should be displayed.	PASS
+02-02-2017 20:25:02	UpdateHoldersPredependencyTest	"tbl_SelectHolders table" should be displayed.	PASS
+02-02-2017 20:25:02	UpdateHoldersPredependencyTest	"btn_SelectClientDistribution button" should be displayed.	PASS
+02-02-2017 20:25:02	UpdateHoldersPredependencyTest	"btn_SelectAll button" should be displayed.	PASS
+02-02-2017 20:25:02	UpdateHoldersPredependencyTest	"btn_Search button" should be displayed.	PASS
+02-02-2017 20:25:03	UpdateHoldersPredependencyTest	"btn_ClearSelection button" should be displayed.	PASS
+02-02-2017 20:25:03	UpdateHoldersPredependencyTest	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:25:03	UpdateHoldersPredependencyTest	"ACORD 24" : value should be entered in "txt_MasterType edit box" field.	PASS
+02-02-2017 20:25:03	UpdateHoldersPredependencyTest	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:25:26	UpdateHoldersPredependencyTest	tbl_SelectHolders table  should be loaded	PASS
+02-02-2017 20:25:26	UpdateHoldersPredependencyTest	"chkb_SelectAllCheckBox check box" object Should be clicked.	PASS
+02-02-2017 20:25:27	UpdateHoldersPredependencyTest	"btn_SelectClientDistribution button" object Should be clicked.	PASS
+02-02-2017 20:25:30	UpdateHoldersPredependencyTest	"Select Client Distribution" page should be displayed.	PASS
+02-02-2017 20:25:30	UpdateHoldersPredependencyTest	"dwl_ClientPrinter object" should be displayed.	PASS
+02-02-2017 20:25:30	UpdateHoldersPredependencyTest	"tbl_SelectClientDistribution table" should be displayed.	PASS
+02-02-2017 20:25:30	UpdateHoldersPredependencyTest	"btn_Add button" should be displayed.	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"tbl_SelectClientDistribution table" should be contain column : "FilterName"	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"tbl_SelectClientDistribution table" should be contain column : "FilterType"	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"tbl_SelectClientDistribution table" should be contain column : "FilterMethod"	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"tbl_SelectClientDistribution table" should be contain column : "FilterDestination"	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"tbl_SelectClientDistribution table" should be contain column : "FilterCC Address"	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"btn_ConfirmIssuance button" should be displayed.	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"dwl_ClientPrinter object" object Should be clicked.	PASS
+02-02-2017 20:25:31	UpdateHoldersPredependencyTest	"dtl_CSC4 object" object Should be clicked.	PASS
+02-02-2017 20:25:32	UpdateHoldersPredependencyTest	"Mail"Type is selected  in "tbl_SelectClientDistribution table"	PASS
+02-02-2017 20:25:32	UpdateHoldersPredependencyTest	"btn_ConfirmIssuance button" object Should be clicked.	PASS
+02-02-2017 20:25:34	UpdateHoldersPredependencyTest	"Submit Issuance" page should be displayed.	PASS
+02-02-2017 20:25:34	UpdateHoldersPredependencyTest	Text: "25"  should be displayed at dtl_IssuanceCertificateCount object	PASS
+02-02-2017 20:25:36	UpdateHoldersPredependencyTest	"MAIL" Should be in 2 Row and 3 Column under "tbl_SelectClientDist table"	PASS
+02-02-2017 20:25:36	UpdateHoldersPredependencyTest	"btn_IssueCertificates button" object Should be clicked.	PASS
+02-02-2017 20:25:39	UpdateHoldersPredependencyTest	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:25:41	Logout	Logout from application	PASS
+02-02-2017 20:25:50	Start Execution	Open the TC756_Finance_HolderMassUpdate file	OPEN THE TC756_FINANCE_HOLDERMASSUPDATE TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:25:52	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:25:52	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:25:55	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:25:55	Start Execution	start execute of  TC756_Finance_HolderMassUpdate	
+02-02-2017 20:25:56			Step Name			Expected		STATUS
+02-02-2017 20:26:04	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:26:44	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:26:44	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:26:44	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:26:55	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:26:55	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:26:55	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:26:55	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:27:00	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:27:00	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:27:01	NavigateToClientSearchPage	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:27:01	NavigateToClientSearchPage	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:27:04	NavigateToClientSearchPage	"Client Search" page should be displayed.	PASS
+02-02-2017 20:27:05	NavigateToClientSearchPage	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:27:05	NavigateToClientSearchPage	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:27:05	NavigateToClientSearchPage	"WESTMA0001" : value should be entered in "txt_ClientLookUpCode edit box" field.	PASS
+02-02-2017 20:27:05	NavigateToClientSearchPage	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:27:06	NavigateToClientSearchPage	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:27:12	NavigateToClientSearchPage	"tbl_ClientName table"populates with a row of data containing "Maya C West"and clicked	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"lbl_ClientProfile object" should be displayed.	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"lbl_CertCenterNotes object" should be displayed.	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:27:15	NavigateToClientSearchPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:27:17	NavigateToClientSearchPage	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:27:18	NavigateToClientSearchPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+02-02-2017 20:27:18	NavigateToClientSearchPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+02-02-2017 20:27:18	NavigateToClientSearchPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+02-02-2017 20:27:18	NavigateToClientSearchPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:27:18	NavigateToClientSearchPage	"tbl_MasterTemplateSubGrid table" should be displayed.	PASS
+02-02-2017 20:27:19	NavigateToClientSearchPage	tbl_MasterTemplateSubGrid table  should be loaded	PASS
+02-02-2017 20:27:19	NavigateToClientSearchPage	"tbl_MasterTemplateSubGrid table" should be contain column : "ID"	PASS
+02-02-2017 20:27:19	NavigateToClientSearchPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Description"	PASS
+02-02-2017 20:27:19	NavigateToClientSearchPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Line of Business"	PASS
+02-02-2017 20:27:19	NavigateToClientSearchPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Effective Date"	PASS
+02-02-2017 20:27:19	NavigateToClientSearchPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Expiration Date "	PASS
+02-02-2017 20:27:19	NavigateToClientSearchPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Holder Count"	PASS
+02-02-2017 20:27:20	NavigateToClientSearchPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:27:25	NavigateToClientSearchPage	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:27:25	NavigateToClientSearchPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:27:25	NavigateToClientSearchPage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:27:25	NavigateToClientSearchPage	"lbl_MasterTemplateDetails object" should be displayed.	PASS
+02-02-2017 20:27:25	NavigateToClientSearchPage	"lbl_SelectedAttachments object" should be displayed.	PASS
+02-02-2017 20:27:25	NavigateToClientSearchPage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+02-02-2017 20:27:25	NavigateToClientSearchPage	"lbl_ActiveHolders object" should be displayed.	PASS
+02-02-2017 20:27:26	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+02-02-2017 20:27:26	UpdateHolderStatus	"lbl_1-25Of1001Items object" should be displayed.	PASS
+02-02-2017 20:27:31	UpdateHolderStatus	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:27:31	UpdateHolderStatus	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "25"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterID"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder Name"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterSummary"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterJob Code"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder City"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder State"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured Address"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNo. Attachments"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterIssued Date"	PASS
+02-02-2017 20:27:32	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be contain column : "FilterStatus"	PASS
+02-02-2017 20:27:33	UpdateHolderStatus	FilterStatus icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:27:33	UpdateHolderStatus	"txt_Status edit box" should be displayed.	PASS
+02-02-2017 20:27:33	UpdateHolderStatus	"Issued" : value should be entered in "txt_Status edit box" field.	PASS
+02-02-2017 20:27:33	UpdateHolderStatus	"btn_Filter button" object Should be clicked.	PASS
+02-02-2017 20:27:39	UpdateHolderStatus	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:27:39	UpdateHolderStatus	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "25"	PASS
+02-02-2017 20:27:39	UpdateHolderStatus	"btn_HolderMassUpdates button" object Should be clicked.	PASS
+02-02-2017 20:27:40	UpdateHolderStatus	"Holder Mass Update Entry" page should be displayed.	PASS
+02-02-2017 20:27:40	UpdateHolderStatus	"dwl_Updateselection object" should be displayed.	PASS
+02-02-2017 20:27:41	UpdateHolderStatus	"btn_Next button" should be displayed.	PASS
+02-02-2017 20:27:41	UpdateHolderStatus	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:27:41	UpdateHolderStatus	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:27:46	UpdateHolderStatus	Issued should be selected from dropdown.	PASS
+02-02-2017 20:27:49	UpdateHolderStatus	Ready for Issuance should be selected from dropdown.	PASS
+02-02-2017 20:27:49	UpdateHolderStatus	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:27:51	UpdateHolderStatus	"Holder Mass Update Submit" page should be displayed.	PASS
+02-02-2017 20:27:53	UpdateHolderStatus	Verify "dtl_CurrentStatus object"is read only	PASS
+02-02-2017 20:27:55	UpdateHolderStatus	Verify "dtl_NewStatus object"is read only	PASS
+02-02-2017 20:27:55	UpdateHolderStatus	"btn_Update button" object Should be clicked.	PASS
+02-02-2017 20:27:58	UpdateHolderStatus	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:27:58	UpdateHolderStatus	"btn_EditMasterTemplate button" should be displayed.	PASS
+02-02-2017 20:27:58	UpdateHolderStatus	"btn_RefreshAttachments button" should be displayed.	PASS
+02-02-2017 20:27:58	UpdateHolderStatus	"btn_AddCoverageTemplate button" should be displayed.	PASS
+02-02-2017 20:27:58	UpdateHolderStatus	"btn_AddHolder button" should be displayed.	PASS
+02-02-2017 20:27:58	UpdateHolderStatus	"btn_HolderMassUpdates button" should be displayed.	PASS
+02-02-2017 20:27:59	UpdateHolderStatus	"btn_HolderExport button" should be displayed.	PASS
+02-02-2017 20:27:59	UpdateHolderStatus	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:27:59	UpdateHolderStatus	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:27:59	UpdateHolderStatus	"lbl_MasterTemplateDetails object" should be displayed.	PASS
+02-02-2017 20:27:59	UpdateHolderStatus	"lbl_ActiveHolders object" should be displayed.	PASS
+02-02-2017 20:27:59	UpdateHolderStatus	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+02-02-2017 20:27:59	UpdateHolderStatus	FilterStatus icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:27:59	UpdateHolderStatus	"txt_Status edit box" should be displayed.	PASS
+02-02-2017 20:28:00	UpdateHolderStatus	"Issued" : value should be entered in "txt_Status edit box" field.	PASS
+02-02-2017 20:28:00	UpdateHolderStatus	"btn_Filter button" object Should be clicked.	PASS
+02-02-2017 20:28:05	UpdateHolderStatus	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:28:05	UpdateHolderStatus	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "0"	PASS
+02-02-2017 20:28:07	Logout	Logout from application	PASS
+02-02-2017 20:28:12	Start Execution	Open the TC769_Finance_AddMultipleAttachments file	OPEN THE TC769_FINANCE_ADDMULTIPLEATTACHMENTS TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:28:14	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:28:14	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:28:17	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:28:17	Start Execution	start execute of  TC769_Finance_AddMultipleAttachments	
+02-02-2017 20:28:18			Step Name			Expected		STATUS
+02-02-2017 20:28:26	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:29:06	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:29:06	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:29:06	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:29:15	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:29:15	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:29:15	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:29:15	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:29:20	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:29:20	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:29:21	NavigateToMasterTemplateID	"421160" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:29:21	NavigateToMasterTemplateID	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"btn_EditClientProfile button" should be displayed.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"btn_AddMasterTemplate button" should be displayed.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"btn_AddAutoIDTemplate button" should be displayed.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"btn_HolderImport/Export button" should be displayed.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"btn_AutoIDImport/Export button" should be displayed.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"btn_RenewMasters button" should be displayed.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:29:25	NavigateToMasterTemplateID	"lbl_ClientProfile object" should be displayed.	PASS
+02-02-2017 20:29:26	NavigateToMasterTemplateID	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+02-02-2017 20:29:26	NavigateToMasterTemplateID	"lbl_CertCenterNotes object" should be displayed.	PASS
+02-02-2017 20:29:26	NavigateToMasterTemplateID	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+02-02-2017 20:29:26	NavigateToMasterTemplateID	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:29:26	NavigateToMasterTemplateID	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:29:26	NavigateToMasterTemplateID	"lbl_RenewalMasterRequest object" should be displayed.	PASS
+02-02-2017 20:29:26	NavigateToMasterTemplateID	"tbl_MasterTemplateGrid table" should be displayed.	PASS
+02-02-2017 20:29:27	NavigateToMasterTemplateID	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:29:27	NavigateToMasterTemplateID	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:29:35	NavigateToMasterTemplateID	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:29:35	NavigateToMasterTemplateID	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"btn_EditMasterTemplate button" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"btn_RefreshAttachments button" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"btn_AddCoverageTemplate button" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"btn_AddHolder button" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"btn_HolderMassUpdates button" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"btn_HolderExport button" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"lbl_SelectedAttachments object" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+02-02-2017 20:29:36	ValidateMasterTemplatePage	"lbl_ActiveHolders object" should be displayed.	PASS
+02-02-2017 20:29:41	ValidateMasterTemplatePage	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:29:41	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+02-02-2017 20:29:41	ValidateMasterTemplatePage	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "25"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterID"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder Name"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterSummary"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterJob Code"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder City"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder State"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterMultiple Named Insured"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured Address"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNo. Attachments"	PASS
+02-02-2017 20:29:42	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterIssued Date"	PASS
+02-02-2017 20:29:43	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterStatus"	PASS
+02-02-2017 20:29:44	AddAttachments	 All "No. Attachments" column displayed record values should be  "0" in tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:29:44	AddAttachments	 Icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:29:47	AddAttachments	"Holder_Summary" page should be displayed.	PASS
+02-02-2017 20:29:47	AddAttachments	Number of rows in the table: "tbl_SelectedAttachments table"should be "0"	PASS
+02-02-2017 20:29:48	AddAttachments	"btn_Done button" object Should be clicked.	PASS
+02-02-2017 20:29:51	AddAttachments	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:29:51	AddAttachments	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+02-02-2017 20:29:51	AddAttachments	"btn_EditMasterTemplate button" should be displayed.	PASS
+02-02-2017 20:29:51	AddAttachments	"btn_RefreshAttachments button" should be displayed.	PASS
+02-02-2017 20:29:51	AddAttachments	"btn_AddCoverageTemplate button" should be displayed.	PASS
+02-02-2017 20:29:51	AddAttachments	"btn_AddHolder button" should be displayed.	PASS
+02-02-2017 20:29:51	AddAttachments	"btn_HolderMassUpdates button" should be displayed.	PASS
+02-02-2017 20:29:51	AddAttachments	"btn_HolderExport button" should be displayed.	PASS
+02-02-2017 20:29:51	AddAttachments	"btn_HolderMassUpdates button" object Should be clicked.	PASS
+02-02-2017 20:29:54	AddAttachments	"Holder Mass Update Entry" page should be displayed.	PASS
+02-02-2017 20:29:54	AddAttachments	"dwl_Updateselection object" should be displayed.	PASS
+02-02-2017 20:29:54	AddAttachments	"dwl_Action object" should be displayed.	PASS
+02-02-2017 20:29:54	AddAttachments	"btn_Next button" should be displayed.	PASS
+02-02-2017 20:29:54	AddAttachments	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:29:54	AddAttachments	"dwl_Action object" object Should be clicked.	PASS
+02-02-2017 20:29:54	AddAttachments	"lnk_Add object" should be displayed.	PASS
+02-02-2017 20:29:54	AddAttachments	"lnk_Add object" object Should be clicked.	PASS
+02-02-2017 20:29:54	AddAttachments	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:29:57	AddAttachments	"Holder Mass Update Add Attachments" page should be displayed.	PASS
+02-02-2017 20:30:00	AddAttachments	tbl_AvailableAttachments table  should be loaded	PASS
+02-02-2017 20:30:00	AddAttachments	"tbl_AvailableAttachments table" should be displayed.	PASS
+02-02-2017 20:30:00	AddAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterID"	PASS
+02-02-2017 20:30:01	AddAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterDescription"	PASS
+02-02-2017 20:30:01	AddAttachments	"tbl_AvailableAttachments table" should be contain column : "Sort Order "	PASS
+02-02-2017 20:30:01	AddAttachments	"Excel Attachment"Type is selected  in "tbl_AvailableAttachments table"	PASS
+02-02-2017 20:30:01	AddAttachments	"Willis Cancellation Notice - Willis 102"Type is selected  in "tbl_AvailableAttachments table"	PASS
+02-02-2017 20:30:01	AddAttachments	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:30:04	AddAttachments	"Holder Mass Selection" page should be displayed.	PASS
+02-02-2017 20:30:04	AddAttachments	"tbl_HolderSelection table" should be displayed.	PASS
+02-02-2017 20:30:14	AddAttachments	tbl_HolderSelection table  should be loaded	PASS
+02-02-2017 20:30:14	AddAttachments	Number of rows in the table: "tbl_HolderSelection table"should be "25"	PASS
+02-02-2017 20:30:14	AddAttachments	"btn_SelectAll button" should be displayed.	PASS
+02-02-2017 20:30:14	AddAttachments	"btn_Next button" should be displayed.	PASS
+02-02-2017 20:30:14	AddAttachments	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:30:14	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterID"	PASS
+02-02-2017 20:30:14	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterHolder Name"	PASS
+02-02-2017 20:30:14	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterMaster Type"	PASS
+02-02-2017 20:30:15	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterMaster Description"	PASS
+02-02-2017 20:30:15	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterSummary"	PASS
+02-02-2017 20:30:15	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterJob Code"	PASS
+02-02-2017 20:30:15	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterNamed Insured"	PASS
+02-02-2017 20:30:15	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterAttached Coverage Templates"	PASS
+02-02-2017 20:30:15	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterLast Modified Date"	PASS
+02-02-2017 20:30:15	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterStatus"	PASS
+02-02-2017 20:30:15	AddAttachments	"btn_SelectAll button" object Should be clicked.	PASS
+02-02-2017 20:30:17	AddAttachments	"Holder Mass Update Submit" page should be displayed.	PASS
+02-02-2017 20:30:17	AddAttachments	"tbl_HolderSelection table" should be displayed.	PASS
+02-02-2017 20:30:23	AddAttachments	tbl_HolderSelection table  should be loaded	PASS
+02-02-2017 20:30:23	AddAttachments	 All "Selected" column displayed record values should be  "True" in tbl_HolderSelection table	PASS
+02-02-2017 20:30:23	AddAttachments	Record with data :"Excel Attachment"Should  present in Table "tbl_AvailableAttachments table"	PASS
+02-02-2017 20:30:23	AddAttachments	Record with data :"Willis Cancellation Notice - Willis 102"Should  present in Table "tbl_AvailableAttachments table"	PASS
+02-02-2017 20:30:24	AddAttachments	 All "Remove" column displayed record values should be  "false" in tbl_AvailableAttachments table	PASS
+02-02-2017 20:30:24	AddAttachments	"Excel Attachment" Record value should be "True"	PASS
+02-02-2017 20:30:24	AddAttachments	"Willis Cancellation Notice - Willis 102" Record value should be "True"	PASS
+02-02-2017 20:30:24	AddAttachments	"btn_Update button" object Should be clicked.	PASS
+02-02-2017 20:30:26	AddAttachments	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:30:27	AddAttachments	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+02-02-2017 20:30:30	AddAttachments	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:30:30	AddAttachments	 All "No. attachments" column displayed record values should be  "2" in tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:30:30	AddAttachments	 Icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:30:32	AddAttachments	"Holder_Summary" page should be displayed.	PASS
+02-02-2017 20:30:32	AddAttachments	"tbl_SelectedAttachments table" should be displayed.	PASS
+02-02-2017 20:30:35	AddAttachments	tbl_SelectedAttachments table  should be loaded	PASS
+02-02-2017 20:30:35	AddAttachments	Number of rows in the table: "tbl_SelectedAttachments table"should be "2"	PASS
+02-02-2017 20:30:37	AddAttachments	"EXCEL ATTACHMENT" Should be in 2 Row and 1 Column under "tbl_SelectedAttachments table"	PASS
+02-02-2017 20:30:39	AddAttachments	"WILLIS CANCELLATION NOTICE - WILLIS 102" Should be in 3 Row and 1 Column under "tbl_SelectedAttachments table"	PASS
+02-02-2017 20:30:40	AddAttachments	"btn_Done button" object Should be clicked.	PASS
+02-02-2017 20:30:42	AddAttachments	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:30:44	Logout	Logout from application	PASS
+02-02-2017 20:30:49	Start Execution	Open the TC770_Finance_RemoveMultipleAttachments file	OPEN THE TC770_FINANCE_REMOVEMULTIPLEATTACHMENTS TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:30:51	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:30:51	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:30:54	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:30:55	Start Execution	start execute of  TC770_Finance_RemoveMultipleAttachments	
+02-02-2017 20:30:55			Step Name			Expected		STATUS
+02-02-2017 20:31:03	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:31:43	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:31:43	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:31:44	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:31:52	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:31:52	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:31:53	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:31:53	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:31:57	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:31:57	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:31:58	NavigateToMasterTemplateID	"421160" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:31:58	NavigateToMasterTemplateID	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:32:01	NavigateToMasterTemplateID	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:32:01	NavigateToMasterTemplateID	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+02-02-2017 20:32:01	NavigateToMasterTemplateID	"btn_EditClientProfile button" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"btn_AddMasterTemplate button" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"btn_AddAutoIDTemplate button" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"btn_HolderImport/Export button" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"btn_AutoIDImport/Export button" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"btn_RenewMasters button" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"lbl_ClientProfile object" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"lbl_CertCenterNotes object" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"lbl_RenewalMasterRequest object" should be displayed.	PASS
+02-02-2017 20:32:02	NavigateToMasterTemplateID	"tbl_MasterTemplateGrid table" should be displayed.	PASS
+02-02-2017 20:32:03	NavigateToMasterTemplateID	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:32:04	NavigateToMasterTemplateID	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:32:07	NavigateToMasterTemplateID	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:32:07	NavigateToMasterTemplateID	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"btn_EditMasterTemplate button" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"btn_RefreshAttachments button" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"btn_AddCoverageTemplate button" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"btn_AddHolder button" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"btn_HolderMassUpdates button" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"btn_HolderExport button" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"lbl_SelectedAttachments object" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+02-02-2017 20:32:08	ValidateMasterTemplatePage	"lbl_ActiveHolders object" should be displayed.	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "25"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterID"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder Name"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterSummary"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterJob Code"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder City"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder State"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterMultiple Named Insured"	PASS
+02-02-2017 20:32:14	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured Address"	PASS
+02-02-2017 20:32:15	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNo. Attachments"	PASS
+02-02-2017 20:32:15	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterIssued Date"	PASS
+02-02-2017 20:32:15	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterStatus"	PASS
+02-02-2017 20:32:16	RemoveAttachments	 All "No. Attachments" column displayed record values should be  "2" in tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:32:16	RemoveAttachments	 Icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:32:19	RemoveAttachments	"Holder_Summary" page should be displayed.	PASS
+02-02-2017 20:32:21	RemoveAttachments	tbl_SelectedAttachments table  should be loaded	PASS
+02-02-2017 20:32:21	RemoveAttachments	"tbl_SelectedAttachments table" should be displayed.	PASS
+02-02-2017 20:32:21	RemoveAttachments	Number of rows in the table: "tbl_SelectedAttachments table"should be "2"	PASS
+02-02-2017 20:32:21	RemoveAttachments	"btn_Done button" object Should be clicked.	PASS
+02-02-2017 20:32:24	RemoveAttachments	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:32:24	RemoveAttachments	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+02-02-2017 20:32:24	RemoveAttachments	"btn_EditMasterTemplate button" should be displayed.	PASS
+02-02-2017 20:32:24	RemoveAttachments	"btn_RefreshAttachments button" should be displayed.	PASS
+02-02-2017 20:32:24	RemoveAttachments	"btn_AddCoverageTemplate button" should be displayed.	PASS
+02-02-2017 20:32:25	RemoveAttachments	"btn_AddHolder button" should be displayed.	PASS
+02-02-2017 20:32:25	RemoveAttachments	"btn_HolderMassUpdates button" should be displayed.	PASS
+02-02-2017 20:32:25	RemoveAttachments	"btn_HolderExport button" should be displayed.	PASS
+02-02-2017 20:32:25	RemoveAttachments	"btn_HolderMassUpdates button" object Should be clicked.	PASS
+02-02-2017 20:32:27	RemoveAttachments	"Holder Mass Update Entry" page should be displayed.	PASS
+02-02-2017 20:32:27	RemoveAttachments	"dwl_Updateselection object" should be displayed.	PASS
+02-02-2017 20:32:27	RemoveAttachments	"dwl_Action object" should be displayed.	PASS
+02-02-2017 20:32:27	RemoveAttachments	"btn_Next button" should be displayed.	PASS
+02-02-2017 20:32:27	RemoveAttachments	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:32:27	RemoveAttachments	"dwl_Action object" object Should be clicked.	PASS
+02-02-2017 20:32:27	RemoveAttachments	"lnk_Remove object" should be displayed.	PASS
+02-02-2017 20:32:28	RemoveAttachments	"lnk_Remove object" object Should be clicked.	PASS
+02-02-2017 20:32:28	RemoveAttachments	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:32:30	RemoveAttachments	"Holder Mass Update Remove Attachments" page should be displayed.	PASS
+02-02-2017 20:32:34	RemoveAttachments	tbl_AvailableAttachments table  should be loaded	PASS
+02-02-2017 20:32:34	RemoveAttachments	"tbl_AvailableAttachments table" should be displayed.	PASS
+02-02-2017 20:32:35	RemoveAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterID"	PASS
+02-02-2017 20:32:35	RemoveAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterDescription"	PASS
+02-02-2017 20:32:35	RemoveAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterSortOrder"	PASS
+02-02-2017 20:32:35	RemoveAttachments	"Excel Attachment"Type is selected  in "tbl_AvailableAttachments table"	PASS
+02-02-2017 20:32:35	RemoveAttachments	"Willis Cancellation Notice - Willis 102"Type is selected  in "tbl_AvailableAttachments table"	PASS
+02-02-2017 20:32:35	RemoveAttachments	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:32:37	RemoveAttachments	"Holder Mass Selection" page should be displayed.	PASS
+02-02-2017 20:32:40	RemoveAttachments	tbl_HolderSelection table  should be loaded	PASS
+02-02-2017 20:32:40	RemoveAttachments	"tbl_HolderSelection table" should be displayed.	PASS
+02-02-2017 20:32:40	RemoveAttachments	Number of rows in the table: "tbl_HolderSelection table"should be "25"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"btn_SelectAll button" should be displayed.	PASS
+02-02-2017 20:32:41	RemoveAttachments	"btn_Next button" should be displayed.	PASS
+02-02-2017 20:32:41	RemoveAttachments	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterID"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterHolder Name"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterMaster Type"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterMaster Description"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterSummary"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterJob Code"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterNamed Insured"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterAttached Coverage Templates"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterLast Modified Date"	PASS
+02-02-2017 20:32:41	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterStatus"	PASS
+02-02-2017 20:32:42	RemoveAttachments	"btn_SelectAll button" object Should be clicked.	PASS
+02-02-2017 20:32:44	RemoveAttachments	"Holder Mass Update Submit" page should be displayed.	PASS
+02-02-2017 20:32:49	RemoveAttachments	tbl_HolderSelection table  should be loaded	PASS
+02-02-2017 20:32:49	RemoveAttachments	"tbl_HolderSelection table" should be displayed.	PASS
+02-02-2017 20:32:49	RemoveAttachments	 All "Selected" column displayed record values should be  "True" in tbl_HolderSelection table	PASS
+02-02-2017 20:32:49	RemoveAttachments	Record with data :"Excel Attachment"Should  present in Table "tbl_AvailableAttachments table"	PASS
+02-02-2017 20:32:49	RemoveAttachments	Record with data :"Willis Cancellation Notice - Willis 102"Should  present in Table "tbl_AvailableAttachments table"	PASS
+02-02-2017 20:32:49	RemoveAttachments	 All "Remove" column displayed record values should be  "true" in tbl_AvailableAttachments table	PASS
+02-02-2017 20:32:49	RemoveAttachments	 All "Add" column displayed record values should be  "false" in tbl_AvailableAttachments table	PASS
+02-02-2017 20:32:49	RemoveAttachments	"btn_Update button" object Should be clicked.	PASS
+02-02-2017 20:32:52	RemoveAttachments	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:32:54	RemoveAttachments	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:32:54	RemoveAttachments	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+02-02-2017 20:32:54	RemoveAttachments	 All "No. attachments" column displayed record values should be  "0" in tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:32:54	RemoveAttachments	 Icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:32:56	RemoveAttachments	"Holder_Summary" page should be displayed.	PASS
+02-02-2017 20:32:58	RemoveAttachments	tbl_SelectedAttachments table  should be loaded	PASS
+02-02-2017 20:32:58	RemoveAttachments	"tbl_SelectedAttachments table" should be displayed.	PASS
+02-02-2017 20:32:59	RemoveAttachments	Number of rows in the table: "tbl_SelectedAttachments table"should be "0"	PASS
+02-02-2017 20:32:59	RemoveAttachments	"btn_Done button" object Should be clicked.	PASS
+02-02-2017 20:33:01	RemoveAttachments	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:33:04	Logout	Logout from application	PASS
+02-02-2017 20:33:09	Start Execution	Open the TC767_Finance_StatusChangeViaImportReadyForReissueToIssued file	OPEN THE TC767_FINANCE_STATUSCHANGEVIAIMPORTREADYFORREISSUETOISSUED TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:33:10	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:33:11	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:33:13	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:33:14	Start Execution	start execute of  TC767_Finance_StatusChangeViaImportReadyForReissueToIssued	
+02-02-2017 20:33:14			Step Name			Expected		STATUS
+02-02-2017 20:33:22	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:34:02	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:34:02	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:34:03	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:34:12	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:34:12	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:34:12	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:34:13	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:34:17	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:34:17	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:34:18	NavigateToMasterSummaryPage	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:34:18	NavigateToMasterSummaryPage	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:34:20	NavigateToMasterSummaryPage	"Client Search" page should be displayed.	PASS
+02-02-2017 20:34:21	NavigateToMasterSummaryPage	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:34:21	NavigateToMasterSummaryPage	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:34:21	NavigateToMasterSummaryPage	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:34:21	NavigateToMasterSummaryPage	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:34:22	NavigateToMasterSummaryPage	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:34:28	NavigateToMasterSummaryPage	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+02-02-2017 20:34:31	NavigateToMasterSummaryPage	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:34:31	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:34:31	NavigateToMasterSummaryPage	"lbl_ClientProfile object" should be displayed.	PASS
+02-02-2017 20:34:31	NavigateToMasterSummaryPage	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+02-02-2017 20:34:31	NavigateToMasterSummaryPage	"lbl_CertCenterNotes object" should be displayed.	PASS
+02-02-2017 20:34:31	NavigateToMasterSummaryPage	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+02-02-2017 20:34:33	NavigateToMasterSummaryPage	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:34:33	NavigateToMasterSummaryPage	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be displayed.	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "ID"	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Description"	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Line of Business"	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Effective Date"	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Expiration Date "	PASS
+02-02-2017 20:34:34	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Holder Count"	PASS
+02-02-2017 20:34:35	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:34:38	NavigateToMasterSummaryPage	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:34:38	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:34:39	NavigateToMasterSummaryPage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:34:39	NavigateToMasterSummaryPage	"lbl_MasterTemplateDetails object" should be displayed.	PASS
+02-02-2017 20:34:39	NavigateToMasterSummaryPage	"lbl_SelectedAttachments object" should be displayed.	PASS
+02-02-2017 20:34:39	NavigateToMasterSummaryPage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+02-02-2017 20:34:39	NavigateToMasterSummaryPage	"lbl_ActiveHolders object" should be displayed.	PASS
+02-02-2017 20:34:40	NavigateToHolderImportExportPage	"btn_HolderExport button" object Should be clicked.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"Holder_ImportExport" page should be displayed.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"btn_Done button" should be displayed.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"tab_Export link" should be displayed.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"tab_Details link" should be displayed.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"tab_Export link" object Should be clicked.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"btn_Export button" should be displayed.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"dwl_Status object" should be displayed.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"dwl_IssuanceStatus object" should be displayed.	PASS
+02-02-2017 20:34:42	NavigateToHolderImportExportPage	"dwl_IssuanceStatus object" object Should be clicked.	PASS
+02-02-2017 20:34:43	SelectReadyForReIssue	"dtl_ReadyForReIssue object" should be displayed.	PASS
+02-02-2017 20:34:43	SelectReadyForReIssue	"dtl_ReadyForReIssue object" object Should be clicked.	PASS
+02-02-2017 20:34:44	StatusChangeViaImport	"btn_Export button" object Should be clicked.	PASS
+02-02-2017 20:34:46	StatusChangeViaImport	 Export Status SRID is "422584"	PASS
+02-02-2017 20:34:46	StatusChangeViaImport	"tab_WorkQueue object" object Should be clicked.	PASS
+02-02-2017 20:34:46	StatusChangeViaImport	"dtl_WorkQueue object" object Should be clicked.	PASS
+02-02-2017 20:34:49	StatusChangeViaImport	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:34:49	StatusChangeViaImport	"422584" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:34:49	StatusChangeViaImport	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:34:51	StatusChangeViaImport	"Summary" page should be displayed.	PASS
+02-02-2017 20:34:51	StatusChangeViaImport	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:34:51	StatusChangeViaImport	"tab_Details link" should be displayed.	PASS
+02-02-2017 20:34:51	StatusChangeViaImport	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:34:51	StatusChangeViaImport	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:34:51	StatusChangeViaImport	"tab_Details link" object Should be clicked.	PASS
+02-02-2017 20:35:40	StatusChangeViaImport	tab_Documents link  should be loaded	PASS
+02-02-2017 20:35:40	StatusChangeViaImport	"tab_Documents link" object Should be clicked.	PASS
+02-02-2017 20:35:43	StatusChangeViaImport	tbl_Document table  should be loaded	PASS
+02-02-2017 20:35:43	StatusChangeViaImport	"tbl_Document table" should be displayed.	PASS
+02-02-2017 20:35:49	StatusChangeViaImport	view attachment icon should be clicked under tbl_Document table	PASS
+02-02-2017 20:35:55	StatusChangeViaImport	"btn_SaveAs button" object Should be clicked.	PASS
+02-02-2017 20:36:03	StatusChangeViaImport	txt_FileName edit box  should be loaded	PASS
+02-02-2017 20:36:04	StatusChangeViaImport	"C:\IFSAutomation\Finance\Resources\TC762.xlsx" : value should be entered in "txt_FileName edit box" field.	PASS
+02-02-2017 20:36:06	StatusChangeViaImport	"btn_Save button" object should be clicked.	PASS
+02-02-2017 20:36:09	StatusChangeViaImport	tab_Documents link  should be loaded	PASS
+02-02-2017 20:36:09	StatusChangeViaImport	 File download successfully  in the specified path 	PASS
+02-02-2017 20:36:09	StatusChangeViaImport	"tab_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:36:09	StatusChangeViaImport	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:36:11	StatusChangeViaImport	"Client Search" page should be displayed.	PASS
+02-02-2017 20:36:11	StatusChangeViaImport	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:36:11	StatusChangeViaImport	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:36:14	StatusChangeViaImport	tbl_ClientName table  should be loaded	PASS
+02-02-2017 20:36:20	StatusChangeViaImport	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+02-02-2017 20:36:22	StatusChangeViaImport	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:36:22	StatusChangeViaImport	"btn_HolderImport/Export button" object Should be clicked.	PASS
+02-02-2017 20:36:24	StatusChangeViaImport	"ImportExport_Holder" page should be displayed.	PASS
+02-02-2017 20:36:25	StatusChangeViaImport	"btn_ViewEPICContactID button" should be displayed.	PASS
+02-02-2017 20:36:25	StatusChangeViaImport	"btn_Done button" should be displayed.	PASS
+02-02-2017 20:36:25	StatusChangeViaImport	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:36:25	StatusChangeViaImport	"tab_Import link" should be displayed.	PASS
+02-02-2017 20:36:25	StatusChangeViaImport	"tab_Export link" should be displayed.	PASS
+02-02-2017 20:36:25	StatusChangeViaImport	"tab_Details link" should be displayed.	PASS
+02-02-2017 20:36:25	StatusChangeViaImport	"tab_Import link" object Should be clicked.	PASS
+02-02-2017 20:36:28	StatusChangeViaImport	"wf_SelectFiles edit box" object Should be clicked.	PASS
+02-02-2017 20:36:28	StatusChangeViaImport	"C:\IFSAutomation\Finance\Resources\TC767.xlsx" : value should be entered in "txt_FileName edit box" field.	PASS
+02-02-2017 20:36:28	StatusChangeViaImport	"BTN_Open button" object should be clicked.	PASS
+02-02-2017 20:36:28	StatusChangeViaImport	"dtl_UploadedFile object" should be displayed.	PASS
+02-02-2017 20:36:28	StatusChangeViaImport	"btn_Upload button" object Should be clicked.	PASS
+02-02-2017 20:36:32	StatusChangeViaImport	"dtl_UploadStatus object" should be displayed.	PASS
+02-02-2017 20:36:32	StatusChangeViaImport	 Export Status SRID is "422585"	PASS
+02-02-2017 20:36:32	StatusChangeViaImport	"tab_WorkQueue object" object Should be clicked.	PASS
+02-02-2017 20:36:32	StatusChangeViaImport	"lnk_WorkQueue object" object Should be clicked.	PASS
+02-02-2017 20:36:35	StatusChangeViaImport	"422585" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:36:35	StatusChangeViaImport	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:36:38	StatusChangeViaImport	"Summary" page should be displayed.	PASS
+02-02-2017 20:36:38	StatusChangeViaImport	"dtl_ImportStatus object" should be displayed.	PASS
+02-02-2017 20:37:24	StatusChangeViaImport	Text: "No Import Errors"  should be displayed at dtl_ImportStatus object	FAIL
+02-02-2017 20:37:24	StatusChangeViaImport	"tab_WorkFlow link" object Should be clicked.	PASS
+02-02-2017 20:37:24	StatusChangeViaImport	"Holder Import Processing" Record value should be "Completed"	FAIL
+02-02-2017 20:37:24	StatusChangeViaImport	"tab_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:37:24	StatusChangeViaImport	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:37:26	StatusChangeViaImport	"Client Search" page should be displayed.	PASS
+02-02-2017 20:37:26	StatusChangeViaImport	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:37:26	StatusChangeViaImport	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:37:29	StatusChangeViaImport	tbl_ClientName table  should be loaded	PASS
+02-02-2017 20:37:34	StatusChangeViaImport	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+02-02-2017 20:37:37	StatusChangeViaImport	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:37:39	StatusChangeViaImport	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:37:39	StatusChangeViaImport	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:37:43	StatusChangeViaImport	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:37:48	StatusChangeViaImport	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:37:48	StatusChangeViaImport	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "10"	PASS
+02-02-2017 20:37:48	StatusChangeViaImport	 All "Status" column displayed record values should be  "Issued" in tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:37:50	Logout	Logout from application	PASS
+02-02-2017 20:38:00	Start Execution	Open the TC762_Finance_StatusChangeViaImportIssuedToReadyForReissue file	OPEN THE TC762_FINANCE_STATUSCHANGEVIAIMPORTISSUEDTOREADYFORREISSUE TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:38:01	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:38:02	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:38:05	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:38:05	Start Execution	start execute of  TC762_Finance_StatusChangeViaImportIssuedToReadyForReissue	
+02-02-2017 20:38:05			Step Name			Expected		STATUS
+02-02-2017 20:38:13	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:38:54	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:38:54	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:38:54	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:39:03	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:39:03	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:39:03	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:39:04	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:39:08	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:39:08	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:39:09	NavigateToMasterSummaryPage	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:39:09	NavigateToMasterSummaryPage	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:39:12	NavigateToMasterSummaryPage	"Client Search" page should be displayed.	PASS
+02-02-2017 20:39:12	NavigateToMasterSummaryPage	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:39:12	NavigateToMasterSummaryPage	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:39:12	NavigateToMasterSummaryPage	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:39:12	NavigateToMasterSummaryPage	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:39:13	NavigateToMasterSummaryPage	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:39:19	NavigateToMasterSummaryPage	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+02-02-2017 20:39:22	NavigateToMasterSummaryPage	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:39:22	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:39:22	NavigateToMasterSummaryPage	"lbl_ClientProfile object" should be displayed.	PASS
+02-02-2017 20:39:22	NavigateToMasterSummaryPage	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+02-02-2017 20:39:22	NavigateToMasterSummaryPage	"lbl_CertCenterNotes object" should be displayed.	PASS
+02-02-2017 20:39:22	NavigateToMasterSummaryPage	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+02-02-2017 20:39:24	NavigateToMasterSummaryPage	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:39:24	NavigateToMasterSummaryPage	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:39:24	NavigateToMasterSummaryPage	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:39:24	NavigateToMasterSummaryPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:39:24	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be displayed.	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "ID"	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Description"	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Line of Business"	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Effective Date"	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Expiration Date "	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Holder Count"	PASS
+02-02-2017 20:39:25	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:39:29	NavigateToMasterSummaryPage	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:39:29	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:39:29	NavigateToMasterSummaryPage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:39:29	NavigateToMasterSummaryPage	"lbl_MasterTemplateDetails object" should be displayed.	PASS
+02-02-2017 20:39:29	NavigateToMasterSummaryPage	"lbl_SelectedAttachments object" should be displayed.	PASS
+02-02-2017 20:39:30	NavigateToMasterSummaryPage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+02-02-2017 20:39:30	NavigateToMasterSummaryPage	"lbl_ActiveHolders object" should be displayed.	PASS
+02-02-2017 20:39:31	NavigateToHolderImportExportPage	"btn_HolderExport button" object Should be clicked.	PASS
+02-02-2017 20:39:32	NavigateToHolderImportExportPage	"Holder_ImportExport" page should be displayed.	PASS
+02-02-2017 20:39:32	NavigateToHolderImportExportPage	"btn_Done button" should be displayed.	PASS
+02-02-2017 20:39:32	NavigateToHolderImportExportPage	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:39:32	NavigateToHolderImportExportPage	"tab_Export link" should be displayed.	PASS
+02-02-2017 20:39:32	NavigateToHolderImportExportPage	"tab_Details link" should be displayed.	PASS
+02-02-2017 20:39:33	NavigateToHolderImportExportPage	"tab_Export link" object Should be clicked.	PASS
+02-02-2017 20:39:33	NavigateToHolderImportExportPage	"btn_Export button" should be displayed.	PASS
+02-02-2017 20:39:33	NavigateToHolderImportExportPage	"dwl_Status object" should be displayed.	PASS
+02-02-2017 20:39:33	NavigateToHolderImportExportPage	"dwl_IssuanceStatus object" should be displayed.	PASS
+02-02-2017 20:39:33	NavigateToHolderImportExportPage	"dwl_IssuanceStatus object" object Should be clicked.	PASS
+02-02-2017 20:39:34	SelectIssued	"dtl_Issued object" should be displayed.	PASS
+02-02-2017 20:39:34	SelectIssued	"dtl_Issued object" object Should be clicked.	PASS
+02-02-2017 20:39:35	StatusChangeAsReIssueViaImport	"btn_Export button" object Should be clicked.	PASS
+02-02-2017 20:39:37	StatusChangeAsReIssueViaImport	 Export Status SRID is "422586"	PASS
+02-02-2017 20:39:37	StatusChangeAsReIssueViaImport	"tab_WorkQueue object" object Should be clicked.	PASS
+02-02-2017 20:39:37	StatusChangeAsReIssueViaImport	"dtl_WorkQueue object" object Should be clicked.	PASS
+02-02-2017 20:39:39	StatusChangeAsReIssueViaImport	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:39:39	StatusChangeAsReIssueViaImport	"422586" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:39:39	StatusChangeAsReIssueViaImport	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:39:43	StatusChangeAsReIssueViaImport	"Summary" page should be displayed.	PASS
+02-02-2017 20:39:43	StatusChangeAsReIssueViaImport	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:39:43	StatusChangeAsReIssueViaImport	"tab_Details link" should be displayed.	PASS
+02-02-2017 20:39:43	StatusChangeAsReIssueViaImport	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:39:43	StatusChangeAsReIssueViaImport	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:39:43	StatusChangeAsReIssueViaImport	"tab_Documents link" object Should be clicked.	PASS
+02-02-2017 20:40:29	StatusChangeAsReIssueViaImport	"tab_Documents link" object Should be clicked.	PASS
+02-02-2017 20:40:31	StatusChangeAsReIssueViaImport	tbl_Document table  should be loaded	PASS
+02-02-2017 20:40:31	StatusChangeAsReIssueViaImport	"tbl_Document table" should be displayed.	PASS
+02-02-2017 20:40:36	StatusChangeAsReIssueViaImport	view attachment icon should be clicked under tbl_Document table	PASS
+02-02-2017 20:40:41	StatusChangeAsReIssueViaImport	"btn_SaveAs button" object Should be clicked.	PASS
+02-02-2017 20:40:50	StatusChangeAsReIssueViaImport	txt_FileName edit box  should be loaded	PASS
+02-02-2017 20:40:50	StatusChangeAsReIssueViaImport	"C:\IFSAutomation\Finance\Resources\TC767.xlsx" : value should be entered in "txt_FileName edit box" field.	PASS
+02-02-2017 20:40:53	StatusChangeAsReIssueViaImport	"btn_Save button" object should be clicked.	PASS
+02-02-2017 20:40:56	StatusChangeAsReIssueViaImport	tab_Details link  should be loaded	PASS
+02-02-2017 20:40:56	StatusChangeAsReIssueViaImport	 File download successfully  in the specified path 	PASS
+02-02-2017 20:40:56	StatusChangeAsReIssueViaImport	"tab_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:40:56	StatusChangeAsReIssueViaImport	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:40:58	StatusChangeAsReIssueViaImport	"Client Search" page should be displayed.	PASS
+02-02-2017 20:40:58	StatusChangeAsReIssueViaImport	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:40:58	StatusChangeAsReIssueViaImport	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:41:00	StatusChangeAsReIssueViaImport	tbl_ClientName table  should be loaded	PASS
+02-02-2017 20:41:06	StatusChangeAsReIssueViaImport	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+02-02-2017 20:41:11	StatusChangeAsReIssueViaImport	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:41:11	StatusChangeAsReIssueViaImport	"btn_HolderImport/Export button" object Should be clicked.	PASS
+02-02-2017 20:41:12	StatusChangeAsReIssueViaImport	"ImportExport_Holder" page should be displayed.	PASS
+02-02-2017 20:41:13	StatusChangeAsReIssueViaImport	"btn_ViewEPICContactID button" should be displayed.	PASS
+02-02-2017 20:41:13	StatusChangeAsReIssueViaImport	"btn_Done button" should be displayed.	PASS
+02-02-2017 20:41:13	StatusChangeAsReIssueViaImport	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:41:13	StatusChangeAsReIssueViaImport	"tab_Import link" should be displayed.	PASS
+02-02-2017 20:41:13	StatusChangeAsReIssueViaImport	"tab_Export link" should be displayed.	PASS
+02-02-2017 20:41:13	StatusChangeAsReIssueViaImport	"tab_Details link" should be displayed.	PASS
+02-02-2017 20:41:13	StatusChangeAsReIssueViaImport	"tab_Import link" object Should be clicked.	PASS
+02-02-2017 20:41:16	StatusChangeAsReIssueViaImport	"wf_SelectFiles edit box" object Should be clicked.	PASS
+02-02-2017 20:41:16	StatusChangeAsReIssueViaImport	"C:\IFSAutomation\Finance\Resources\TC762.xlsx" : value should be entered in "txt_FileName edit box" field.	PASS
+02-02-2017 20:41:16	StatusChangeAsReIssueViaImport	"BTN_Open button" object should be clicked.	PASS
+02-02-2017 20:41:36	StatusChangeAsReIssueViaImport	"dtl_UploadedFile object" should be displayed.	PASS
+02-02-2017 20:41:37	StatusChangeAsReIssueViaImport	"btn_Upload button" object Should be clicked.	PASS
+02-02-2017 20:41:39	StatusChangeAsReIssueViaImport	"dtl_UploadStatus object" should be displayed.	PASS
+02-02-2017 20:41:39	StatusChangeAsReIssueViaImport	 Export Status SRID is "422587"	PASS
+02-02-2017 20:41:39	StatusChangeAsReIssueViaImport	"tab_WorkQueue object" object Should be clicked.	PASS
+02-02-2017 20:41:39	StatusChangeAsReIssueViaImport	"lnk_WorkQueue object" object Should be clicked.	PASS
+02-02-2017 20:41:41	StatusChangeAsReIssueViaImport	"422587" : value should be entered in "txt_SearchID edit box" field.	PASS
+02-02-2017 20:41:42	StatusChangeAsReIssueViaImport	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:41:44	StatusChangeAsReIssueViaImport	"Summary" page should be displayed.	PASS
+02-02-2017 20:41:47	StatusChangeAsReIssueViaImport	dtl_ImportStatus object  should be loaded	PASS
+02-02-2017 20:41:47	StatusChangeAsReIssueViaImport	"dtl_ImportStatus object" should be displayed.	PASS
+02-02-2017 20:42:31	StatusChangeAsReIssueViaImport	Text: "No Import Errors"  should be displayed at dtl_ImportStatus object	FAIL
+02-02-2017 20:42:31	StatusChangeAsReIssueViaImport	"tab_WorkFlow link" object Should be clicked.	PASS
+02-02-2017 20:42:31	StatusChangeAsReIssueViaImport	"Holder Import Processing" Record value should be "Completed"	FAIL
+02-02-2017 20:42:32	StatusChangeAsReIssueViaImport	"tab_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:42:32	StatusChangeAsReIssueViaImport	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:42:34	StatusChangeAsReIssueViaImport	"Client Search" page should be displayed.	PASS
+02-02-2017 20:42:34	StatusChangeAsReIssueViaImport	"Heather C" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:42:34	StatusChangeAsReIssueViaImport	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:42:37	StatusChangeAsReIssueViaImport	tbl_ClientName table  should be loaded	PASS
+02-02-2017 20:42:43	StatusChangeAsReIssueViaImport	"tbl_ClientName table"populates with a row of data containing "Heather Canarecci"and clicked	PASS
+02-02-2017 20:42:45	StatusChangeAsReIssueViaImport	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:42:48	StatusChangeAsReIssueViaImport	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:42:48	StatusChangeAsReIssueViaImport	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:42:52	StatusChangeAsReIssueViaImport	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:42:57	StatusChangeAsReIssueViaImport	tbl_ActiveHoldersGrid table  should be loaded	PASS
+02-02-2017 20:42:57	StatusChangeAsReIssueViaImport	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "10"	PASS
+02-02-2017 20:42:57	StatusChangeAsReIssueViaImport	 All "Status" column displayed record values should be  "Ready for Reissue" in tbl_ActiveHoldersGrid table	PASS
+02-02-2017 20:42:59	Logout	Logout from application	PASS
+02-02-2017 20:43:08	Start Execution	Open the TC926_Finance_ReNewMasterTemplatePreSteps file	OPEN THE TC926_FINANCE_RENEWMASTERTEMPLATEPRESTEPS TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:43:10	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:43:10	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:43:13	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:43:14	Start Execution	start execute of  TC926_Finance_ReNewMasterTemplatePreSteps	
+02-02-2017 20:43:14			Step Name			Expected		STATUS
+02-02-2017 20:43:22	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:44:02	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:44:02	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:44:02	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:44:11	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:44:11	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:44:11	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:44:11	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:44:16	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:44:16	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:44:17	NavigateToMasterSummaryPage	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:44:17	NavigateToMasterSummaryPage	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:44:19	NavigateToMasterSummaryPage	"Client Search" page should be displayed.	PASS
+02-02-2017 20:44:19	NavigateToMasterSummaryPage	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:44:19	NavigateToMasterSummaryPage	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:44:19	NavigateToMasterSummaryPage	"Happy Tails Grooming" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:44:19	NavigateToMasterSummaryPage	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:44:20	NavigateToMasterSummaryPage	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:44:26	NavigateToMasterSummaryPage	"tbl_ClientName table"populates with a row of data containing "Happy Tails Grooming"and clicked	PASS
+02-02-2017 20:44:29	NavigateToMasterSummaryPage	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:44:29	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:44:29	NavigateToMasterSummaryPage	"lbl_ClientProfile object" should be displayed.	PASS
+02-02-2017 20:44:29	NavigateToMasterSummaryPage	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+02-02-2017 20:44:29	NavigateToMasterSummaryPage	"lbl_CertCenterNotes object" should be displayed.	PASS
+02-02-2017 20:44:29	NavigateToMasterSummaryPage	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+02-02-2017 20:44:31	NavigateToMasterSummaryPage	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:44:31	NavigateToMasterSummaryPage	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:44:31	NavigateToMasterSummaryPage	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:44:31	NavigateToMasterSummaryPage	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:44:31	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+02-02-2017 20:44:31	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be displayed.	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "ID"	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Description"	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Line of Business"	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Effective Date"	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Expiration Date "	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Holder Count"	PASS
+02-02-2017 20:44:32	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+02-02-2017 20:44:36	NavigateToMasterSummaryPage	"Master Template Summary" page should be displayed.	PASS
+02-02-2017 20:44:36	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:44:36	NavigateToMasterSummaryPage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:44:36	NavigateToMasterSummaryPage	"lbl_MasterTemplateDetails object" should be displayed.	PASS
+02-02-2017 20:44:36	NavigateToMasterSummaryPage	"lbl_SelectedAttachments object" should be displayed.	PASS
+02-02-2017 20:44:36	NavigateToMasterSummaryPage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+02-02-2017 20:44:36	NavigateToMasterSummaryPage	"lbl_ActiveHolders object" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"btn_EditMasterTemplate button" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"btn_RefreshAttachments button" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"btn_AddCoverageTemplate button" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"btn_AddHolder button" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"btn_HolderMassUpdates button" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"btn_HolderExport button" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"lbl_SelectedAttachments object" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"lbl_ActiveHolders object" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"tbl_ActiveCoverageTemp table" should be displayed.	PASS
+02-02-2017 20:44:38	PreCursorSteps	"lnk_Carat link" object Should be clicked.	PASS
+02-02-2017 20:44:39	PreCursorSteps	tbl_ActiveCoverageTemp table  should be loaded	PASS
+02-02-2017 20:44:40	PreCursorSteps	"Copy" Record value should be "3"	FAIL
+02-02-2017 20:44:40	PreCursorSteps	"Renew" Record value should be "3"	FAIL
+02-02-2017 20:44:45	PreCursorSteps	SummaryCopy icon should be clicked under tbl_ActiveCoverageTemp table	PASS
+02-02-2017 20:44:51	PreCursorSteps	Summary icon should be clicked under tbl_ActiveCoverageTemp table	PASS
+02-02-2017 20:44:56	PreCursorSteps	"Summary" page should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"lbl_PolicyDetails object" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"lbl_TemplateDetails object" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"lbl_Limits object" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"lbl_GeneralLiability object" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"lbl_DescriptionOf object" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"lbl_SelectedAttachments object" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"tab_Details link" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:44:56	PreCursorSteps	"btn_Edit button" object Should be clicked.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"Edit" page should be displayed.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"lbl_PolicyDetails object" should be displayed.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"lbl_TemplateDetails object" should be displayed.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"lbl_GeneralLiability object" should be displayed.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"lbl_Limits object" should be displayed.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"lbl_DescriptionOf object" should be displayed.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"lbl_AvailableAttachments object" should be displayed.	PASS
+02-02-2017 20:45:00	PreCursorSteps	"btn_PolicyDetailsEdit button" object Should be clicked.	PASS
+02-02-2017 20:45:03	PreCursorSteps	lnk_Edit object  should be loaded	PASS
+02-02-2017 20:45:04	PreCursorSteps	"lnk_Edit object" object Should be clicked.	PASS
+02-02-2017 20:45:06	PreCursorSteps	"Policy Search_" page should be displayed.	PASS
+02-02-2017 20:45:06	PreCursorSteps	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+02-02-2017 20:45:06	PreCursorSteps	"lbl_PolicyCriteria object" should be displayed.	PASS
+02-02-2017 20:45:06	PreCursorSteps	"lbl_PolicySearchResults object" should be displayed.	PASS
+02-02-2017 20:45:07	PreCursorSteps	tbl_PolicySearchResults table  should be loaded	PASS
+02-02-2017 20:45:07	PreCursorSteps	"tbl_PolicySearchResults table" should be displayed.	PASS
+02-02-2017 20:45:07	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterLine ID"	PASS
+02-02-2017 20:45:07	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterPolicy Number"	PASS
+02-02-2017 20:45:07	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterLOB Type Code"	PASS
+02-02-2017 20:45:07	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterLine Description"	PASS
+02-02-2017 20:45:07	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterPolicy Description"	PASS
+02-02-2017 20:45:07	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterAgency"	PASS
+02-02-2017 20:45:07	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterBranch"	PASS
+02-02-2017 20:45:08	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterEffective Date"	PASS
+02-02-2017 20:45:08	PreCursorSteps	"tbl_PolicySearchResults table" should be contain column : "FilterExpiration Date"	PASS
+02-02-2017 20:45:13	PreCursorSteps	412897 icon should be clicked under tbl_PolicySearchResults table	PASS
+02-02-2017 20:45:55	PreCursorSteps	"Master Template Summary" page should be displayed.	FAIL
+02-02-2017 20:45:57	Logout	Logout from application	PASS
+02-02-2017 20:46:07	Start Execution	Open the TC927_Finance_RenewMasterTemplateFromRenewToCopy file	OPEN THE TC927_FINANCE_RENEWMASTERTEMPLATEFROMRENEWTOCOPY TEST CASE FILE SUCCESSFULLY
+02-02-2017 20:46:08	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:46:09	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+02-02-2017 20:46:11	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+02-02-2017 20:46:12	Start Execution	start execute of  TC927_Finance_RenewMasterTemplateFromRenewToCopy	
+02-02-2017 20:46:12			Step Name			Expected		STATUS
+02-02-2017 20:46:20	LoginToSecurityWindow	Open the browser and start Application	PASS
+02-02-2017 20:47:00	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:47:00	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+02-02-2017 20:47:00	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+02-02-2017 20:47:10	LoginToFinance	btn_Login button  should be loaded	PASS
+02-02-2017 20:47:10	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+02-02-2017 20:47:10	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+02-02-2017 20:47:10	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+02-02-2017 20:47:15	LoginToFinance	"Work Queue" page should be displayed.	PASS
+02-02-2017 20:47:16	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+02-02-2017 20:47:17	NavigateMasterSummary	"lnk_Certificates object" object Should be clicked.	PASS
+02-02-2017 20:47:17	NavigateMasterSummary	"lnk_ClientLookup object" object Should be clicked.	PASS
+02-02-2017 20:47:19	NavigateMasterSummary	"Client Search" page should be displayed.	PASS
+02-02-2017 20:47:19	NavigateMasterSummary	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+02-02-2017 20:47:19	NavigateMasterSummary	"lbl_SearchResults object" should be displayed.	PASS
+02-02-2017 20:47:19	NavigateMasterSummary	"Happy Tails Grooming" : value should be entered in "txt_ClientName edit box" field.	PASS
+02-02-2017 20:47:19	NavigateMasterSummary	"btn_Search button" object Should be clicked.	PASS
+02-02-2017 20:47:21	NavigateMasterSummary	"tbl_ClientName table" should be displayed.	PASS
+02-02-2017 20:47:26	NavigateMasterSummary	"tbl_ClientName table"populates with a row of data containing "Happy Tails Grooming"and clicked	PASS
+02-02-2017 20:47:29	NavigateMasterSummary	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:47:29	NavigateMasterSummary	"lbl_ClientSummary object" should be displayed.	PASS
+02-02-2017 20:47:29	NavigateMasterSummary	"lbl_ClientProfile object" should be displayed.	PASS
+02-02-2017 20:47:29	NavigateMasterSummary	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+02-02-2017 20:47:29	NavigateMasterSummary	"lbl_CertCenterNotes object" should be displayed.	PASS
+02-02-2017 20:47:29	NavigateMasterSummary	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+02-02-2017 20:47:31	NavigateMasterSummary	tbl_MasterTemplateGrid table  should be loaded	PASS
+02-02-2017 20:47:32	NavigateMasterSummary	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:47:32	NavigateMasterSummary	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+02-02-2017 20:47:32	NavigateMasterSummary	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:47:32	NavigateMasterSummary	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+02-02-2017 20:47:32	NavigateMasterSummary	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+02-02-2017 20:47:32	NavigateMasterSummary	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+02-02-2017 20:47:34	NavigateMasterSummary	"RENEW MASTERS TEST" Should be in 2 Row and 4 Column under "tbl_MasterTemplateGrid table"	PASS
+02-02-2017 20:47:35	RenewMasterTemplateFromRenewToCopy	"btn_RenewMasters button" object Should be clicked.	PASS
+02-02-2017 20:47:38	RenewMasterTemplateFromRenewToCopy	"Select Master Type" page should be displayed.	PASS
+02-02-2017 20:47:38	RenewMasterTemplateFromRenewToCopy	"dwl_AcordType object" should be displayed.	PASS
+02-02-2017 20:47:40	RenewMasterTemplateFromRenewToCopy	"ACORD 24: CERTIFICATE OF PROPERTY INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+02-02-2017 20:47:42	RenewMasterTemplateFromRenewToCopy	"ACORD 25.CERTIFICATE OF LIABILITY INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+02-02-2017 20:47:44	RenewMasterTemplateFromRenewToCopy	"ACORD 27: EVIDENCE OF PROPERTY INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+02-02-2017 20:47:46	RenewMasterTemplateFromRenewToCopy	"ACORD 28: EVIDENCE OF COMMERICAL PROPERTY INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+02-02-2017 20:47:48	RenewMasterTemplateFromRenewToCopy	"ACORD 30: CERTIFICATE OF GARAGE INSURANCE" should be displayed with in dropdown : "dwl_AcordType object"	PASS
+02-02-2017 20:47:52	RenewMasterTemplateFromRenewToCopy	ACORD 25.CERTIFICATE OF LIABILITY INSURANCE should be selected from dropdown.	PASS
+02-02-2017 20:47:53	RenewMasterTemplateFromRenewToCopy	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:47:55	RenewMasterTemplateFromRenewToCopy	"Select Master" page should be displayed.	PASS
+02-02-2017 20:47:55	RenewMasterTemplateFromRenewToCopy	"lbl_SelectMaster(s) object" should be displayed.	PASS
+02-02-2017 20:47:55	RenewMasterTemplateFromRenewToCopy	"lbl_MasterTemplateCopyDetails object" should be displayed.	PASS
+02-02-2017 20:47:57	RenewMasterTemplateFromRenewToCopy	"RENEW MASTERS TEST" Should be in 2 Row and 5 Column under "tbl_SelectMaster(s) table"	PASS
+02-02-2017 20:47:58	RenewMasterTemplateFromRenewToCopy	Number of rows selected in the table: "tbl_SelectMaster(s) table"should be "1"	PASS
+02-02-2017 20:47:58	RenewMasterTemplateFromRenewToCopy	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:48:00	RenewMasterTemplateFromRenewToCopy	"Select Coverage Template" page should be displayed.	PASS
+02-02-2017 20:48:00	RenewMasterTemplateFromRenewToCopy	"lbl_SelectCoverageTemplate object" should be displayed.	PASS
+02-02-2017 20:48:00	RenewMasterTemplateFromRenewToCopy	"lbl_MasterTemplateCopyDetails object" should be displayed.	PASS
+02-02-2017 20:48:01	RenewMasterTemplateFromRenewToCopy	tbl_SelectCoverageTemplate table  should be loaded	PASS
+02-02-2017 20:48:07	RenewMasterTemplateFromRenewToCopy	Renewselect icon should be clicked under tbl_SelectCoverageTemplate table	PASS
+02-02-2017 20:48:07	RenewMasterTemplateFromRenewToCopy	"dtl_Remove object" should be displayed.	PASS
+02-02-2017 20:48:08	RenewMasterTemplateFromRenewToCopy	"dtl_Renew object" should be displayed.	PASS
+02-02-2017 20:48:08	RenewMasterTemplateFromRenewToCopy	"dtl_Copy object" should be displayed.	PASS
+02-02-2017 20:48:08	RenewMasterTemplateFromRenewToCopy	"dtl_Copy object" object Should be clicked.	PASS
+02-02-2017 20:48:08	RenewMasterTemplateFromRenewToCopy	"btn_Next button" object Should be clicked.	PASS
+02-02-2017 20:48:11	RenewMasterTemplateFromRenewToCopy	"Select Policy" page should be displayed.	PASS
+02-02-2017 20:48:11	RenewMasterTemplateFromRenewToCopy	"lbl_MasterTemplateCopyDetails object" should be displayed.	PASS
+02-02-2017 20:48:11	RenewMasterTemplateFromRenewToCopy	"lbl_Confirm/SelectPolicy object" should be displayed.	PASS
+02-02-2017 20:48:11	RenewMasterTemplateFromRenewToCopy	 Request ID is "422588"	PASS
+02-02-2017 20:48:11	RenewMasterTemplateFromRenewToCopy	"btn_Submit button" object Should be clicked.	PASS
+02-02-2017 20:48:13	RenewMasterTemplateFromRenewToCopy	"Client Summary" page should be displayed.	PASS
+02-02-2017 20:48:15	RenewMasterTemplateFromRenewToCopy	tbl_RenewalMasterRequest table  should be loaded	PASS
+02-02-2017 20:48:15	RenewMasterTemplateFromRenewToCopy	 Icon should be clicked under tbl_RenewalMasterRequest table	PASS
+02-02-2017 20:48:18	RenewMasterTemplateFromRenewToCopy	"Summary" page should be displayed.	PASS
+02-02-2017 20:48:18	RenewMasterTemplateFromRenewToCopy	"tab_WorkFlow link" should be displayed.	PASS
+02-02-2017 20:48:18	RenewMasterTemplateFromRenewToCopy	"tab_Documents link" should be displayed.	PASS
+02-02-2017 20:48:18	RenewMasterTemplateFromRenewToCopy	"tab_Details link" should be displayed.	PASS
+02-02-2017 20:48:18	RenewMasterTemplateFromRenewToCopy	"tab_Audit link" should be displayed.	PASS
+02-02-2017 20:49:08	RenewMasterTemplateFromRenewToCopy	dtl_MasterTemplateCopy object  should be loaded	PASS
+02-02-2017 20:49:09	RenewMasterTemplateFromRenewToCopy	"dtl_MasterTemplateCopy object" should be displayed.	PASS
+02-02-2017 20:49:29	RenewMasterTemplateFromRenewToCopy	"dtl_HolderCopy object" should be displayed.	FAIL
+02-02-2017 20:49:50	RenewMasterTemplateFromRenewToCopy	"dtl_CoverageTemplateCopy object" should be displayed.	FAIL
+02-02-2017 20:50:10	RenewMasterTemplateFromRenewToCopy	"dtl_CompleteMasterCopyWorkflow object" should be displayed.	FAIL
+02-02-2017 20:50:11	RenewMasterTemplateFromRenewToCopy	"tab_WorkFlow link" object Should be clicked.	PASS
+02-02-2017 20:50:11	RenewMasterTemplateFromRenewToCopy	"tbl_WorkFlow table" should be displayed.	PASS
+02-02-2017 20:50:12	RenewMasterTemplateFromRenewToCopy	tbl_WorkFlow table  should be loaded	PASS
+02-02-2017 20:50:14	RenewMasterTemplateFromRenewToCopy	"IN PROGRESS" Should be in 2 Row and 2 Column under tbl_WorkFlow table" but displayed is NEW	FAIL
+02-02-2017 20:50:14	RenewMasterTemplateFromRenewToCopy	"btn_Work button" object Should be clicked.	PASS
+02-02-2017 20:50:55	RenewMasterTemplateFromRenewToCopy	"Summary" page should be displayed.	PASS
+02-02-2017 20:51:16	RenewMasterTemplateFromRenewToCopy	"btn_GenerateReport button" should be displayed.	PASS
+02-02-2017 20:51:36	RenewMasterTemplateFromRenewToCopy	"btn_Complete button" should be displayed.	PASS
+02-02-2017 20:51:36	RenewMasterTemplateFromRenewToCopy	"btn_Back button" should be displayed.	PASS
+02-02-2017 20:52:16	RenewMasterTemplateFromRenewToCopy	"btn_Complete button" object Should be clicked.	PASS
+02-02-2017 20:52:58	RenewMasterTemplateFromRenewToCopy	"Summary" page should be displayed.	PASS
+02-02-2017 20:53:18	RenewMasterTemplateFromRenewToCopy	"tab_WorkFlow link" should be displayed.	FAIL
+02-02-2017 20:53:58	RenewMasterTemplateFromRenewToCopy	tab_WorkFlow link object should exist.	FAIL
+02-02-2017 20:54:39	RenewMasterTemplateFromRenewToCopy	tbl_WorkFlow table object should exist.	FAIL
+02-02-2017 20:54:59	RenewMasterTemplateFromRenewToCopy	"tbl_WorkFlow table" should be displayed.	FAIL
+02-02-2017 20:55:41	RenewMasterTemplateFromRenewToCopy	tbl_WorkFlow tableshould exist	FAIL

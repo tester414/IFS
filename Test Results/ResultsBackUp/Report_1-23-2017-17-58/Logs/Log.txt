@@ -1,0 +1,103 @@
+23-01-2017 17:58:18	Start Execution		
+23-01-2017 17:58:21	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+23-01-2017 17:58:29	Start Execution	Open the TC926_Finance_ReNewMasterTemplatePreSteps file	OPEN THE TC926_FINANCE_RENEWMASTERTEMPLATEPRESTEPS TEST CASE FILE SUCCESSFULLY
+23-01-2017 17:58:30	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+23-01-2017 17:58:31	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+23-01-2017 17:58:34	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+23-01-2017 17:58:34	Start Execution	start execute of  TC926_Finance_ReNewMasterTemplatePreSteps	
+23-01-2017 17:58:34			Step Name			Expected		STATUS
+23-01-2017 17:58:43	LoginToSecurityWindow	Open the browser and start Application	PASS
+23-01-2017 17:59:23	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+23-01-2017 17:59:23	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+23-01-2017 17:59:23	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+23-01-2017 17:59:31	LoginToFinance	btn_Login button  should be loaded	PASS
+23-01-2017 17:59:31	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+23-01-2017 17:59:31	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+23-01-2017 17:59:31	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+23-01-2017 17:59:35	LoginToFinance	"Work Queue" page should be displayed.	PASS
+23-01-2017 17:59:35	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+23-01-2017 17:59:36	NavigateToMasterSummaryPage	"lnk_Certificates object" object Should be clicked.	PASS
+23-01-2017 17:59:37	NavigateToMasterSummaryPage	"lnk_ClientLookup object" object Should be clicked.	PASS
+23-01-2017 17:59:38	NavigateToMasterSummaryPage	"Client Search" page should be displayed.	PASS
+23-01-2017 17:59:38	NavigateToMasterSummaryPage	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+23-01-2017 17:59:38	NavigateToMasterSummaryPage	"lbl_SearchResults object" should be displayed.	PASS
+23-01-2017 17:59:38	NavigateToMasterSummaryPage	"Happy Tails Grooming" : value should be entered in "txt_ClientName edit box" field.	PASS
+23-01-2017 17:59:38	NavigateToMasterSummaryPage	"btn_Search button" object Should be clicked.	PASS
+23-01-2017 17:59:40	NavigateToMasterSummaryPage	"tbl_ClientName table" should be displayed.	PASS
+23-01-2017 17:59:45	NavigateToMasterSummaryPage	"tbl_ClientName table"populates with a row of data containing "Happy Tails Grooming"and clicked	PASS
+23-01-2017 17:59:48	NavigateToMasterSummaryPage	"Client Summary" page should be displayed.	PASS
+23-01-2017 17:59:48	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+23-01-2017 17:59:48	NavigateToMasterSummaryPage	"lbl_ClientProfile object" should be displayed.	PASS
+23-01-2017 17:59:48	NavigateToMasterSummaryPage	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+23-01-2017 17:59:48	NavigateToMasterSummaryPage	"lbl_CertCenterNotes object" should be displayed.	PASS
+23-01-2017 17:59:48	NavigateToMasterSummaryPage	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+23-01-2017 17:59:50	NavigateToMasterSummaryPage	tbl_MasterTemplateGrid table  should be loaded	PASS
+23-01-2017 17:59:50	NavigateToMasterSummaryPage	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+23-01-2017 17:59:50	NavigateToMasterSummaryPage	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+23-01-2017 17:59:50	NavigateToMasterSummaryPage	"tab_Audit link" should be displayed.	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterID"	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterACORD Form"	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateGrid table" should be contain column : "FilterDescription"	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be displayed.	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "ID"	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Description"	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Line of Business"	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Effective Date"	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Expiration Date "	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	"tbl_MasterTemplateSubGrid table" should be contain column : "Holder Count"	PASS
+23-01-2017 17:59:51	NavigateToMasterSummaryPage	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+23-01-2017 17:59:55	NavigateToMasterSummaryPage	"Master Template Summary" page should be displayed.	PASS
+23-01-2017 17:59:55	NavigateToMasterSummaryPage	"lbl_ClientSummary object" should be displayed.	PASS
+23-01-2017 17:59:55	NavigateToMasterSummaryPage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+23-01-2017 17:59:55	NavigateToMasterSummaryPage	"lbl_MasterTemplateDetails object" should be displayed.	PASS
+23-01-2017 17:59:55	NavigateToMasterSummaryPage	"lbl_SelectedAttachments object" should be displayed.	PASS
+23-01-2017 17:59:55	NavigateToMasterSummaryPage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+23-01-2017 17:59:55	NavigateToMasterSummaryPage	"lbl_ActiveHolders object" should be displayed.	PASS
+23-01-2017 17:59:56	PreCursorSteps	"btn_EditMasterTemplate button" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"btn_RefreshAttachments button" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"btn_AddCoverageTemplate button" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"btn_AddHolder button" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"btn_HolderMassUpdates button" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"btn_HolderExport button" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"lbl_ClientSummary object" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"lbl_SelectedAttachments object" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"lbl_ActiveHolders object" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"tbl_ActiveCoverageTemp table" should be displayed.	PASS
+23-01-2017 17:59:57	PreCursorSteps	"lnk_Carat link" object Should be clicked.	PASS
+23-01-2017 17:59:58	PreCursorSteps	tbl_ActiveCoverageTemp table  should be loaded	PASS
+23-01-2017 18:00:00	PreCursorSteps	"COPY" Should be in 3 Row and 3 Column under "tbl_ActiveCoverageTemp table"	PASS
+23-01-2017 18:00:02	PreCursorSteps	"RENEW" Should be in 4 Row and 3 Column under "tbl_ActiveCoverageTemp table"	PASS
+23-01-2017 18:00:08	PreCursorSteps	SummaryCopy icon should be clicked under tbl_ActiveCoverageTemp table	PASS
+23-01-2017 18:00:14	PreCursorSteps	Summary icon should be clicked under tbl_ActiveCoverageTemp table	PASS
+23-01-2017 18:00:17	PreCursorSteps	"Summary" page should be displayed.	PASS
+23-01-2017 18:00:17	PreCursorSteps	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+23-01-2017 18:00:17	PreCursorSteps	"lbl_PolicyDetails object" should be displayed.	PASS
+23-01-2017 18:00:17	PreCursorSteps	"lbl_TemplateDetails object" should be displayed.	PASS
+23-01-2017 18:00:17	PreCursorSteps	"lbl_Limits object" should be displayed.	PASS
+23-01-2017 18:00:17	PreCursorSteps	"lbl_GeneralLiability object" should be displayed.	PASS
+23-01-2017 18:00:18	PreCursorSteps	"lbl_DescriptionOf object" should be displayed.	PASS
+23-01-2017 18:00:18	PreCursorSteps	"lbl_SelectedAttachments object" should be displayed.	PASS
+23-01-2017 18:00:38	PreCursorSteps	"tab_WorkFlow link" should be displayed.	PASS
+23-01-2017 18:00:58	PreCursorSteps	"tab_Documents link" should be displayed.	PASS
+23-01-2017 18:01:18	PreCursorSteps	"tab_Details link" should be displayed.	PASS
+23-01-2017 18:01:34	PreCursorSteps	"tab_Audit link" should be displayed.	PASS
+23-01-2017 18:01:35	PreCursorSteps	"btn_Edit button" object Should be clicked.	PASS
+23-01-2017 18:01:35	PreCursorSteps	"Edit" page should be displayed.	PASS
+23-01-2017 18:01:35	PreCursorSteps	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+23-01-2017 18:01:36	PreCursorSteps	"lbl_PolicyDetails object" should be displayed.	FAIL
+23-01-2017 18:01:36	PreCursorSteps	"lbl_TemplateDetails object" should be displayed.	PASS
+23-01-2017 18:01:36	PreCursorSteps	"lbl_GeneralLiability object" should be displayed.	PASS
+23-01-2017 18:01:37	PreCursorSteps	"lbl_Limits object" should be displayed.	PASS
+23-01-2017 18:01:37	PreCursorSteps	"lbl_DescriptionOf object" should be displayed.	PASS
+23-01-2017 18:01:38	PreCursorSteps	"lbl_AvailableAttachments object" should be displayed.	FAIL
+23-01-2017 18:01:38	PreCursorSteps	"btn_PolicyDetailsEdit button" object Should be clicked.	PASS
+23-01-2017 18:01:38	PreCursorSteps	lnk_Edit object  should be loaded	PASS
+23-01-2017 18:01:38	PreCursorSteps	"lnk_Edit object" object Should be clicked.	PASS
+23-01-2017 18:01:40	PreCursorSteps	"Policy Search_" page should be displayed.	FAIL
+23-01-2017 18:01:41	PreCursorSteps	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+23-01-2017 18:01:43	PreCursorSteps	"lbl_PolicyCriteria object" should be displayed.	FAIL
+23-01-2017 18:01:44	PreCursorSteps	"lbl_PolicySearchResults object" should be displayed.	FAIL
+23-01-2017 18:01:44	PreCursorSteps	"tbl_PolicySearchResults table" should be displayed.	FAIL

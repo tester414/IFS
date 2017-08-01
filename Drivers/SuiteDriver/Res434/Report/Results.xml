@@ -1,0 +1,786 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED SolManSolutionId CDATA #IMPLIED SolManProjectId CDATA #IMPLIED SolManTestPlanId CDATA #IMPLIED SolManTestPackageId CDATA #IMPLIED SolManUserInfoData CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group|Action) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*, Summary,ActionMaintenanceSummary*, NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,DataMapping?, Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED isCountable (False|True) "False" >
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*, DataMapping?, NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT DataMapping ( DataMappedItem* )>
+<!ELEMENT DataMappedItem EMPTY >
+<!ATTLIST DataMappedItem dsName CDATA #REQUIRED >
+<!ATTLIST DataMappedItem rowId CDATA #REQUIRED >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED StepFlowItemKey CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="India Standard Time">
+<General productName="HP Unified Functional Testing" productVer="12.01" os="Windows 7" host="HW1419"><DocLocation><![CDATA[C:\IFSAutomation\Finance\Drivers\SuiteDriver]]></DocLocation></General>
+<Doc rID="T1"   productName= "HP Unified Functional Testing"  >
+<DName><![CDATA[SuiteDriver]]></DName>
+<Res><![CDATA[Res434]]></Res>
+<DT rID="T2">
+<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<Disp><![CDATA[Run-Time Data Table]]></Disp>
+<BtmPane vType="Table" >
+<Path><![CDATA[Default.xls]]></Path>
+</BtmPane>
+</NodeArgs>
+</DT>
+<Action rID="T3">
+<AName><![CDATA[Action1]]></AName>
+<Step rID="T4">
+<Obj plainTxt="False" ><![CDATA[SystemUtil]]></Obj>
+<Details plainTxt="False" ><![CDATA[SystemUtil]]></Details>
+<Time><![CDATA[14-11-2016 - 11:01:03]]></Time>
+<TimeTick>1479101463</TimeTick>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Run "iexplore.exe",3]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run "iexplore.exe",3]]></Details>
+<Time><![CDATA[14-11-2016 - 11:01:03]]></Time>
+<TimeTick>1479101463</TimeTick>
+<NodeArgs eType="Replay" icon="4" nRep="10" status="Passed" >
+<Disp><![CDATA[Run "iexplore.exe",3]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="4" nRep="9" status="Passed" >
+<Disp><![CDATA[SystemUtil]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:01:15]]></Time>
+<TimeTick>1479101475</TimeTick>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Login" (of class Browser). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14-11-2016 - 11:01:15]]></Time>
+<TimeTick>1479101475</TimeTick>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>miccommentproperty = <br>Mercury Class = Browser<br>CreationTime = 0<br>|Title = Login - Windows Internet Explorer<br>openurl = http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<br>opentitle = <br>Opened By Testing Tool = 0<br>number of tabs = 1<br>Name = Login<br>]]></Details>
+<Time><![CDATA[14-11-2016 - 11:01:15]]></Time>
+<TimeTick>1479101475</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="22" status="Warning" nType="Description" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="5" nRep="21" status="Failed" nType="Run Error" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="20" status="Failed" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Login&quot; (of class Browser). Verify that this object's properties match an object currently displayed in your application.<BR>Function file: C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs<BR>Line (11): &quot;		Browser(&quot;Login&quot;).Page(&quot;Login&quot;).sync&quot;.]]></Details>
+<Time><![CDATA[14-11-2016 - 11:01:15]]></Time>
+<TimeTick>1479101475</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="23" status="Failed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="10" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj ><![CDATA[LoginToFinance]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:01:15]]></Time>
+<TimeTick>1479101475</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="24" status="Passed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[LoginToFinance]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:02:15]]></Time>
+<TimeTick>1479101535</TimeTick>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[Windows Security]]></Obj>
+<Details plainTxt="False" ><![CDATA[Dialog]]></Details>
+<Time><![CDATA[14-11-2016 - 11:02:15]]></Time>
+<TimeTick>1479101535</TimeTick>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[txt_UserName.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:02:15]]></Time>
+<TimeTick>1479101535</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="40" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[txt_UserName.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="8" nRep="39" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Windows Security]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="38" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj ><![CDATA[LoginToFinance]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:02:15]]></Time>
+<TimeTick>1479101535</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="41" status="Failed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[LoginToFinance]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:16]]></Time>
+<TimeTick>1479101596</TimeTick>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Windows Security]]></Obj>
+<Details plainTxt="False" ><![CDATA[Dialog]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:16]]></Time>
+<TimeTick>1479101596</TimeTick>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[txt__PassWord.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:16]]></Time>
+<TimeTick>1479101596</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="57" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[txt__PassWord.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="8" nRep="56" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Windows Security]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="55" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T18">
+<Obj ><![CDATA[LoginToFinance]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:16]]></Time>
+<TimeTick>1479101596</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="58" status="Failed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[LoginToFinance]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[Windows Security]]></Obj>
+<Details plainTxt="False" ><![CDATA[Dialog]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[btn_OK.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="74" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[btn_OK.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="8" nRep="73" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Windows Security]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="72" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj ><![CDATA[LoginToFinance]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="75" status="Failed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[LoginToFinance]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[txt_UserName.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="97" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[txt_UserName.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="96" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="95" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj ><![CDATA[LoginToFinance]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="98" status="Failed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[LoginToFinance]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA[txt_Password.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="114" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[txt_Password.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="113" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="112" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj ><![CDATA[LoginToFinance]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="115" status="Failed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[LoginToFinance]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T32">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[btn_Login.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="131" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[btn_Login.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="130" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="129" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj ><![CDATA[LoginToFinance]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="132" status="Failed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[LoginToFinance]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T35">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<Step rID="T37">
+<Obj plainTxt="False" ><![CDATA[lnk_Certificates.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:25]]></Time>
+<TimeTick>1479101605</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="154" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[lnk_Certificates.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA[lnk_Certificates.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:26]]></Time>
+<TimeTick>1479101606</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="174" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[lnk_Certificates.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="153" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="152" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T39">
+<Obj ><![CDATA[LoginToFinance]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:26]]></Time>
+<TimeTick>1479101606</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="175" status="Failed" Source="C:\IFSAutomation\Finance\Libraries\GeneralLibraries\BusinessFunction.vbs" SourceLine="-1" >
+<Disp><![CDATA[LoginToFinance]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T40">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA[lnk_Certificates.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="197" >
+<Disp><![CDATA[lnk_Certificates.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="196" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="195" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T43">
+<Obj ><![CDATA[NavigateToEntryRequestDetails]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="198" status="Failed" >
+<Disp><![CDATA[NavigateToEntryRequestDetails]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<Step rID="T45">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<Step rID="T46">
+<Obj plainTxt="False" ><![CDATA[lnk_CreateRequest.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="220" >
+<Disp><![CDATA[lnk_CreateRequest.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="219" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="218" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T47">
+<Obj ><![CDATA[NavigateToEntryRequestDetails]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="221" status="Failed" >
+<Disp><![CDATA[NavigateToEntryRequestDetails]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T48">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<Step rID="T49">
+<Obj plainTxt="False" ><![CDATA[EntrerRequestDetails]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<Step rID="T50">
+<Obj plainTxt="False" ><![CDATA[btn_SelectClient.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="243" >
+<Disp><![CDATA[btn_SelectClient.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="242" >
+<Disp><![CDATA[EntrerRequestDetails]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="241" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T51">
+<Obj ><![CDATA[NavigateToEntryRequestDetails]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:58]]></Time>
+<TimeTick>1479101638</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="244" status="Failed" >
+<Disp><![CDATA[NavigateToEntryRequestDetails]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T52">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:59]]></Time>
+<TimeTick>1479101639</TimeTick>
+<Step rID="T53">
+<Obj plainTxt="False" ><![CDATA[EntrerRequestDetails]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:59]]></Time>
+<TimeTick>1479101639</TimeTick>
+<Step rID="T54">
+<Obj plainTxt="False" ><![CDATA[btn_SelectClient.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:59]]></Time>
+<TimeTick>1479101639</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="266" >
+<Disp><![CDATA[btn_SelectClient.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="265" >
+<Disp><![CDATA[EntrerRequestDetails]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="264" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T55">
+<Obj ><![CDATA[NavigateToEntryRequestDetails]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:03:59]]></Time>
+<TimeTick>1479101639</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="267" status="Failed" >
+<Disp><![CDATA[NavigateToEntryRequestDetails]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T56">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<Step rID="T57">
+<Obj plainTxt="False" ><![CDATA[Client Search]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<Step rID="T58">
+<Obj plainTxt="False" ><![CDATA[txt_ClientName.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="298" >
+<Disp><![CDATA[txt_ClientName.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="297" >
+<Disp><![CDATA[Client Search]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="296" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T59">
+<Obj ><![CDATA[EnterClientName]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="299" status="Failed" >
+<Disp><![CDATA[EnterClientName]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T60">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<Step rID="T61">
+<Obj plainTxt="False" ><![CDATA[Client Search]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<Step rID="T62">
+<Obj plainTxt="False" ><![CDATA[txt_ClientName.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="330" >
+<Disp><![CDATA[txt_ClientName.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="329" >
+<Disp><![CDATA[Client Search]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="328" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T63">
+<Obj ><![CDATA[EnterClientName]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="331" status="Failed" >
+<Disp><![CDATA[EnterClientName]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T64">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<Step rID="T65">
+<Obj plainTxt="False" ><![CDATA[Client Search]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<Step rID="T66">
+<Obj plainTxt="False" ><![CDATA[btn_Search.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="353" >
+<Disp><![CDATA[btn_Search.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="352" >
+<Disp><![CDATA[Client Search]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="351" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T67">
+<Obj ><![CDATA[EnterClientName]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="354" status="Failed" >
+<Disp><![CDATA[EnterClientName]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T68">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<Step rID="T69">
+<Obj plainTxt="False" ><![CDATA[Client Search]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<Step rID="T70">
+<Obj plainTxt="False" ><![CDATA[tbl_ClientName.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<NodeArgs eType="Replay" icon="15" nRep="376" >
+<Disp><![CDATA[tbl_ClientName.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="11" nRep="375" >
+<Disp><![CDATA[Client Search]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="374" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T71">
+<Obj ><![CDATA[EnterClientName]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:09]]></Time>
+<TimeTick>1479101649</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="377" status="Failed" >
+<Disp><![CDATA[EnterClientName]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T72">
+<Obj plainTxt="False" ><![CDATA[Stop Run]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run stopped by user.]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:12]]></Time>
+<TimeTick>1479101652</TimeTick>
+<NodeArgs eType="General" icon="16" nRep="378" >
+<Disp><![CDATA[Stop Run]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="14-11-2016 - 11:00:10" eTime="14-11-2016 - 11:04:12" passed="2" failed="17" warnings="1" ></Summary>
+<NodeArgs eType="StartAction" icon="3" nRep="6" status="Failed" >
+<Disp><![CDATA[Action1 Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Step rID="T73">
+<Obj plainTxt="False" ><![CDATA[Stop Run]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run stopped by user.]]></Details>
+<Time><![CDATA[14-11-2016 - 11:04:12]]></Time>
+<TimeTick>1479101652</TimeTick>
+<NodeArgs eType="General" icon="17" nRep="380" >
+<Disp><![CDATA[Stop Run]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="14-11-2016 - 11:00:08" eTime="14-11-2016 - 11:04:12" passed="2" failed="17" warnings="1" stopped="True" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="3" status="Failed" >
+<Disp><![CDATA[Test SuiteDriver Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>

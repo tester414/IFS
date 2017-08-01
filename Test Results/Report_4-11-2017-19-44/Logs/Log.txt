@@ -1,0 +1,279 @@
+11-04-2017 19:44:51	Start Execution		
+11-04-2017 19:44:54	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+11-04-2017 19:45:01	Start Execution	Open the TC769_Finance_AddMultipleAttachments file	OPEN THE TC769_FINANCE_ADDMULTIPLEATTACHMENTS TEST CASE FILE SUCCESSFULLY
+11-04-2017 19:45:02	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+11-04-2017 19:45:03	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+11-04-2017 19:45:06	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+11-04-2017 19:45:06	Start Execution	start execute of  TC769_Finance_AddMultipleAttachments	
+11-04-2017 19:45:06			Step Name			Expected		STATUS
+11-04-2017 19:45:14	LoginToSecurityWindow	Open the browser and start Application	PASS
+11-04-2017 19:45:54	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+11-04-2017 19:45:54	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+11-04-2017 19:45:54	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+11-04-2017 19:46:03	LoginToFinance	btn_Login button  should be loaded	PASS
+11-04-2017 19:46:03	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+11-04-2017 19:46:03	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+11-04-2017 19:46:03	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+11-04-2017 19:46:09	LoginToFinance	"Work Queue" page should be displayed.	PASS
+11-04-2017 19:46:09	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+11-04-2017 19:46:10	NavigateToMasterTemplateID	"421160" : value should be entered in "txt_SearchID edit box" field.	PASS
+11-04-2017 19:46:10	NavigateToMasterTemplateID	"btn_Search button" object Should be clicked.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"Client Summary" page should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"btn_EditClientProfile button" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"btn_AddMasterTemplate button" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"btn_AddAutoIDTemplate button" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"btn_HolderImport/Export button" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"btn_AutoIDImport/Export button" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"btn_RenewMasters button" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"lbl_ClientSummary object" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"lbl_ClientProfile object" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+11-04-2017 19:46:13	NavigateToMasterTemplateID	"lbl_CertCenterNotes object" should be displayed.	PASS
+11-04-2017 19:46:14	NavigateToMasterTemplateID	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+11-04-2017 19:46:14	NavigateToMasterTemplateID	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+11-04-2017 19:46:14	NavigateToMasterTemplateID	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+11-04-2017 19:46:14	NavigateToMasterTemplateID	"lbl_RenewalMasterRequest object" should be displayed.	PASS
+11-04-2017 19:46:14	NavigateToMasterTemplateID	"tbl_MasterTemplateGrid table" should be displayed.	PASS
+11-04-2017 19:46:15	NavigateToMasterTemplateID	tbl_MasterTemplateGrid table  should be loaded	PASS
+11-04-2017 19:46:15	NavigateToMasterTemplateID	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+11-04-2017 19:46:18	NavigateToMasterTemplateID	"Master Template Summary" page should be displayed.	PASS
+11-04-2017 19:46:18	NavigateToMasterTemplateID	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+11-04-2017 19:46:19	ValidateMasterTemplatePage	"btn_EditMasterTemplate button" should be displayed.	PASS
+11-04-2017 19:46:19	ValidateMasterTemplatePage	"btn_RefreshAttachments button" should be displayed.	PASS
+11-04-2017 19:46:19	ValidateMasterTemplatePage	"btn_AddCoverageTemplate button" should be displayed.	PASS
+11-04-2017 19:46:19	ValidateMasterTemplatePage	"btn_AddHolder button" should be displayed.	PASS
+11-04-2017 19:46:19	ValidateMasterTemplatePage	"btn_HolderMassUpdates button" should be displayed.	PASS
+11-04-2017 19:46:19	ValidateMasterTemplatePage	"btn_HolderExport button" should be displayed.	PASS
+11-04-2017 19:46:20	ValidateMasterTemplatePage	"lbl_ClientSummary object" should be displayed.	PASS
+11-04-2017 19:46:20	ValidateMasterTemplatePage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+11-04-2017 19:46:20	ValidateMasterTemplatePage	"lbl_SelectedAttachments object" should be displayed.	PASS
+11-04-2017 19:46:20	ValidateMasterTemplatePage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+11-04-2017 19:46:20	ValidateMasterTemplatePage	"lbl_ActiveHolders object" should be displayed.	PASS
+11-04-2017 19:46:25	ValidateMasterTemplatePage	tbl_ActiveHoldersGrid table  should be loaded	PASS
+11-04-2017 19:46:25	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+11-04-2017 19:46:25	ValidateMasterTemplatePage	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "25"	PASS
+11-04-2017 19:46:25	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterID"	PASS
+11-04-2017 19:46:25	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder Name"	PASS
+11-04-2017 19:46:25	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterSummary"	PASS
+11-04-2017 19:46:25	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterJob Code"	PASS
+11-04-2017 19:46:25	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder City"	PASS
+11-04-2017 19:46:26	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder State"	PASS
+11-04-2017 19:46:26	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured"	PASS
+11-04-2017 19:46:26	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterMultiple Named Insured"	PASS
+11-04-2017 19:46:26	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured Address"	PASS
+11-04-2017 19:46:26	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNo. Attachments"	PASS
+11-04-2017 19:46:26	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterIssued Date"	PASS
+11-04-2017 19:46:26	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterStatus"	PASS
+11-04-2017 19:46:27	AddAttachments	 All "No. Attachments" column displayed record values should be  "0" in tbl_ActiveHoldersGrid table	PASS
+11-04-2017 19:46:27	AddAttachments	 Icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+11-04-2017 19:46:31	AddAttachments	"Holder_Summary" page should be displayed.	PASS
+11-04-2017 19:46:31	AddAttachments	Number of rows in the table: "tbl_SelectedAttachments table"should be "0"	PASS
+11-04-2017 19:46:31	AddAttachments	"btn_Done button" object Should be clicked.	PASS
+11-04-2017 19:46:34	AddAttachments	"Master Template Summary" page should be displayed.	PASS
+11-04-2017 19:46:34	AddAttachments	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+11-04-2017 19:46:34	AddAttachments	"btn_EditMasterTemplate button" should be displayed.	PASS
+11-04-2017 19:46:34	AddAttachments	"btn_RefreshAttachments button" should be displayed.	PASS
+11-04-2017 19:46:34	AddAttachments	"btn_AddCoverageTemplate button" should be displayed.	PASS
+11-04-2017 19:46:34	AddAttachments	"btn_AddHolder button" should be displayed.	PASS
+11-04-2017 19:46:34	AddAttachments	"btn_HolderMassUpdates button" should be displayed.	PASS
+11-04-2017 19:46:34	AddAttachments	"btn_HolderExport button" should be displayed.	PASS
+11-04-2017 19:46:34	AddAttachments	"btn_HolderMassUpdates button" object Should be clicked.	PASS
+11-04-2017 19:46:37	AddAttachments	"Holder Mass Update Entry" page should be displayed.	PASS
+11-04-2017 19:46:37	AddAttachments	"dwl_Updateselection object" should be displayed.	PASS
+11-04-2017 19:46:37	AddAttachments	"dwl_Action object" should be displayed.	PASS
+11-04-2017 19:46:37	AddAttachments	"btn_Next button" should be displayed.	PASS
+11-04-2017 19:46:37	AddAttachments	"btn_Back button" should be displayed.	PASS
+11-04-2017 19:46:37	AddAttachments	"dwl_Action object" object Should be clicked.	PASS
+11-04-2017 19:46:37	AddAttachments	"lnk_Add object" should be displayed.	PASS
+11-04-2017 19:46:37	AddAttachments	"lnk_Add object" object Should be clicked.	PASS
+11-04-2017 19:46:37	AddAttachments	"btn_Next button" object Should be clicked.	PASS
+11-04-2017 19:46:41	AddAttachments	"Holder Mass Update Add Attachments" page should be displayed.	PASS
+11-04-2017 19:46:44	AddAttachments	tbl_AvailableAttachments table  should be loaded	PASS
+11-04-2017 19:46:44	AddAttachments	"tbl_AvailableAttachments table" should be displayed.	PASS
+11-04-2017 19:46:44	AddAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterID"	PASS
+11-04-2017 19:46:44	AddAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterDescription"	PASS
+11-04-2017 19:46:44	AddAttachments	"tbl_AvailableAttachments table" should be contain column : "Sort Order "	PASS
+11-04-2017 19:46:45	AddAttachments	"Excel Attachment"type is not selected  in "tbl_AvailableAttachments table"	FAIL
+11-04-2017 19:46:45	AddAttachments	"Willis Cancellation Notice - Willis 102"type is not selected  in "tbl_AvailableAttachments table"	FAIL
+11-04-2017 19:46:45	AddAttachments	"btn_Next button" object Should be clicked.	PASS
+11-04-2017 19:46:48	AddAttachments	"Holder Mass Selection" page should be displayed.	PASS
+11-04-2017 19:46:48	AddAttachments	"tbl_HolderSelection table" should be displayed.	PASS
+11-04-2017 19:46:58	AddAttachments	tbl_HolderSelection table  should be loaded	PASS
+11-04-2017 19:46:58	AddAttachments	Number of rows in the table: "tbl_HolderSelection table"should be "25"	PASS
+11-04-2017 19:46:58	AddAttachments	"btn_SelectAll button" should be displayed.	PASS
+11-04-2017 19:46:58	AddAttachments	"btn_Next button" should be displayed.	PASS
+11-04-2017 19:46:58	AddAttachments	"btn_Back button" should be displayed.	PASS
+11-04-2017 19:46:58	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterID"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterHolder Name"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterMaster Type"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterMaster Description"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterSummary"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterJob Code"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterNamed Insured"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterAttached Coverage Templates"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterLast Modified Date"	PASS
+11-04-2017 19:46:59	AddAttachments	"tbl_HolderSelection table" should be contain column : "FilterStatus"	PASS
+11-04-2017 19:46:59	AddAttachments	"btn_SelectAll button" object Should be clicked.	PASS
+11-04-2017 19:47:01	AddAttachments	"Holder Mass Update Submit" page should be displayed.	PASS
+11-04-2017 19:47:01	AddAttachments	"tbl_HolderSelection table" should be displayed.	PASS
+11-04-2017 19:47:08	AddAttachments	tbl_HolderSelection table  should be loaded	PASS
+11-04-2017 19:47:08	AddAttachments	 All "Selected" column displayed record values should be  "True" in tbl_HolderSelection table	PASS
+11-04-2017 19:47:08	AddAttachments	Record with data :"Excel Attachment"Should  present in Table "tbl_AvailableAttachments table"	FAIL
+11-04-2017 19:47:08	AddAttachments	Record with data :"Willis Cancellation Notice - Willis 102"Should  present in Table "tbl_AvailableAttachments table"	FAIL
+11-04-2017 19:47:08	AddAttachments	 All "Remove" column values should be displayed "false" in tbl_AvailableAttachments table	FAIL
+11-04-2017 19:47:09	AddAttachments	Excel Attachment should be displayed in table	FAIL
+11-04-2017 19:47:11	AddAttachments	Willis Cancellation Notice - Willis 102 should be displayed in table	FAIL
+11-04-2017 19:47:11	AddAttachments	"btn_Update button" object Should be clicked.	PASS
+11-04-2017 19:47:13	AddAttachments	"Master Template Summary" page should be displayed.	PASS
+11-04-2017 19:47:13	AddAttachments	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+11-04-2017 19:47:17	AddAttachments	tbl_ActiveHoldersGrid table  should be loaded	PASS
+11-04-2017 19:47:17	AddAttachments	 All "No. attachments" column values should be displayed "2" in tbl_ActiveHoldersGrid table	FAIL
+11-04-2017 19:47:17	AddAttachments	 Icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+11-04-2017 19:47:19	AddAttachments	"Holder_Summary" page should be displayed.	PASS
+11-04-2017 19:47:19	AddAttachments	"tbl_SelectedAttachments table" should be displayed.	PASS
+11-04-2017 19:47:22	AddAttachments	tbl_SelectedAttachments table  should be loaded	PASS
+11-04-2017 19:47:23	AddAttachments	Number of rows in the table: "tbl_SelectedAttachments table"should be "2"	FAIL
+11-04-2017 19:47:25	AddAttachments	"EXCEL ATTACHMENT" Should be in 2 Row and 1 Column under tbl_SelectedAttachments table" but displayed is ERROR: THE SPECIFIED CELL DOES NOT EXIST.	FAIL
+11-04-2017 19:47:27	AddAttachments	"WILLIS CANCELLATION NOTICE - WILLIS 102" Should be in 3 Row and 1 Column under tbl_SelectedAttachments table" but displayed is ERROR: THE SPECIFIED CELL DOES NOT EXIST.	FAIL
+11-04-2017 19:47:27	AddAttachments	"btn_Done button" object Should be clicked.	PASS
+11-04-2017 19:47:30	AddAttachments	"Master Template Summary" page should be displayed.	PASS
+11-04-2017 19:47:32	Logout	Logout from application	PASS
+11-04-2017 19:47:41	Start Execution	Open the TC770_Finance_RemoveMultipleAttachments file	OPEN THE TC770_FINANCE_REMOVEMULTIPLEATTACHMENTS TEST CASE FILE SUCCESSFULLY
+11-04-2017 19:47:43	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+11-04-2017 19:47:43	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+11-04-2017 19:47:46	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+11-04-2017 19:47:46	Start Execution	start execute of  TC770_Finance_RemoveMultipleAttachments	
+11-04-2017 19:47:47			Step Name			Expected		STATUS
+11-04-2017 19:47:55	LoginToSecurityWindow	Open the browser and start Application	PASS
+11-04-2017 19:48:35	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+11-04-2017 19:48:35	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+11-04-2017 19:48:36	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+11-04-2017 19:48:47	LoginToFinance	btn_Login button  should be loaded	PASS
+11-04-2017 19:48:47	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+11-04-2017 19:48:47	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+11-04-2017 19:48:47	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+11-04-2017 19:48:53	LoginToFinance	"Work Queue" page should be displayed.	PASS
+11-04-2017 19:48:53	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+11-04-2017 19:48:54	NavigateToMasterTemplateID	"421160" : value should be entered in "txt_SearchID edit box" field.	PASS
+11-04-2017 19:48:54	NavigateToMasterTemplateID	"btn_Search button" object Should be clicked.	PASS
+11-04-2017 19:48:57	NavigateToMasterTemplateID	"Client Summary" page should be displayed.	PASS
+11-04-2017 19:48:57	NavigateToMasterTemplateID	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+11-04-2017 19:48:57	NavigateToMasterTemplateID	"btn_EditClientProfile button" should be displayed.	PASS
+11-04-2017 19:48:57	NavigateToMasterTemplateID	"btn_AddMasterTemplate button" should be displayed.	PASS
+11-04-2017 19:48:57	NavigateToMasterTemplateID	"btn_AddAutoIDTemplate button" should be displayed.	PASS
+11-04-2017 19:48:57	NavigateToMasterTemplateID	"btn_HolderImport/Export button" should be displayed.	PASS
+11-04-2017 19:48:57	NavigateToMasterTemplateID	"btn_AutoIDImport/Export button" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"btn_RenewMasters button" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"lbl_ClientSummary object" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"lbl_ClientProfile object" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"lbl_CertCenterContactInformation object" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"lbl_CertCenterNotes object" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"lbl_ClientDistributionDetails object" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"lbl_MasterTemplate(s) object" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"lbl_AutoIDTemplate(s) object" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"lbl_RenewalMasterRequest object" should be displayed.	PASS
+11-04-2017 19:48:58	NavigateToMasterTemplateID	"tbl_MasterTemplateGrid table" should be displayed.	PASS
+11-04-2017 19:48:59	NavigateToMasterTemplateID	tbl_MasterTemplateGrid table  should be loaded	PASS
+11-04-2017 19:48:59	NavigateToMasterTemplateID	 Icon should be clicked under tbl_MasterTemplateGrid table	PASS
+11-04-2017 19:49:03	NavigateToMasterTemplateID	"Master Template Summary" page should be displayed.	PASS
+11-04-2017 19:49:03	NavigateToMasterTemplateID	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"btn_EditMasterTemplate button" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"btn_RefreshAttachments button" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"btn_AddCoverageTemplate button" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"btn_AddHolder button" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"btn_HolderMassUpdates button" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"btn_HolderExport button" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"lbl_ClientSummary object" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"lbl_MasterTemplateSummary object" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"lbl_SelectedAttachments object" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"lbl_ActiveCoverageTemplates object" should be displayed.	PASS
+11-04-2017 19:49:04	ValidateMasterTemplatePage	"lbl_ActiveHolders object" should be displayed.	PASS
+11-04-2017 19:49:09	ValidateMasterTemplatePage	tbl_ActiveHoldersGrid table  should be loaded	PASS
+11-04-2017 19:49:09	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	Number of rows in the table: "tbl_ActiveHoldersGrid table"should be "25"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterID"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder Name"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterSummary"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterJob Code"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder City"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterHolder State"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterMultiple Named Insured"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNamed Insured Address"	PASS
+11-04-2017 19:49:10	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterNo. Attachments"	PASS
+11-04-2017 19:49:11	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterIssued Date"	PASS
+11-04-2017 19:49:11	ValidateMasterTemplatePage	"tbl_ActiveHoldersGrid table" should be contain column : "FilterStatus"	PASS
+11-04-2017 19:49:12	RemoveAttachments	 All "No. Attachments" column values should be displayed "2" in tbl_ActiveHoldersGrid table	FAIL
+11-04-2017 19:49:12	RemoveAttachments	 Icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+11-04-2017 19:49:15	RemoveAttachments	"Holder_Summary" page should be displayed.	PASS
+11-04-2017 19:49:17	RemoveAttachments	tbl_SelectedAttachments table  should be loaded	PASS
+11-04-2017 19:49:17	RemoveAttachments	"tbl_SelectedAttachments table" should be displayed.	PASS
+11-04-2017 19:49:17	RemoveAttachments	Number of rows in the table: "tbl_SelectedAttachments table"should be "2"	FAIL
+11-04-2017 19:49:17	RemoveAttachments	"btn_Done button" object Should be clicked.	PASS
+11-04-2017 19:49:20	RemoveAttachments	"Master Template Summary" page should be displayed.	PASS
+11-04-2017 19:49:20	RemoveAttachments	Text: "Grace Limousine, LLC And Leopard Properties LLC"  should be displayed at dtl_ClientName object	PASS
+11-04-2017 19:49:20	RemoveAttachments	"btn_EditMasterTemplate button" should be displayed.	PASS
+11-04-2017 19:49:20	RemoveAttachments	"btn_RefreshAttachments button" should be displayed.	PASS
+11-04-2017 19:49:20	RemoveAttachments	"btn_AddCoverageTemplate button" should be displayed.	PASS
+11-04-2017 19:49:21	RemoveAttachments	"btn_AddHolder button" should be displayed.	PASS
+11-04-2017 19:49:21	RemoveAttachments	"btn_HolderMassUpdates button" should be displayed.	PASS
+11-04-2017 19:49:21	RemoveAttachments	"btn_HolderExport button" should be displayed.	PASS
+11-04-2017 19:49:21	RemoveAttachments	"btn_HolderMassUpdates button" object Should be clicked.	PASS
+11-04-2017 19:49:23	RemoveAttachments	"Holder Mass Update Entry" page should be displayed.	PASS
+11-04-2017 19:49:23	RemoveAttachments	"dwl_Updateselection object" should be displayed.	PASS
+11-04-2017 19:49:23	RemoveAttachments	"dwl_Action object" should be displayed.	PASS
+11-04-2017 19:49:23	RemoveAttachments	"btn_Next button" should be displayed.	PASS
+11-04-2017 19:49:23	RemoveAttachments	"btn_Back button" should be displayed.	PASS
+11-04-2017 19:49:23	RemoveAttachments	"dwl_Action object" object Should be clicked.	PASS
+11-04-2017 19:49:23	RemoveAttachments	"lnk_Remove object" should be displayed.	PASS
+11-04-2017 19:49:23	RemoveAttachments	"lnk_Remove object" object Should be clicked.	PASS
+11-04-2017 19:49:24	RemoveAttachments	"btn_Next button" object Should be clicked.	PASS
+11-04-2017 19:49:26	RemoveAttachments	"Holder Mass Update Remove Attachments" page should be displayed.	PASS
+11-04-2017 19:49:30	RemoveAttachments	tbl_AvailableAttachments table  should be loaded	PASS
+11-04-2017 19:49:30	RemoveAttachments	"tbl_AvailableAttachments table" should be displayed.	PASS
+11-04-2017 19:49:30	RemoveAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterID"	PASS
+11-04-2017 19:49:30	RemoveAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterDescription"	PASS
+11-04-2017 19:49:30	RemoveAttachments	"tbl_AvailableAttachments table" should be contain column : "FilterSortOrder"	PASS
+11-04-2017 19:49:31	RemoveAttachments	"Excel Attachment"type is not selected  in "tbl_AvailableAttachments table"	FAIL
+11-04-2017 19:49:31	RemoveAttachments	"Willis Cancellation Notice - Willis 102"type is not selected  in "tbl_AvailableAttachments table"	FAIL
+11-04-2017 19:49:31	RemoveAttachments	"btn_Next button" object Should be clicked.	PASS
+11-04-2017 19:49:33	RemoveAttachments	"Holder Mass Selection" page should be displayed.	PASS
+11-04-2017 19:49:36	RemoveAttachments	tbl_HolderSelection table  should be loaded	PASS
+11-04-2017 19:49:36	RemoveAttachments	"tbl_HolderSelection table" should be displayed.	PASS
+11-04-2017 19:49:36	RemoveAttachments	Number of rows in the table: "tbl_HolderSelection table"should be "25"	PASS
+11-04-2017 19:49:36	RemoveAttachments	"btn_SelectAll button" should be displayed.	PASS
+11-04-2017 19:49:36	RemoveAttachments	"btn_Next button" should be displayed.	PASS
+11-04-2017 19:49:37	RemoveAttachments	"btn_Back button" should be displayed.	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterID"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterHolder Name"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterMaster Type"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterMaster Description"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterSummary"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterJob Code"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterNamed Insured"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterAttached Coverage Templates"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterLast Modified Date"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"tbl_HolderSelection table" should be contain column : "FilterStatus"	PASS
+11-04-2017 19:49:37	RemoveAttachments	"btn_SelectAll button" object Should be clicked.	PASS
+11-04-2017 19:49:39	RemoveAttachments	"Holder Mass Update Submit" page should be displayed.	PASS
+11-04-2017 19:49:44	RemoveAttachments	tbl_HolderSelection table  should be loaded	PASS
+11-04-2017 19:49:44	RemoveAttachments	"tbl_HolderSelection table" should be displayed.	PASS
+11-04-2017 19:49:45	RemoveAttachments	 All "Selected" column displayed record values should be  "True" in tbl_HolderSelection table	PASS
+11-04-2017 19:49:45	RemoveAttachments	Record with data :"Excel Attachment"Should  present in Table "tbl_AvailableAttachments table"	FAIL
+11-04-2017 19:49:45	RemoveAttachments	Record with data :"Willis Cancellation Notice - Willis 102"Should  present in Table "tbl_AvailableAttachments table"	FAIL
+11-04-2017 19:49:45	RemoveAttachments	 All "Remove" column values should be displayed "true" in tbl_AvailableAttachments table	FAIL
+11-04-2017 19:49:45	RemoveAttachments	 All "Add" column values should be displayed "false" in tbl_AvailableAttachments table	FAIL
+11-04-2017 19:49:46	RemoveAttachments	"btn_Update button" object Should be clicked.	PASS
+11-04-2017 19:49:48	RemoveAttachments	"Master Template Summary" page should be displayed.	PASS
+11-04-2017 19:49:50	RemoveAttachments	tbl_ActiveHoldersGrid table  should be loaded	PASS
+11-04-2017 19:49:50	RemoveAttachments	"tbl_ActiveHoldersGrid table" should be displayed.	PASS
+11-04-2017 19:49:50	RemoveAttachments	 All "No. attachments" column displayed record values should be  "0" in tbl_ActiveHoldersGrid table	PASS
+11-04-2017 19:49:50	RemoveAttachments	 Icon should be clicked under tbl_ActiveHoldersGrid table	PASS
+11-04-2017 19:49:53	RemoveAttachments	"Holder_Summary" page should be displayed.	PASS
+11-04-2017 19:49:55	RemoveAttachments	tbl_SelectedAttachments table  should be loaded	PASS
+11-04-2017 19:49:55	RemoveAttachments	"tbl_SelectedAttachments table" should be displayed.	PASS
+11-04-2017 19:49:55	RemoveAttachments	Number of rows in the table: "tbl_SelectedAttachments table"should be "0"	PASS
+11-04-2017 19:49:55	RemoveAttachments	"btn_Done button" object Should be clicked.	PASS
+11-04-2017 19:49:58	RemoveAttachments	"Master Template Summary" page should be displayed.	PASS
+11-04-2017 19:50:00	Logout	Logout from application	PASS

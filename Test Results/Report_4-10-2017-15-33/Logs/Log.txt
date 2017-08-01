@@ -1,0 +1,96 @@
+10-04-2017 15:33:14	Start Execution		
+10-04-2017 15:33:17	Start Execution	Open the test suite file	OPEN THE TEST SUITE FILE SUCCESSFULLY
+10-04-2017 15:33:25	Start Execution	Open the TC755_Finance_HolderMassUpdatePreDependencyTest file	OPEN THE TC755_FINANCE_HOLDERMASSUPDATEPREDEPENDENCYTEST TEST CASE FILE SUCCESSFULLY
+10-04-2017 15:33:26	Start Execution	Associate the Finance object repository to test		ASSOCIATE THE FINANCE OBJECT REPOSITORY TO TEST SUCCESSFULLY
+10-04-2017 15:33:27	Start Execution	Associate the SecurityWindow object repository to test		ASSOCIATE THE SECURITYWINDOW OBJECT REPOSITORY TO TEST SUCCESSFULLY
+10-04-2017 15:33:30	Start Execution	Read the test data from C:\IFSAutomation\Finance\Test Data\Finance.xls File 	READ THE TEST DATA FROM C:\IFSAUTOMATION\FINANCE\TEST DATA\FINANCE.XLS FILE SUCCESSFULLY
+10-04-2017 15:33:31	Start Execution	start execute of  TC755_Finance_HolderMassUpdatePreDependencyTest	
+10-04-2017 15:33:31			Step Name			Expected		STATUS
+10-04-2017 15:33:40	LoginToSecurityWindow	Open the browser and start Application	PASS
+10-04-2017 15:34:21	LoginToSecurityWindow	"Gallop@IFSAutomation.com" : value should be entered in "txt_UserName edit box" field.	PASS
+10-04-2017 15:34:21	LoginToSecurityWindow	"Password2016!" : value should be entered in "txt_PassWord edit box" field.	PASS
+10-04-2017 15:34:21	LoginToSecurityWindow	"btn_OK button" object should be clicked.	PASS
+10-04-2017 15:34:30	LoginToFinance	btn_Login button  should be loaded	PASS
+10-04-2017 15:34:30	LoginToFinance	"cj" : value should be entered in "txt_UserName edit box" field.	PASS
+10-04-2017 15:34:30	LoginToFinance	"********" : value should be entered in "txt_Password edit box" field.	PASS
+10-04-2017 15:34:30	LoginToFinance	"btn_Login button" object Should be clicked.	PASS
+10-04-2017 15:34:45	LoginToFinance	"Work Queue" page should be displayed.	PASS
+10-04-2017 15:34:45	LoginToFinance	"lnk_Certificates object" should be displayed.	PASS
+10-04-2017 15:34:46	NavigateToEntryRequestDetails	"lnk_Certificates object" object Should be clicked.	PASS
+10-04-2017 15:34:46	NavigateToEntryRequestDetails	"lnk_CreateRequest object" object Should be clicked.	PASS
+10-04-2017 15:34:53	NavigateToEntryRequestDetails	btn_SelectClient button  should be loaded	PASS
+10-04-2017 15:34:54	NavigateToEntryRequestDetails	"Entry" page should be displayed.	PASS
+10-04-2017 15:34:54	NavigateToEntryRequestDetails	"btn_SelectClient button" object Should be clicked.	PASS
+10-04-2017 15:34:56	EnterClientName	"Client Search" page should be displayed.	PASS
+10-04-2017 15:34:56	EnterClientName	"lbl_ClientSearchCriteria object" should be displayed.	PASS
+10-04-2017 15:34:57	EnterClientName	"lbl_SearchResults object" should be displayed.	PASS
+10-04-2017 15:34:57	EnterClientName	"Maya C West" : value should be entered in "txt_ClientName edit box" field.	PASS
+10-04-2017 15:34:57	EnterClientName	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 15:34:58	EnterClientName	"tbl_ClientName table" should be displayed.	PASS
+10-04-2017 15:35:04	EnterClientName	"tbl_ClientName table"populates with a row of data containing "Maya C West"and clicked	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"Entry" page should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"lbl_RequestSummary object" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"lbl_ClientSummary object" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"lbl_RequestDetails object" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"lbl_NamedInsuredCertifcate object" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"lbl_Coverages object" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"lbl_AdditionalRequirements object" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"lbl_AutoID object" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"lbl_HandlingInstructions object" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"tab_Documents link" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"tab_Email link" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"tab_Audit link" should be displayed.	PASS
+10-04-2017 15:35:07	ValidateEntryPage	"tab_WorkFlow link" should be displayed.	PASS
+10-04-2017 15:35:08	ValidateEntryPage	"btn_Submit button" should be displayed.	PASS
+10-04-2017 15:35:08	ValidateEntryPage	"btn_Cancel button" should be displayed.	PASS
+10-04-2017 15:35:08	ValidateEntryPage	"btn_Back button" should be displayed.	PASS
+10-04-2017 15:35:09	ValidateEntryPage	 Request ID is "422879"	PASS
+10-04-2017 15:35:11	ValidateEntryPage	Email should be selected from dropdown.	PASS
+10-04-2017 15:35:14	UpdateHoldersPredependencyTest	Renewal should be selected from dropdown.	PASS
+10-04-2017 15:35:15	UpdateHoldersPredependencyTest	"btn_Submit button" object Should be clicked.	PASS
+10-04-2017 15:35:18	UpdateHoldersPredependencyTest	"Work Queue" page should be displayed.	PASS
+10-04-2017 15:35:18	UpdateHoldersPredependencyTest	"422879" : value should be entered in "txt_SearchID edit box" field.	PASS
+10-04-2017 15:35:18	UpdateHoldersPredependencyTest	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 15:35:20	UpdateHoldersPredependencyTest	"Summary" page should be displayed.	PASS
+10-04-2017 15:35:21	UpdateHoldersPredependencyTest	"tab_WorkFlow link" should be displayed.	PASS
+10-04-2017 15:35:21	UpdateHoldersPredependencyTest	"tab_WorkFlow link" object Should be clicked.	PASS
+10-04-2017 15:35:23	UpdateHoldersPredependencyTest	"NEW" Should be in 2 Row and 2 Column under "tbl_Task table"	PASS
+10-04-2017 15:35:27	UpdateHoldersPredependencyTest	"dtl_RenewalReview object" should be displayed.	PASS
+10-04-2017 15:35:28	UpdateHoldersPredependencyTest	"dtl_RequestEntry object" should be displayed.	PASS
+10-04-2017 15:35:28	UpdateHoldersPredependencyTest	"btn_Task button" object Should be clicked.	PASS
+10-04-2017 15:35:31	UpdateHoldersPredependencyTest	"Process Details" page should be displayed.	PASS
+10-04-2017 15:35:31	UpdateHoldersPredependencyTest	"btn_ClearAssignment button" should be displayed.	PASS
+10-04-2017 15:35:31	UpdateHoldersPredependencyTest	"btn_SelectHolder(s) button" object Should be clicked.	PASS
+10-04-2017 15:35:34	UpdateHoldersPredependencyTest	"Select Holder for Issuance" page should be displayed.	PASS
+10-04-2017 15:35:34	UpdateHoldersPredependencyTest	"tbl_SelectHolders table" should be displayed.	PASS
+10-04-2017 15:35:34	UpdateHoldersPredependencyTest	"btn_SelectClientDistribution button" should be displayed.	PASS
+10-04-2017 15:35:34	UpdateHoldersPredependencyTest	"btn_SelectAll button" should be displayed.	PASS
+10-04-2017 15:35:34	UpdateHoldersPredependencyTest	"btn_Search button" should be displayed.	PASS
+10-04-2017 15:35:34	UpdateHoldersPredependencyTest	"btn_ClearSelection button" should be displayed.	PASS
+10-04-2017 15:35:34	UpdateHoldersPredependencyTest	"btn_Back button" should be displayed.	PASS
+10-04-2017 15:35:34	UpdateHoldersPredependencyTest	"ACORD 24" : value should be entered in "txt_MasterType edit box" field.	PASS
+10-04-2017 15:35:35	UpdateHoldersPredependencyTest	"btn_Search button" object Should be clicked.	PASS
+10-04-2017 15:35:59	UpdateHoldersPredependencyTest	tbl_SelectHolders table  should be loaded	PASS
+10-04-2017 15:35:59	UpdateHoldersPredependencyTest	"chkb_SelectAllCheckBox check box" object Should be clicked.	PASS
+10-04-2017 15:35:59	UpdateHoldersPredependencyTest	"btn_SelectClientDistribution button" object Should be clicked.	PASS
+10-04-2017 15:36:04	UpdateHoldersPredependencyTest	"Select Client Distribution" page should be displayed.	PASS
+10-04-2017 15:36:04	UpdateHoldersPredependencyTest	"dwl_ClientPrinter object" should be displayed.	PASS
+10-04-2017 15:36:24	UpdateHoldersPredependencyTest	"tbl_SelectClientDistribution table" should be displayed.	FAIL
+10-04-2017 15:36:24	UpdateHoldersPredependencyTest	"btn_Add button" should be displayed.	PASS
+10-04-2017 15:37:05	UpdateHoldersPredependencyTest	tbl_SelectClientDistribution table table should exist.	FAIL
+10-04-2017 15:37:46	UpdateHoldersPredependencyTest	tbl_SelectClientDistribution table table should exist.	FAIL
+10-04-2017 15:38:27	UpdateHoldersPredependencyTest	tbl_SelectClientDistribution table table should exist.	FAIL
+10-04-2017 15:39:08	UpdateHoldersPredependencyTest	tbl_SelectClientDistribution table table should exist.	FAIL
+10-04-2017 15:39:49	UpdateHoldersPredependencyTest	tbl_SelectClientDistribution table table should exist.	FAIL
+10-04-2017 15:39:49	UpdateHoldersPredependencyTest	"btn_ConfirmIssuance button" should be displayed.	PASS
+10-04-2017 15:39:49	UpdateHoldersPredependencyTest	"btn_Back button" should be displayed.	PASS
+10-04-2017 15:39:49	UpdateHoldersPredependencyTest	"dwl_ClientPrinter object" object Should be clicked.	PASS
+10-04-2017 15:39:50	UpdateHoldersPredependencyTest	"dtl_CSC4 object" object Should be clicked.	PASS
+10-04-2017 15:40:30	UpdateHoldersPredependencyTest	tbl_SelectClientDistribution table table should exist.	FAIL
+10-04-2017 15:40:30	UpdateHoldersPredependencyTest	"btn_ConfirmIssuance button" object Should be clicked.	PASS
+10-04-2017 15:40:33	UpdateHoldersPredependencyTest	"Submit Issuance" page should be displayed.	PASS
+10-04-2017 15:40:33	UpdateHoldersPredependencyTest	Text: "25"  should be displayed at dtl_IssuanceCertificateCount object	PASS
+10-04-2017 15:41:16	UpdateHoldersPredependencyTest	tbl_SelectClientDist tableshould exist	FAIL
+10-04-2017 15:41:16	UpdateHoldersPredependencyTest	"btn_IssueCertificates button" object Should be clicked.	PASS
+10-04-2017 15:41:18	UpdateHoldersPredependencyTest	"Work Queue" page should be displayed.	PASS
+10-04-2017 15:41:20	Logout	Logout from application	PASS

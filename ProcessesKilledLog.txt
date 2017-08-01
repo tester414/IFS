@@ -1,0 +1,87 @@
+8:21:09 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+8:21:09 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+8:21:09 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+8:21:09 AM - Trying to find 'wscript.exe' process in the Task Manager.
+2:21:15 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+2:21:15 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+2:21:15 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+2:21:15 PM - Trying to find 'wscript.exe' process in the Task Manager.
+2:16:05 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+2:16:05 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+2:16:05 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+2:16:06 PM - EXCEL.EXE - terminated successfully.
+2:16:07 PM - Trying to find 'wscript.exe' process in the Task Manager.
+2:20:28 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+2:20:28 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+2:20:28 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+2:20:28 PM - EXCEL.EXE - terminated successfully.
+2:20:29 PM - Trying to find 'wscript.exe' process in the Task Manager.
+2:24:23 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+2:24:23 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+2:24:23 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+2:24:23 PM - Trying to find 'wscript.exe' process in the Task Manager.
+3:27:25 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+3:27:25 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+3:27:25 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+3:27:26 PM - Trying to find 'wscript.exe' process in the Task Manager.
+4:04:39 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+4:04:39 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+4:04:39 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+4:04:40 PM - EXCEL.EXE - terminated successfully.
+4:04:40 PM - Trying to find 'wscript.exe' process in the Task Manager.
+11:45:09 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+11:45:09 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+11:45:09 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+11:45:09 AM - Trying to find 'wscript.exe' process in the Task Manager.
+9:10:30 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+9:10:30 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+9:10:30 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+9:10:30 AM - EXCEL.EXE - terminated successfully.
+9:10:32 AM - Trying to find 'wscript.exe' process in the Task Manager.
+12:00:28 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+12:00:28 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+12:00:28 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+12:00:28 PM - EXCEL.EXE - terminated successfully.
+12:00:29 PM - Trying to find 'wscript.exe' process in the Task Manager.
+8:27:45 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+8:27:45 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+8:27:45 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+8:27:45 AM - EXCEL.EXE - terminated successfully.
+8:27:47 AM - Trying to find 'wscript.exe' process in the Task Manager.
+8:15:54 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+8:15:54 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+8:15:54 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+8:15:54 AM - Trying to find 'wscript.exe' process in the Task Manager.
+3:12:37 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+3:12:37 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+3:12:37 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+3:12:37 PM - Trying to find 'wscript.exe' process in the Task Manager.
+8:05:07 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+8:05:07 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+8:05:07 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+8:05:07 AM - EXCEL.EXE - terminated successfully.
+8:05:08 AM - Trying to find 'wscript.exe' process in the Task Manager.
+11:24:43 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+11:24:43 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+11:24:43 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+11:24:43 AM - EXCEL.EXE - terminated successfully.
+11:24:44 AM - Trying to find 'wscript.exe' process in the Task Manager.
+9:24:22 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+9:24:22 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+9:24:22 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+9:24:22 PM - EXCEL.EXE - terminated successfully.
+9:24:24 PM - Trying to find 'wscript.exe' process in the Task Manager.
+9:29:17 PM - Trying to find 'QTPro.exe' process in the Task Manager.
+9:29:17 PM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+9:29:17 PM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+9:29:17 PM - Trying to find 'wscript.exe' process in the Task Manager.
+8:35:43 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+8:35:43 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+8:35:43 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+8:35:44 AM - EXCEL.EXE - terminated successfully.
+8:35:45 AM - Trying to find 'wscript.exe' process in the Task Manager.
+3:45:08 AM - Trying to find 'QTPro.exe' process in the Task Manager.
+3:45:08 AM - Trying to find 'QTAutomationAgent.exe' process in the Task Manager.
+3:45:08 AM - Trying to find 'EXCEL.EXE' process in the Task Manager.
+3:45:08 AM - EXCEL.EXE - terminated successfully.
+3:45:11 AM - Trying to find 'wscript.exe' process in the Task Manager.

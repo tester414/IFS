@@ -1,0 +1,3155 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED SolManSolutionId CDATA #IMPLIED SolManProjectId CDATA #IMPLIED SolManTestPlanId CDATA #IMPLIED SolManTestPackageId CDATA #IMPLIED SolManUserInfoData CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group|Action) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*, Summary,ActionMaintenanceSummary*, NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,DataMapping?, Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED isCountable (False|True) "False" >
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*, DataMapping?, NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT DataMapping ( DataMappedItem* )>
+<!ELEMENT DataMappedItem EMPTY >
+<!ATTLIST DataMappedItem dsName CDATA #REQUIRED >
+<!ATTLIST DataMappedItem rowId CDATA #REQUIRED >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED StepFlowItemKey CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="India Standard Time">
+<General productName="HP Unified Functional Testing" productVer="12.01" os="Windows 7" host="HW2314"><DocLocation><![CDATA[C:\IFSAutomation\Trunk_IFS_QuestionTypes\Trunk_IFS_QuestionTypes\Drivers\SuiteDriver]]></DocLocation></General>
+<Doc rID="T1"   productName= "HP Unified Functional Testing"  >
+<DName><![CDATA[SuiteDriver]]></DName>
+<Res><![CDATA[Res240]]></Res>
+<DT rID="T2">
+<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<Disp><![CDATA[Run-Time Data Table]]></Disp>
+<BtmPane vType="Table" >
+<Path><![CDATA[Default.xls]]></Path>
+</BtmPane>
+</NodeArgs>
+</DT>
+<Action rID="T3">
+<AName><![CDATA[Action1]]></AName>
+<Step rID="T4">
+<Obj plainTxt="False" ><![CDATA[SystemUtil]]></Obj>
+<Details plainTxt="False" ><![CDATA[SystemUtil]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:27]]></Time>
+<TimeTick>1453730367</TimeTick>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Run "iexplore.exe",3]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run "iexplore.exe",3]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:27]]></Time>
+<TimeTick>1453730367</TimeTick>
+<NodeArgs eType="Replay" icon="4" nRep="10" status="Passed" >
+<Disp><![CDATA[Run "iexplore.exe",3]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="4" nRep="9" status="Passed" >
+<Disp><![CDATA[SystemUtil]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[Login.Sync]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="15" >
+<Disp><![CDATA[Login.Sync]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="14" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="13" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj ><![CDATA[Login]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="16" status="Passed" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[TXT_user_name.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="20" >
+<Disp><![CDATA[TXT_user_name.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[TXT_user_name.Set]]></Obj>
+<Details plainTxt="False" ><![CDATA["chrisj"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="22" >
+<Disp><![CDATA[TXT_user_name.Set]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="19" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="18" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj ><![CDATA[Login]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="23" status="Passed" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[TXT_user_password.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="27" >
+<Disp><![CDATA[TXT_user_password.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA[TXT_user_password.Set]]></Obj>
+<Details plainTxt="False" ><![CDATA["password"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="29" >
+<Disp><![CDATA[TXT_user_password.Set]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="26" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="25" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj ><![CDATA[Login]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:37]]></Time>
+<TimeTick>1453730377</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="30" status="Passed" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:38]]></Time>
+<TimeTick>1453730378</TimeTick>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[Login]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:38]]></Time>
+<TimeTick>1453730378</TimeTick>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[BTN_Log In.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:38]]></Time>
+<TimeTick>1453730378</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="34" >
+<Disp><![CDATA[BTN_Log In.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[BTN_Log In.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:38]]></Time>
+<TimeTick>1453730378</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="36" >
+<Disp><![CDATA[BTN_Log In.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="33" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="32" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj ><![CDATA[Login]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:38]]></Time>
+<TimeTick>1453730378</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="37" status="Passed" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:40]]></Time>
+<TimeTick>1453730380</TimeTick>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:40]]></Time>
+<TimeTick>1453730380</TimeTick>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[TAB _Home.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:40]]></Time>
+<TimeTick>1453730380</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="42" >
+<Disp><![CDATA[TAB _Home.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[Work Queue.Sync]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:40]]></Time>
+<TimeTick>1453730380</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="44" >
+<Disp><![CDATA[Work Queue.Sync]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA[TAB _Home.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:42]]></Time>
+<TimeTick>1453730382</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="46" >
+<Disp><![CDATA[TAB _Home.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="41" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="40" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj ><![CDATA[Login]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:45]]></Time>
+<TimeTick>1453730385</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="47" status="Passed" >
+<Disp><![CDATA[Login]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:51]]></Time>
+<TimeTick>1453730391</TimeTick>
+<Step rID="T32">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:51]]></Time>
+<TimeTick>1453730391</TimeTick>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[TAB_Tests.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:51]]></Time>
+<TimeTick>1453730391</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="51" >
+<Disp><![CDATA[TAB_Tests.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA[TAB_Tests.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:51]]></Time>
+<TimeTick>1453730391</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="53" >
+<Disp><![CDATA[TAB_Tests.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="50" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="49" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T35">
+<Obj ><![CDATA[NavigateToDate]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:51]]></Time>
+<TimeTick>1453730391</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="54" status="Passed" >
+<Disp><![CDATA[NavigateToDate]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:54]]></Time>
+<TimeTick>1453730394</TimeTick>
+<Step rID="T37">
+<Obj plainTxt="False" ><![CDATA[Work Queue]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:54]]></Time>
+<TimeTick>1453730394</TimeTick>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA[LNK_Test Question Types.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:54]]></Time>
+<TimeTick>1453730394</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="58" >
+<Disp><![CDATA[LNK_Test Question Types.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T39">
+<Obj plainTxt="False" ><![CDATA[LNK_Test Question Types.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:54]]></Time>
+<TimeTick>1453730394</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="60" >
+<Disp><![CDATA[LNK_Test Question Types.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="57" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="56" >
+<Disp><![CDATA[Work Queue]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T40">
+<Obj ><![CDATA[NavigateToDate]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:54]]></Time>
+<TimeTick>1453730394</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="61" status="Passed" >
+<Disp><![CDATA[NavigateToDate]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA[Navigation Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:56]]></Time>
+<TimeTick>1453730396</TimeTick>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA[Navigation Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:56]]></Time>
+<TimeTick>1453730396</TimeTick>
+<Step rID="T43">
+<Obj plainTxt="False" ><![CDATA[DWL_Navigate through Service.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:56]]></Time>
+<TimeTick>1453730396</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="66" >
+<Disp><![CDATA[DWL_Navigate through Service.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA[DWL_Navigate through Service.Object]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:56]]></Time>
+<TimeTick>1453730396</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="67" >
+<Disp><![CDATA[DWL_Navigate through Service.Object]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T45">
+<Obj plainTxt="False" ><![CDATA[[ All Questions Combined ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:29:58]]></Time>
+<TimeTick>1453730398</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="69" >
+<Disp><![CDATA[[ All Questions Combined ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T46">
+<Obj plainTxt="False" ><![CDATA[[ Date ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:01]]></Time>
+<TimeTick>1453730401</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="71" >
+<Disp><![CDATA[[ Date ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="65" >
+<Disp><![CDATA[Navigation Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="64" >
+<Disp><![CDATA[Navigation Page]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T47">
+<Obj ><![CDATA[NavigateToDate]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:01]]></Time>
+<TimeTick>1453730401</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="72" status="Passed" >
+<Disp><![CDATA[NavigateToDate]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T48">
+<Obj plainTxt="False" ><![CDATA[Navigation Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:05]]></Time>
+<TimeTick>1453730405</TimeTick>
+<Step rID="T49">
+<Obj plainTxt="False" ><![CDATA[Navigation Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:05]]></Time>
+<TimeTick>1453730405</TimeTick>
+<Step rID="T50">
+<Obj plainTxt="False" ><![CDATA[BTN_Next.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:05]]></Time>
+<TimeTick>1453730405</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="76" >
+<Disp><![CDATA[BTN_Next.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T51">
+<Obj plainTxt="False" ><![CDATA[BTN_Next.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:05]]></Time>
+<TimeTick>1453730405</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="78" >
+<Disp><![CDATA[BTN_Next.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="75" >
+<Disp><![CDATA[Navigation Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="74" >
+<Disp><![CDATA[Navigation Page]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T52">
+<Obj ><![CDATA[NavigateToDate]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:05]]></Time>
+<TimeTick>1453730405</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="79" status="Passed" >
+<Disp><![CDATA[NavigateToDate]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T53">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:09]]></Time>
+<TimeTick>1453730409</TimeTick>
+<Step rID="T54">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:09]]></Time>
+<TimeTick>1453730409</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="81" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T55">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:09]]></Time>
+<TimeTick>1453730409</TimeTick>
+<Step rID="T56">
+<Obj plainTxt="False" ><![CDATA[LBL_Date.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:09]]></Time>
+<TimeTick>1453730409</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="84" >
+<Disp><![CDATA[LBL_Date.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T57">
+<Obj plainTxt="False" ><![CDATA[Dates.Sync]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:09]]></Time>
+<TimeTick>1453730409</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="86" >
+<Disp><![CDATA[Dates.Sync]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="83" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T58">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:18]]></Time>
+<TimeTick>1453730418</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="87" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T59">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:18]]></Time>
+<TimeTick>1453730418</TimeTick>
+<Step rID="T60">
+<Obj plainTxt="False" ><![CDATA[LBL_Date.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:18]]></Time>
+<TimeTick>1453730418</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="90" >
+<Disp><![CDATA[LBL_Date.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="89" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="80" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T61">
+<Obj ><![CDATA[NavigateToDate]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:18]]></Time>
+<TimeTick>1453730418</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="91" status="Passed" >
+<Disp><![CDATA[NavigateToDate]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T62">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:24]]></Time>
+<TimeTick>1453730424</TimeTick>
+<Step rID="T63">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:24]]></Time>
+<TimeTick>1453730424</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="93" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T64">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:24]]></Time>
+<TimeTick>1453730424</TimeTick>
+<Step rID="T65">
+<Obj plainTxt="False" ><![CDATA[TXT_DateMonth/YearOneColumn.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:24]]></Time>
+<TimeTick>1453730424</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="96" >
+<Disp><![CDATA[TXT_DateMonth/YearOneColumn.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="95" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="92" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T66">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:27]]></Time>
+<TimeTick>1453730427</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="97" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T67">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:28]]></Time>
+<TimeTick>1453730428</TimeTick>
+<Step rID="T68">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:28]]></Time>
+<TimeTick>1453730428</TimeTick>
+<Step rID="T69">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumn.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:28]]></Time>
+<TimeTick>1453730428</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="101" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumn.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T70">
+<Obj plainTxt="False" ><![CDATA[[ select ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:28]]></Time>
+<TimeTick>1453730428</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="103" >
+<Disp><![CDATA[[ select ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="100" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="99" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T71">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:28]]></Time>
+<TimeTick>1453730428</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="104" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T72">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:31]]></Time>
+<TimeTick>1453730431</TimeTick>
+<Step rID="T73">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:31]]></Time>
+<TimeTick>1453730431</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="106" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T74">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:31]]></Time>
+<TimeTick>1453730431</TimeTick>
+<Step rID="T75">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:31]]></Time>
+<TimeTick>1453730431</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="109" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T76">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:31]]></Time>
+<TimeTick>1453730431</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="111" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="108" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="105" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T77">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:31]]></Time>
+<TimeTick>1453730431</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="112" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T78">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:34]]></Time>
+<TimeTick>1453730434</TimeTick>
+<Step rID="T79">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:34]]></Time>
+<TimeTick>1453730434</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="114" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T80">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:34]]></Time>
+<TimeTick>1453730434</TimeTick>
+<Step rID="T81">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:34]]></Time>
+<TimeTick>1453730434</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="117" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="116" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="113" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T82">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:37]]></Time>
+<TimeTick>1453730437</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="118" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T83">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:40]]></Time>
+<TimeTick>1453730440</TimeTick>
+<Step rID="T84">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:40]]></Time>
+<TimeTick>1453730440</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="120" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T85">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:40]]></Time>
+<TimeTick>1453730440</TimeTick>
+<Step rID="T86">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:40]]></Time>
+<TimeTick>1453730440</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="123" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="122" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="119" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T87">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:40]]></Time>
+<TimeTick>1453730440</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="124" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T88">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:43]]></Time>
+<TimeTick>1453730443</TimeTick>
+<Step rID="T89">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:43]]></Time>
+<TimeTick>1453730443</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="126" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T90">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:43]]></Time>
+<TimeTick>1453730443</TimeTick>
+<Step rID="T91">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarTodayDate.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:43]]></Time>
+<TimeTick>1453730443</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="129" >
+<Disp><![CDATA[LNK_CalendarTodayDate.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T92">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarTodayDate.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:43]]></Time>
+<TimeTick>1453730443</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="131" >
+<Disp><![CDATA[LNK_CalendarTodayDate.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="128" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="125" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T93">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:43]]></Time>
+<TimeTick>1453730443</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="132" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T94">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:46]]></Time>
+<TimeTick>1453730446</TimeTick>
+<Step rID="T95">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:46]]></Time>
+<TimeTick>1453730446</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="134" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T96">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:46]]></Time>
+<TimeTick>1453730446</TimeTick>
+<Step rID="T97">
+<Obj plainTxt="False" ><![CDATA[TXT_DateMonth/YearOneColumn.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:46]]></Time>
+<TimeTick>1453730446</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="137" >
+<Disp><![CDATA[TXT_DateMonth/YearOneColumn.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="136" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="133" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T98">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:50]]></Time>
+<TimeTick>1453730450</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="138" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T99">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:50]]></Time>
+<TimeTick>1453730450</TimeTick>
+<Step rID="T100">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:50]]></Time>
+<TimeTick>1453730450</TimeTick>
+<Step rID="T101">
+<Obj plainTxt="False" ><![CDATA[TXT_DateMonth/YearOneColumn.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:50]]></Time>
+<TimeTick>1453730450</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="142" >
+<Disp><![CDATA[TXT_DateMonth/YearOneColumn.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="141" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="140" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T102">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:50]]></Time>
+<TimeTick>1453730450</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="143" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T103">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:53]]></Time>
+<TimeTick>1453730453</TimeTick>
+<Step rID="T104">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:53]]></Time>
+<TimeTick>1453730453</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="145" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T105">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:53]]></Time>
+<TimeTick>1453730453</TimeTick>
+<Step rID="T106">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:53]]></Time>
+<TimeTick>1453730453</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="148" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T107">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:53]]></Time>
+<TimeTick>1453730453</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="150" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="147" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="144" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T108">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:53]]></Time>
+<TimeTick>1453730453</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="151" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T109">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:56]]></Time>
+<TimeTick>1453730456</TimeTick>
+<Step rID="T110">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:56]]></Time>
+<TimeTick>1453730456</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="153" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T111">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:56]]></Time>
+<TimeTick>1453730456</TimeTick>
+<Step rID="T112">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:56]]></Time>
+<TimeTick>1453730456</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="156" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="155" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="152" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T113">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:30:59]]></Time>
+<TimeTick>1453730459</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="157" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T114">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<Step rID="T115">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="159" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T116">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<Step rID="T117">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="162" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T118">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="164" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="161" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="158" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T119">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="165" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T120">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<Step rID="T121">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<Step rID="T122">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumn.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="169" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumn.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T123">
+<Obj plainTxt="False" ><![CDATA[[ select ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="171" >
+<Disp><![CDATA[[ select ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="168" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="167" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T124">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:02]]></Time>
+<TimeTick>1453730462</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="172" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T125">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:05]]></Time>
+<TimeTick>1453730465</TimeTick>
+<Step rID="T126">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:05]]></Time>
+<TimeTick>1453730465</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="174" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T127">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:05]]></Time>
+<TimeTick>1453730465</TimeTick>
+<Step rID="T128">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:05]]></Time>
+<TimeTick>1453730465</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="177" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="176" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="173" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T129">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:08]]></Time>
+<TimeTick>1453730468</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="178" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T130">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:08]]></Time>
+<TimeTick>1453730468</TimeTick>
+<Step rID="T131">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:08]]></Time>
+<TimeTick>1453730468</TimeTick>
+<Step rID="T132">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:08]]></Time>
+<TimeTick>1453730468</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="182" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="181" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="180" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T133">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:08]]></Time>
+<TimeTick>1453730468</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="183" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T134">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:11]]></Time>
+<TimeTick>1453730471</TimeTick>
+<Step rID="T135">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:11]]></Time>
+<TimeTick>1453730471</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="185" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T136">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:11]]></Time>
+<TimeTick>1453730471</TimeTick>
+<Step rID="T137">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:11]]></Time>
+<TimeTick>1453730471</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="188" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T138">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:11]]></Time>
+<TimeTick>1453730471</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="190" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumnCalendarIcon.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="187" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="184" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T139">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:11]]></Time>
+<TimeTick>1453730471</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="191" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T140">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:15]]></Time>
+<TimeTick>1453730475</TimeTick>
+<Step rID="T141">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:15]]></Time>
+<TimeTick>1453730475</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="193" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T142">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:15]]></Time>
+<TimeTick>1453730475</TimeTick>
+<Step rID="T143">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:15]]></Time>
+<TimeTick>1453730475</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="196" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="195" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="192" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T144">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:18]]></Time>
+<TimeTick>1453730478</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="197" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T145">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<Step rID="T146">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="199" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T147">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<Step rID="T148">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="202" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T149">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="204" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="201" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="198" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T150">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="205" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T151">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<Step rID="T152">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<Step rID="T153">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumn.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="209" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumn.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T154">
+<Obj plainTxt="False" ><![CDATA[[ select ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="211" >
+<Disp><![CDATA[[ select ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="208" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="207" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T155">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:21]]></Time>
+<TimeTick>1453730481</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="212" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T156">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:24]]></Time>
+<TimeTick>1453730484</TimeTick>
+<Step rID="T157">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:24]]></Time>
+<TimeTick>1453730484</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="214" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T158">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:24]]></Time>
+<TimeTick>1453730484</TimeTick>
+<Step rID="T159">
+<Obj plainTxt="False" ><![CDATA[TBL_CalendarTable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:24]]></Time>
+<TimeTick>1453730484</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="217" >
+<Disp><![CDATA[TBL_CalendarTable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="216" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="213" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T160">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="218" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T161">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<Step rID="T162">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<Step rID="T163">
+<Obj plainTxt="False" ><![CDATA[TBL_CalendarTable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="222" >
+<Disp><![CDATA[TBL_CalendarTable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T164">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[RowCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="223" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T165">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="224" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T166">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="225" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T167">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="226" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T168">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="227" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T169">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="228" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T170">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="229" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T171">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="230" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T172">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="231" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T173">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="232" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T174">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="233" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T175">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="234" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T176">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="235" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="221" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="220" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T177">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="236" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T178">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<Step rID="T179">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<Step rID="T180">
+<Obj plainTxt="False" ><![CDATA[TBL_CalendarTable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="240" >
+<Disp><![CDATA[TBL_CalendarTable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T181">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[RowCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="241" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T182">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="242" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T183">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="243" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T184">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="244" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T185">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="245" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T186">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="246" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T187">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="247" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T188">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="248" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T189">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="249" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T190">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="250" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T191">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="251" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T192">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="252" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T193">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="253" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T194">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="254" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T195">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="255" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="239" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="238" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T196">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:27]]></Time>
+<TimeTick>1453730487</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="256" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T197">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:28]]></Time>
+<TimeTick>1453730488</TimeTick>
+<Step rID="T198">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:28]]></Time>
+<TimeTick>1453730488</TimeTick>
+<Step rID="T199">
+<Obj plainTxt="False" ><![CDATA[TBL_CalendarTable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:28]]></Time>
+<TimeTick>1453730488</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="260" >
+<Disp><![CDATA[TBL_CalendarTable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T200">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[RowCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:28]]></Time>
+<TimeTick>1453730488</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="261" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T201">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:28]]></Time>
+<TimeTick>1453730488</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="262" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T202">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:28]]></Time>
+<TimeTick>1453730488</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="263" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T203">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:28]]></Time>
+<TimeTick>1453730488</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="264" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T204">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[CellText]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:28]]></Time>
+<TimeTick>1453730488</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="265" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T205">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ChildItem]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:31]]></Time>
+<TimeTick>1453730491</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="266" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T206">
+<Obj plainTxt="False" ><![CDATA[[ 2010 - 2019 ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:34]]></Time>
+<TimeTick>1453730494</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="268" >
+<Disp><![CDATA[[ 2010 - 2019 ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="259" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="258" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T207">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:34]]></Time>
+<TimeTick>1453730494</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="269" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T208">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:34]]></Time>
+<TimeTick>1453730494</TimeTick>
+<Step rID="T209">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:34]]></Time>
+<TimeTick>1453730494</TimeTick>
+<Step rID="T210">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearOneColumn.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:34]]></Time>
+<TimeTick>1453730494</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="273" >
+<Disp><![CDATA[DTL_DateMonth/YearOneColumn.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T211">
+<Obj plainTxt="False" ><![CDATA[[ select ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:34]]></Time>
+<TimeTick>1453730494</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="275" >
+<Disp><![CDATA[[ select ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="272" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="271" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T212">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:34]]></Time>
+<TimeTick>1453730494</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="276" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T213">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:37]]></Time>
+<TimeTick>1453730497</TimeTick>
+<Step rID="T214">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:37]]></Time>
+<TimeTick>1453730497</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="278" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T215">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:37]]></Time>
+<TimeTick>1453730497</TimeTick>
+<Step rID="T216">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:37]]></Time>
+<TimeTick>1453730497</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="281" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="280" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="277" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T217">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:40]]></Time>
+<TimeTick>1453730500</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="282" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T218">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:40]]></Time>
+<TimeTick>1453730500</TimeTick>
+<Step rID="T219">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:40]]></Time>
+<TimeTick>1453730500</TimeTick>
+<Step rID="T220">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarDefaultYear.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:40]]></Time>
+<TimeTick>1453730500</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="286" >
+<Disp><![CDATA[LNK_CalendarDefaultYear.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="285" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="284" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T221">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:40]]></Time>
+<TimeTick>1453730500</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="287" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T222">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:43]]></Time>
+<TimeTick>1453730503</TimeTick>
+<Step rID="T223">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:43]]></Time>
+<TimeTick>1453730503</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="289" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T224">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:43]]></Time>
+<TimeTick>1453730503</TimeTick>
+<Step rID="T225">
+<Obj plainTxt="False" ><![CDATA[DTL_Month/YearMin/Max Test-MaxSize0.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:43]]></Time>
+<TimeTick>1453730503</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="292" >
+<Disp><![CDATA[DTL_Month/YearMin/Max Test-MaxSize0.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="291" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="288" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T226">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:43]]></Time>
+<TimeTick>1453730503</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="293" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T227">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:44]]></Time>
+<TimeTick>1453730504</TimeTick>
+<Step rID="T228">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:44]]></Time>
+<TimeTick>1453730504</TimeTick>
+<Step rID="T229">
+<Obj plainTxt="False" ><![CDATA[DTL_Month/YearMin/Max Test-MaxSize0.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:44]]></Time>
+<TimeTick>1453730504</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="297" >
+<Disp><![CDATA[DTL_Month/YearMin/Max Test-MaxSize0.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T230">
+<Obj plainTxt="False" ><![CDATA[[ select ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:44]]></Time>
+<TimeTick>1453730504</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="299" >
+<Disp><![CDATA[[ select ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="296" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="295" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T231">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:44]]></Time>
+<TimeTick>1453730504</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="300" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T232">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:47]]></Time>
+<TimeTick>1453730507</TimeTick>
+<Step rID="T233">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:47]]></Time>
+<TimeTick>1453730507</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="302" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T234">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:47]]></Time>
+<TimeTick>1453730507</TimeTick>
+<Step rID="T235">
+<Obj plainTxt="False" ><![CDATA[DTL_Month/YearMin/MaxTest-MaxSize0CalendarIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:47]]></Time>
+<TimeTick>1453730507</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="305" >
+<Disp><![CDATA[DTL_Month/YearMin/MaxTest-MaxSize0CalendarIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T236">
+<Obj plainTxt="False" ><![CDATA[DTL_Month/YearMin/MaxTest-MaxSize0CalendarIcon.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:47]]></Time>
+<TimeTick>1453730507</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="307" >
+<Disp><![CDATA[DTL_Month/YearMin/MaxTest-MaxSize0CalendarIcon.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="304" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="301" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T237">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:47]]></Time>
+<TimeTick>1453730507</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="308" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T238">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:51]]></Time>
+<TimeTick>1453730511</TimeTick>
+<Step rID="T239">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:51]]></Time>
+<TimeTick>1453730511</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="310" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T240">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:51]]></Time>
+<TimeTick>1453730511</TimeTick>
+<Step rID="T241">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarRightArrowIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:51]]></Time>
+<TimeTick>1453730511</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="313" >
+<Disp><![CDATA[LNK_CalendarRightArrowIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="312" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="309" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T242">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="314" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T243">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<Step rID="T244">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<Step rID="T245">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarRightArrowIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="318" >
+<Disp><![CDATA[LNK_CalendarRightArrowIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="317" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="316" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T246">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="319" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T247">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<Step rID="T248">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<Step rID="T249">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="323" >
+<Disp><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="322" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="321" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T250">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="324" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T251">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<Step rID="T252">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<Step rID="T253">
+<Obj plainTxt="False" ><![CDATA[TBL_CalendarTable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="328" >
+<Disp><![CDATA[TBL_CalendarTable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T254">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[RowCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="329" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T255">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="330" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T256">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ChildItem]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="331" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T257">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ChildItem]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="332" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T258">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ChildItem]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="333" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="327" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="326" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T259">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:54]]></Time>
+<TimeTick>1453730514</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="334" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T260">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:57]]></Time>
+<TimeTick>1453730517</TimeTick>
+<Step rID="T261">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:57]]></Time>
+<TimeTick>1453730517</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="336" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T262">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:57]]></Time>
+<TimeTick>1453730517</TimeTick>
+<Step rID="T263">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearMinTest-1.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:57]]></Time>
+<TimeTick>1453730517</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="339" >
+<Disp><![CDATA[DTL_DateMonth/YearMinTest-1.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="338" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="335" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T264">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:57]]></Time>
+<TimeTick>1453730517</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="340" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T265">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:58]]></Time>
+<TimeTick>1453730518</TimeTick>
+<Step rID="T266">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:58]]></Time>
+<TimeTick>1453730518</TimeTick>
+<Step rID="T267">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearMinTest-1.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:58]]></Time>
+<TimeTick>1453730518</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="344" >
+<Disp><![CDATA[DTL_DateMonth/YearMinTest-1.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T268">
+<Obj plainTxt="False" ><![CDATA[[ select ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:58]]></Time>
+<TimeTick>1453730518</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="346" >
+<Disp><![CDATA[[ select ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="343" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="342" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T269">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:31:58]]></Time>
+<TimeTick>1453730518</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="347" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T270">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:02]]></Time>
+<TimeTick>1453730522</TimeTick>
+<Step rID="T271">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:02]]></Time>
+<TimeTick>1453730522</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="349" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T272">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:02]]></Time>
+<TimeTick>1453730522</TimeTick>
+<Step rID="T273">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearMinTest-1CalendarIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:02]]></Time>
+<TimeTick>1453730522</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="352" >
+<Disp><![CDATA[DTL_DateMonth/YearMinTest-1CalendarIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T274">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearMinTest-1CalendarIcon.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:02]]></Time>
+<TimeTick>1453730522</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="354" >
+<Disp><![CDATA[DTL_DateMonth/YearMinTest-1CalendarIcon.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="351" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="348" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T275">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:02]]></Time>
+<TimeTick>1453730522</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="355" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T276">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:05]]></Time>
+<TimeTick>1453730525</TimeTick>
+<Step rID="T277">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:05]]></Time>
+<TimeTick>1453730525</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="357" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T278">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:05]]></Time>
+<TimeTick>1453730525</TimeTick>
+<Step rID="T279">
+<Obj plainTxt="False" ><![CDATA[TBL_CalendarTable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:05]]></Time>
+<TimeTick>1453730525</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="360" >
+<Disp><![CDATA[TBL_CalendarTable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="359" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="356" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T280">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:08]]></Time>
+<TimeTick>1453730528</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="361" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T281">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:08]]></Time>
+<TimeTick>1453730528</TimeTick>
+<Step rID="T282">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:08]]></Time>
+<TimeTick>1453730528</TimeTick>
+<Step rID="T283">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:08]]></Time>
+<TimeTick>1453730528</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="365" >
+<Disp><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="364" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="363" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T284">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:08]]></Time>
+<TimeTick>1453730528</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="366" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T285">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:11]]></Time>
+<TimeTick>1453730531</TimeTick>
+<Step rID="T286">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:11]]></Time>
+<TimeTick>1453730531</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="368" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T287">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:11]]></Time>
+<TimeTick>1453730531</TimeTick>
+<Step rID="T288">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:11]]></Time>
+<TimeTick>1453730531</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="371" >
+<Disp><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T289">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarLeftArrowIcon.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:11]]></Time>
+<TimeTick>1453730531</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="373" >
+<Disp><![CDATA[LNK_CalendarLeftArrowIcon.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="370" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="367" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T290">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:11]]></Time>
+<TimeTick>1453730531</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="374" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T291">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:14]]></Time>
+<TimeTick>1453730534</TimeTick>
+<Step rID="T292">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:14]]></Time>
+<TimeTick>1453730534</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="376" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T293">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:14]]></Time>
+<TimeTick>1453730534</TimeTick>
+<Step rID="T294">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearMinTest-1CalendarIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:14]]></Time>
+<TimeTick>1453730534</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="379" >
+<Disp><![CDATA[DTL_DateMonth/YearMinTest-1CalendarIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T295">
+<Obj plainTxt="False" ><![CDATA[DTL_DateMonth/YearMinTest-1CalendarIcon.Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:14]]></Time>
+<TimeTick>1453730534</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="381" >
+<Disp><![CDATA[DTL_DateMonth/YearMinTest-1CalendarIcon.Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="378" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="375" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T296">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:14]]></Time>
+<TimeTick>1453730534</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="382" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T297">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:17]]></Time>
+<TimeTick>1453730537</TimeTick>
+<Step rID="T298">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:17]]></Time>
+<TimeTick>1453730537</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="384" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T299">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:18]]></Time>
+<TimeTick>1453730538</TimeTick>
+<Step rID="T300">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:18]]></Time>
+<TimeTick>1453730538</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="387" >
+<Disp><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="386" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="383" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T301">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:21]]></Time>
+<TimeTick>1453730541</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="388" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T302">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<Step rID="T303">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<Step rID="T304">
+<Obj plainTxt="False" ><![CDATA[TBL_CalendarTable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="392" >
+<Disp><![CDATA[TBL_CalendarTable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T305">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[RowCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="393" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T306">
+<Obj plainTxt="False" ><![CDATA["TBL_CalendarTable":Function Call]]></Obj>
+<Details plainTxt="False" ><![CDATA[ColumnCount]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<NodeArgs eType="General" icon="13" nRep="394" >
+<Disp><![CDATA["TBL_CalendarTable":Function Call]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="391" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="390" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T307">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="395" status="Failed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T308">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<Step rID="T309">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<Step rID="T310">
+<Obj plainTxt="False" ><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="399" >
+<Disp><![CDATA[LNK_CalendarLeftArrowIcon.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="398" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="397" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T311">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:25]]></Time>
+<TimeTick>1453730545</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="400" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T312">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:28]]></Time>
+<TimeTick>1453730548</TimeTick>
+<Step rID="T313">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:28]]></Time>
+<TimeTick>1453730548</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="402" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T314">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:28]]></Time>
+<TimeTick>1453730548</TimeTick>
+<Step rID="T315">
+<Obj plainTxt="False" ><![CDATA[DTL_Month/YearNotEditable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:28]]></Time>
+<TimeTick>1453730548</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="405" >
+<Disp><![CDATA[DTL_Month/YearNotEditable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="404" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="401" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T316">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:28]]></Time>
+<TimeTick>1453730548</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="406" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T317">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:29]]></Time>
+<TimeTick>1453730549</TimeTick>
+<Step rID="T318">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:29]]></Time>
+<TimeTick>1453730549</TimeTick>
+<Step rID="T319">
+<Obj plainTxt="False" ><![CDATA[DTL_Month/YearNotEditable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:29]]></Time>
+<TimeTick>1453730549</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="410" >
+<Disp><![CDATA[DTL_Month/YearNotEditable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="409" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="408" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T320">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:29]]></Time>
+<TimeTick>1453730549</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="411" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T321">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Browser]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:32]]></Time>
+<TimeTick>1453730552</TimeTick>
+<Step rID="T322">
+<Obj plainTxt="False" ><![CDATA["Dates"- Smart Identification]]></Obj>
+<Details plainTxt="False" ><![CDATA[<P><span class="text">The smart identification mechanism was invoked.</span></P><P><SPAN class=text>Reason: object not unique (2 objects found)</SPAN></P>           <SPAN class=text><b>Original description:</b></SPAN><br>micclass=Browser<br><P><FONT face=Verdana size=2><SPAN class=text><B>Smart Identification Alternative Description: </B></SPAN></FONT></P><FONT face=Verdana size=2><u>Base filter properties (2 objects found)&nbsp;</FONT></u><br>
+micclass=Browser<br><br><FONT face=Verdana size=2><u>Optional filter properties</FONT></u><br>
+name=Dates<SPAN class=passed> (Used</SPAN>, 1 matches)</SPAN><br>title=Dates - Internet Explorer<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openurl=http://www.msn.com/en-in/?cobrand=dell13.msn.com&ocid=DELLDHP&pc=MDDCJS<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>opentitle=<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>openedbytestingtool=0<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>number of tabs=2<SPAN class=warning> (Ignored)<FONT color=#000000></FONT></SPAN><br>]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:32]]></Time>
+<TimeTick>1453730552</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="413" >
+<Disp><![CDATA["Dates"- Smart Identification]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T323">
+<Obj plainTxt="False" ><![CDATA[Dates]]></Obj>
+<Details plainTxt="False" ><![CDATA[Page]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:32]]></Time>
+<TimeTick>1453730552</TimeTick>
+<Step rID="T324">
+<Obj plainTxt="False" ><![CDATA[DTL_Month/YearNotEditable.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:32]]></Time>
+<TimeTick>1453730552</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="416" >
+<Disp><![CDATA[DTL_Month/YearNotEditable.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="415" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="412" >
+<Disp><![CDATA[Dates]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T325">
+<Obj ><![CDATA[ValidateDateMonthYearOneColumn]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:32]]></Time>
+<TimeTick>1453730552</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="417" status="Passed" >
+<Disp><![CDATA[ValidateDateMonthYearOneColumn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T326">
+<Obj plainTxt="False" ><![CDATA[[ WebButton ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:36]]></Time>
+<TimeTick>1453730556</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="419" >
+<Disp><![CDATA[[ WebButton ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T327">
+<Obj plainTxt="False" ><![CDATA[[ Logout ].Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:36]]></Time>
+<TimeTick>1453730556</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="421" >
+<Disp><![CDATA[[ Logout ].Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T328">
+<Obj ><![CDATA[Logout]]></Obj>
+<Details ><![CDATA[]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:37]]></Time>
+<TimeTick>1453730557</TimeTick>
+<NodeArgs eType="User" icon="7" nRep="422" status="Passed" >
+<Disp><![CDATA[Logout]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T329">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'Wscript'<BR>Function file: C:\IFSAutomation\Trunk_IFS_QuestionTypes\Trunk_IFS_QuestionTypes\Libraries\GeneralLibraries\CommonLibrary.vbs<BR>Line (548): &quot;	Set objNetwork = Wscript.CreateObject(&quot;Wscript.Network&quot;)&quot;.]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:55]]></Time>
+<TimeTick>1453730575</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="423" status="Failed" Source="C:\IFSAutomation\Trunk_IFS_QuestionTypes\Trunk_IFS_QuestionTypes\Libraries\GeneralLibraries\CommonLibrary.vbs" SourceLine="547" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T330">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object required: 'objNetwork'<BR>Function file: C:\IFSAutomation\Trunk_IFS_QuestionTypes\Trunk_IFS_QuestionTypes\Libraries\GeneralLibraries\CommonLibrary.vbs<BR>Line (549): &quot;	currUser = objNetwork.UserName&quot;.]]></Details>
+<Time><![CDATA[25-01-2016 - 19:32:55]]></Time>
+<TimeTick>1453730575</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="424" status="Failed" Source="C:\IFSAutomation\Trunk_IFS_QuestionTypes\Trunk_IFS_QuestionTypes\Libraries\GeneralLibraries\CommonLibrary.vbs" SourceLine="548" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="25-01-2016 - 19:26:52" eTime="25-01-2016 - 19:32:56" passed="56" failed="3" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="3" nRep="6" status="Failed" >
+<Disp><![CDATA[Action1 Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Summary sTime="25-01-2016 - 19:26:51" eTime="25-01-2016 - 19:32:56" passed="56" failed="3" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="3" status="Failed" >
+<Disp><![CDATA[Test SuiteDriver Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>
